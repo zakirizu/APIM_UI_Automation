@@ -1,0 +1,106 @@
+[INFO ] 2022-12-15 23:29:01.193 - com.informatica.web.util.MyLogger:startLogger 18==>  
+
+************** Execution Started : CustomAPITest**************
+
+[INFO ] 2022-12-15 23:29:07.533 - com.informatica.pages.BasePage:loginIntoIICSApp 60==>  entering username and password
+[INFO ] 2022-12-15 23:29:09.582 - com.informatica.pages.BasePage:loginIntoIICSApp 63==>  Clicking on Login Button
+[INFO ] 2022-12-15 23:29:15.639 - com.informatica.pages.LoginPage:<init> 26==>  Initiated loginPage object
+[INFO ] 2022-12-15 23:29:15.641 - com.informatica.pages.LoginPage:ClickonAPIMChiklet 48==>  Clicking on  APIM Chikclet
+[INFO ] 2022-12-15 23:29:33.613 - com.informatica.pages.APIMRegistryPage:<init> 18==>  Initiated APIMRegistryPage object
+[INFO ] 2022-12-15 23:29:33.628 - com.informatica.tests.CustomAPITest:ValdiateTestAndCreateCustomAPI 45==>  ================= ValdiateTestCustomAPI : START ================== 
+[INFO ] 2022-12-15 23:29:33.836 - com.informatica.pages.APIMRegistryPage:ValdiateAPIPresentInAPIRegistery 515==>  Clicking on API - CustomAPI_Automation
+[INFO ] 2022-12-15 23:29:33.858 - com.informatica.tests.CustomAPITest:ValdiateTestAndCreateCustomAPI 54==>  Custom API For Automation is already Exists, so deleting the Custom API 
+[INFO ] 2022-12-15 23:29:33.860 - com.informatica.pages.APIMRegistryPage:DeleteManagedAPI 662==>  Search an API
+[INFO ] 2022-12-15 23:29:42.744 - com.informatica.pages.APIMRegistryPage:DeleteManagedAPI 682==>  Deactivate Message :The Managed API "CustomAPI_Automation" was deactivated successfully.
+[INFO ] 2022-12-15 23:29:43.982 - com.informatica.pages.APIMRegistryPage:DeleteManagedAPI 704==>  Deactivate Message :The Managed API "CustomAPI_Automation" was deleted successfully.
+[INFO ] 2022-12-15 23:29:43.983 - com.informatica.pages.BasePage:CheckPageisLoading 326==>  Checking Page is Loading :: START
+[INFO ] 2022-12-15 23:29:43.988 - com.informatica.pages.APIMRegistryPage:DeleteManagedAPI 716==>  Deleted the Managed API post Validation
+[INFO ] 2022-12-15 23:29:43.988 - com.informatica.pages.APIMRegistryPage:ReloadPage 559==>  Reloading the page
+[INFO ] 2022-12-15 23:30:00.281 - com.informatica.pages.APIMRegistryPage:ClickonCreateCustomAPI 267==>  Clicking on  Analytics Tab
+[INFO ] 2022-12-15 23:30:00.602 - com.informatica.tests.CustomAPITest:ValdiateTestAndCreateCustomAPI 66==>  Validating the Test URL Message
+[INFO ] 2022-12-15 23:30:14.368 - com.informatica.tests.CustomAPITest:ValdiateTestAndCreateCustomAPI 73==>  Actual Save Message :The Managed API "CustomAPI_Automation" was created successfully.
+[INFO ] 2022-12-15 23:30:14.370 - com.informatica.tests.CustomAPITest:ValdiateTestAndCreateCustomAPI 76==>  Expected Save Message :The Managed API "CustomAPI_Automation" was created successfully.
+[INFO ] 2022-12-15 23:30:14.372 - com.informatica.pages.APIMRegistryPage:ReloadPage 559==>  Reloading the page
+[INFO ] 2022-12-15 23:30:24.731 - com.informatica.pages.APIMRegistryPage:ValdiateAPIPresentInAPIRegistery 515==>  Clicking on API - CustomAPI_Automation
+[INFO ] 2022-12-15 23:30:24.745 - com.informatica.tests.CustomAPITest:ValdiateTestAndCreateCustomAPI 81==>  Checking the Created Custom API Present in Registery :true
+[INFO ] 2022-12-15 23:30:24.746 - com.informatica.tests.CustomAPITest:ValdiateTestAndCreateCustomAPI 84==>  Validating the Create Custom API, Custom API is Created and Present in API Regsitery Page
+[INFO ] 2022-12-15 23:30:24.746 - com.informatica.tests.CustomAPITest:ValdiateTestAndCreateCustomAPI 95==>  ================= ValdiateTestCustomAPI : END ================== 
+[INFO ] 2022-12-15 23:30:24.750 - com.informatica.tests.CustomAPITest:ValdiateAddRatelimitToCustomApi 102==>  ================= Validating the Update Custom API with RateLimit : START ================== 
+[INFO ] 2022-12-15 23:30:24.762 - com.informatica.pages.APIMRegistryPage:clickOnApiInGrid 504==>  Clicking on API - CustomAPI_Automation
+[INFO ] 2022-12-15 23:30:24.953 - com.informatica.pages.managedAPIPage:ClickonManagedAPIPolicies 119==>  Clicking on  Policies tab
+[INFO ] 2022-12-15 23:30:26.170 - com.informatica.pages.CustomAPIPage:selectAPIRegistryDropdownOption 122==>  Selecting Dropdown OptionAPIM_Automation_Tierfrom API registry
+[INFO ] 2022-12-15 23:30:29.666 - com.informatica.tests.CustomAPITest:ValdiateAddRatelimitToCustomApi 114==>  Actual Save Message :Failed to update the Managed API "CustomAPI_Automation"
+[INFO ] 2022-12-15 23:30:29.667 - com.informatica.tests.CustomAPITest:ValdiateAddRatelimitToCustomApi 117==>  Expected Save Message :The Managed API "CustomAPI_Automation" was updated successfully.
+[INFO ] 2022-12-15 23:30:29.846 - com.informatica.tests.CustomAPITest:ValdiateAddIpFilteringToCustomApi 139==>  ================= Validating the Update Custom API with IpFiltering : START ================== 
+[ERROR] 2022-12-15 23:31:29.852 - com.informatica.tests.CustomAPITest:ValdiateAddIpFilteringToCustomApi 165==>  Exception while update IpFiltering for CustomAPIcom.microsoft.playwright.TimeoutError: Error {
+  message='Timeout 60000ms exceeded.
+=========================== logs ===========================
+waiting for selector "//div[@data-bo='API REGISTRY RESTRICTION']//input[@placeholder='Find']"
+  selector resolved to hidden <input type="text" tabindex="0" placeholder="Find" valu…/>
+elementHandle.fill("CustomAPI_Automation")
+  waiting for element to be visible, enabled and editable
+    element is not visible - waiting...
+============================================================
+  name='TimeoutError
+  stack='TimeoutError: Timeout 60000ms exceeded.
+=========================== logs ===========================
+waiting for selector "//div[@data-bo='API REGISTRY RESTRICTION']//input[@placeholder='Find']"
+  selector resolved to hidden <input type="text" tabindex="0" placeholder="Find" valu…/>
+elementHandle.fill("CustomAPI_Automation")
+  waiting for element to be visible, enabled and editable
+    element is not visible - waiting...
+============================================================
+    at ProgressController.run (C:\Users\jashaik\AppData\Local\Temp\playwright-java-5376866736254237440\package\lib\server\progress.js:96:26)
+    at Frame.fill (C:\Users\jashaik\AppData\Local\Temp\playwright-java-5376866736254237440\package\lib\server\frames.js:1156:23)
+    at FrameDispatcher.fill (C:\Users\jashaik\AppData\Local\Temp\playwright-java-5376866736254237440\package\lib\dispatchers\frameDispatcher.js:182:30)
+    at DispatcherConnection.dispatch (C:\Users\jashaik\AppData\Local\Temp\playwright-java-5376866736254237440\package\lib\dispatchers\dispatcher.js:352:46)
+}
+[INFO ] 2022-12-15 23:31:30.088 - com.informatica.tests.CustomAPITest:ValdiateAddGroupToCustomApi 177==>  ================= Validating the Update Custom API with Groups: START ================== 
+[ERROR] 2022-12-15 23:32:30.103 - com.informatica.tests.CustomAPITest:ValdiateAddGroupToCustomApi 200==>  Exception while update Groups for CustomAPIcom.microsoft.playwright.TimeoutError: Error {
+  message='Timeout 60000ms exceeded.
+=========================== logs ===========================
+waiting for selector "//div[@data-bo='API REGISTRY RESTRICTION']//input[@placeholder='Find']"
+  selector resolved to hidden <input type="text" tabindex="0" placeholder="Find" valu…/>
+elementHandle.fill("CustomAPI_Automation")
+  waiting for element to be visible, enabled and editable
+    element is not visible - waiting...
+============================================================
+  name='TimeoutError
+  stack='TimeoutError: Timeout 60000ms exceeded.
+=========================== logs ===========================
+waiting for selector "//div[@data-bo='API REGISTRY RESTRICTION']//input[@placeholder='Find']"
+  selector resolved to hidden <input type="text" tabindex="0" placeholder="Find" valu…/>
+elementHandle.fill("CustomAPI_Automation")
+  waiting for element to be visible, enabled and editable
+    element is not visible - waiting...
+============================================================
+    at ProgressController.run (C:\Users\jashaik\AppData\Local\Temp\playwright-java-5376866736254237440\package\lib\server\progress.js:96:26)
+    at Frame.fill (C:\Users\jashaik\AppData\Local\Temp\playwright-java-5376866736254237440\package\lib\server\frames.js:1156:23)
+    at FrameDispatcher.fill (C:\Users\jashaik\AppData\Local\Temp\playwright-java-5376866736254237440\package\lib\dispatchers\frameDispatcher.js:182:30)
+    at DispatcherConnection.dispatch (C:\Users\jashaik\AppData\Local\Temp\playwright-java-5376866736254237440\package\lib\dispatchers\dispatcher.js:352:46)
+}
+[INFO ] 2022-12-15 23:32:30.356 - com.informatica.tests.CustomAPITest:ValdiateDeleteCustomAPI 212==>  ================= Validating the Delete Custom API: START ================== 
+[INFO ] 2022-12-15 23:32:30.357 - com.informatica.pages.APIMRegistryPage:DeleteManagedAPI 662==>  Search an API
+[ERROR] 2022-12-15 23:33:30.363 - com.informatica.tests.CustomAPITest:ValdiateDeleteCustomAPI 229==>  Exception while Delete Custom APIcom.microsoft.playwright.TimeoutError: Error {
+  message='Timeout 60000ms exceeded.
+=========================== logs ===========================
+waiting for selector "//div[@data-bo='API REGISTRY RESTRICTION']//input[@placeholder='Find']"
+  selector resolved to hidden <input type="text" tabindex="0" placeholder="Find" valu…/>
+elementHandle.fill("CustomAPI_Automation")
+  waiting for element to be visible, enabled and editable
+    element is not visible - waiting...
+============================================================
+  name='TimeoutError
+  stack='TimeoutError: Timeout 60000ms exceeded.
+=========================== logs ===========================
+waiting for selector "//div[@data-bo='API REGISTRY RESTRICTION']//input[@placeholder='Find']"
+  selector resolved to hidden <input type="text" tabindex="0" placeholder="Find" valu…/>
+elementHandle.fill("CustomAPI_Automation")
+  waiting for element to be visible, enabled and editable
+    element is not visible - waiting...
+============================================================
+    at ProgressController.run (C:\Users\jashaik\AppData\Local\Temp\playwright-java-5376866736254237440\package\lib\server\progress.js:96:26)
+    at Frame.fill (C:\Users\jashaik\AppData\Local\Temp\playwright-java-5376866736254237440\package\lib\server\frames.js:1156:23)
+    at FrameDispatcher.fill (C:\Users\jashaik\AppData\Local\Temp\playwright-java-5376866736254237440\package\lib\dispatchers\frameDispatcher.js:182:30)
+    at DispatcherConnection.dispatch (C:\Users\jashaik\AppData\Local\Temp\playwright-java-5376866736254237440\package\lib\dispatchers\dispatcher.js:352:46)
+}

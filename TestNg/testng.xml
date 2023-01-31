@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="APIM Tests">
+  <test thread-count="5" parallel="tests" name="IICS_Login">
+    <classes>
+      <class name="com.informatica.tests.LoginTest">
+        <methods>
+          <include name="validateIICSLogin"/>
+          <include name="valdiateAPIMChiklet"/>
+        </methods>
+      </class> <!-- com.informatica.tests.LoginTest -->
+    </classes>
+  </test> <!-- IICS_Login -->
+  <test thread-count="5" parallel="tests" name="APIM_Home_Page">
+    <classes>
+      <class name="com.informatica.tests.APIMRegisteryTest">
+        <methods>
+          <include name="SearchActiveStatus"/>
+          <include name="SearchInActiveStatus"/>
+          <include name="Search_ActiveServiceNot_AvailiableStatus"/>
+          <include name="Search_InActiveServiceNot_AvailiableStatus"/>
+          <include name="ValidateHeadersAPiRegistry"/>
+          <include name="validateManagedAPIDropdown"/>
+          <include name="CreateManagagedAPI"/>
+          <include name="CreateNewVersionAPI"/>
+          <include name="DeleteManagagedAPI"/>
+        </methods>
+      </class> <!-- com.informatica.tests.APIMRegisteryTest -->
+    </classes>
+  </test> <!-- APIM_Home_Page -->
+  <test thread-count="5" parallel="tests" name="Managed_API_Page">
+    <classes>
+      <class name="com.informatica.tests.managedAPITest">
+        <methods>
+          <include name="accessAnonManagedAPI"/>
+          <include name="accessBasicManagedAPI"/>
+          <include name="validateWSDLURL"/>
+          <include name="ClickOnEnablePrivacyPolicyWarning"/>
+          <include name="ClickOnEnablePrivacyPolicyBlock"/>
+        </methods>
+      </class> <!-- com.informatica.tests.managedAPITest -->
+    </classes>
+  </test> <!-- Managed_API_Page -->
+  <test thread-count="5" parallel="tests" name="API_Groups">
+    <classes>
+      <class name="com.informatica.tests.APIGroupsTest">
+        <methods>
+          <include name="validateUserNavigatedtoAPiGroups"/>
+          <include name="ValidateHeadersAPiGroups"/>
+          <include name="validateCreateAPIGroupWithContext"/>
+          <include name="validateCreateAPIGroupWithOutContext"/>
+          <include name="validateRenameAPIGroup"/>
+          <include name="validateRemoveAPIGroup"/>
+          <include name="APIM_UI_Reg_TC01"/>
+          <include name="APIM_UI_Reg_TC02"/>
+          <include name="APIM_UI_Reg_TC24"/>
+          <include name="APIM_UI_Reg_TC53"/>
+          <include name="APIM_UI_Reg_TC27"/>
+          <include name="APIM_UI_Reg_TC29"/>
+        </methods>
+      </class> <!-- com.informatica.tests.APIGroupsTest -->
+    </classes>
+  </test> <!-- API_Groups -->
+  <test thread-count="5" parallel="tests" name="API_Portal_Registry">
+    <classes>
+      <class name="com.informatica.tests.APIPortalRegistryTest">
+        <methods>
+          <include name="ValidateSwaggerTab"/>
+          <include name="run_anonymous_Managed_API"/>
+          <include name="run_basic_Managed_API"/>
+          <include name="validateSwaggerURLinAPIPortal"/>
+        </methods>
+      </class> <!-- com.informatica.tests.APIPortalRegistryTest -->
+    </classes>
+  </test> <!-- API_Portal_Registry -->
+  <test thread-count="5" parallel="tests" name="API_Portal_Home">
+    <classes>
+      <class name="com.informatica.tests.APIPortalHomeTest">
+        <methods>
+          <include name="validateAnalyticsOverviewTab"/>
+          <include name="validateTopApisTab"/>
+        </methods>
+      </class> <!-- com.informatica.tests.APIPortalHomeTest -->
+    </classes>
+  </test> <!-- API_Portal_Home -->
+  <test thread-count="5" parallel="tests" name="API_Groups_In_API_Portal">
+    <classes>
+      <class name="com.informatica.tests.APIPortalAPIGroupsTest">
+        <methods>
+          <include name="validateAPIURLInAPIGroup"/>
+        </methods>
+      </class> <!-- com.informatica.tests.APIPortalAPIGroupsTest -->
+    </classes>
+  </test> <!-- API_Groups_In_API_Portal -->
+  <test thread-count="5" parallel="tests" name="APIM_Analytics">
+    <classes>
+      <class name="com.informatica.tests.ApimAnalyticsTest">
+        <methods>
+          <include name="validateAnalyticsOverViewTab"/>
+          <include name="validateAnalyticsActivityLogTab"/>
+          <include name="validateAnalyticsEventsLogTab"/>
+        </methods>
+      </class> <!-- com.informatica.tests.ApimAnalyticsTest -->
+    </classes>
+  </test> <!-- APIM_Analytics -->
+  <test thread-count="5" parallel="tests" name="APIM_OAuth2">
+    <classes>
+      <class name="com.informatica.tests.PoliciesAuthorizationTest">
+        <methods>
+          <include name="ValdiateCreateOAuth2Client"/>
+          <include name="ValdiateEditOAuth2Client"/>
+          <include name="ValdiateDeleteOAuth2Client"/>
+        </methods>
+      </class> <!-- com.informatica.tests.PoliciesAuthorizationTest -->
+    </classes>
+  </test> <!-- APIM_OAuth2 -->
+  <test thread-count="5" parallel="tests" name="APIM_CustomAPI">
+    <classes>
+      <class name="com.informatica.tests.CustomAPITest">
+        <methods>
+          <include name="ValdiateTestAndCreateCustomAPI"/>
+          <include name="ValdiateAddRatelimitToCustomApi"/>
+          <include name="ValdiateAddIpFilteringToCustomApi"/>
+          <include name="ValdiateAddGroupToCustomApi"/>
+          <include name="ValdiateDeleteCustomAPI"/>
+        </methods>
+      </class> <!-- com.informatica.tests.CustomAPITest -->
+    </classes>
+  </test> <!-- APIM_CustomAPI -->
+  <test thread-count="5" parallel="tests" name="APIM_Swagger">
+    <classes>
+      <class name="com.informatica.tests.APIMSwaggerTest">
+        <methods>
+          <include name="validateAnonAPISwagger"/>
+          <include name="validateBasicAPISwagger"/>
+          <include name="validateAnonAPISwaggerURL"/>
+          <include name="validateBasicAPISwaggerURL"/>
+        </methods>
+      </class> <!-- com.informatica.tests.APIMSwaggerTest -->
+    </classes>
+  </test> <!-- APIM_Swagger -->
+  <test thread-count="5" parallel="tests" name="RateLimit">
+    <classes>
+      <class name="com.informatica.tests.RateLimitTest">
+        <methods>
+          <include name="verifyRateLimitPolicyAppliedToAnonymousApi"/>
+          <include name="verifyRateLimitPolicyAppliedToBasicApi"/>
+        </methods>
+      </class> <!-- com.informatica.tests.RateLimitTest -->
+    </classes>
+  </test> <!-- RateLimit -->
+  <test thread-count="5" parallel="tests" name="ClientSdk">
+    <classes>
+      <class name="com.informatica.tests.ClientSdkTest">
+        <methods>
+          <include name="verifyClientSdkItemsAndDownload"/>
+        </methods>
+      </class> <!-- com.informatica.tests.ClientSdkTest -->
+    </classes>
+  </test> <!-- ClientSdk -->
+  <test thread-count="5" parallel="tests" name="OrgLevelPolicies">
+    <classes>
+      <class name="com.informatica.tests.OrgLevelPoliciesTest"/>
+    </classes>
+  </test> <!-- OrgLevelPolicies -->
+</suite> <!-- APIM Tests -->

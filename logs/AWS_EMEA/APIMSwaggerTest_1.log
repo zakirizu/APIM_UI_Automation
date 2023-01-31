@@ -1,0 +1,32 @@
+[INFO ] 2022-12-15 13:29:05.265 - com.informatica.web.util.MyLogger:startLogger 18==>  
+
+************** Execution Started : APIMSwaggerTest**************
+
+[INFO ] 2022-12-15 13:29:06.565 - com.informatica.pages.LoginPage:<init> 26==>  Initiated loginPage object
+[INFO ] 2022-12-15 13:29:09.828 - com.informatica.pages.BasePage:loginIntoIICSApp 60==>  entering username and password
+[INFO ] 2022-12-15 13:29:11.095 - com.informatica.pages.BasePage:loginIntoIICSApp 63==>  Clicking on Login Button
+[INFO ] 2022-12-15 13:29:16.724 - com.informatica.pages.LoginPage:ClickonAPIMChiklet 48==>  Clicking on  APIM Chikclet
+[INFO ] 2022-12-15 13:29:22.144 - com.informatica.pages.APIMRegistryPage:<init> 18==>  Initiated APIMRegistryPage object
+[INFO ] 2022-12-15 13:29:22.149 - com.informatica.tests.APIMSwaggerTest:validateAnonAPISwaggerURL 194==>  ================= validateAnonAPISwaggerURL : START ================== 
+[INFO ] 2022-12-15 13:29:24.394 - com.informatica.pages.APIMRegistryPage:clickOnApiInGrid 504==>  Clicking on API - APIM_Automation_Generic_Anon1
+[INFO ] 2022-12-15 13:29:26.288 - com.informatica.pages.BasePage:copySwaggerURL 146==>  Copying Swagger URL
+[INFO ] 2022-12-15 13:29:34.642 - com.informatica.pages.BasePage:copySwaggerURL 150==>  Copied Swagger URL Text :https://emw1-apigw.dm-em.informaticacloud.com/t/apim.emw.com/APIM_Automation_Generic_Anon1?swagger
+[INFO ] 2022-12-15 13:29:34.643 - com.informatica.pages.BasePage:runAnonSwaggerURL 169==>  Running Swagger URL of Anonymous API
+[INFO ] 2022-12-15 13:29:35.765 - com.informatica.tests.APIMSwaggerTest:validateAnonAPISwaggerURL 218==>  ================= validateAnonAPISwaggerURL : END ================== 
+[INFO ] 2022-12-15 13:29:35.769 - com.informatica.tests.APIMSwaggerTest:validateAnonAPISwagger 77==>  ================= validateAnonAPISwagger : START ================== 
+[INFO ] 2022-12-15 13:29:35.770 - com.informatica.pages.APIMSwaggerPage:switchToSwaggerTab 44==>  Clicking on Swagger tab of Managed API
+[INFO ] 2022-12-15 13:29:35.853 - com.informatica.pages.APIMSwaggerPage:executeAPIonSwaggerTab 63==>  Executing API in Swagger tab
+[INFO ] 2022-12-15 13:29:36.810 - com.informatica.pages.APIMSwaggerPage:getAPIExecutionResponseCode 86==>  Getting response code of Swagger execution
+[INFO ] 2022-12-15 13:29:37.367 - com.informatica.pages.APIMSwaggerPage:getAPIExecutionResponseBody 107==>  Getting response body of Swagger execution
+[INFO ] 2022-12-15 13:29:37.380 - com.informatica.pages.APIMRegistryPage:closeOpenedAPI 377==>  Closing API APIM_Automation_Generic_Anon1
+[INFO ] 2022-12-15 13:29:37.612 - com.informatica.tests.APIMSwaggerTest:validateAnonAPISwagger 112==>  ================= validateAnonAPISwagger : END ================== 
+[INFO ] 2022-12-15 13:29:37.619 - com.informatica.tests.APIMSwaggerTest:validateBasicAPISwaggerURL 235==>  ================= validateBasicAPISwaggerURL : START ================== 
+[INFO ] 2022-12-15 13:29:37.697 - com.informatica.pages.APIMRegistryPage:clickOnApiInGrid 504==>  Clicking on API - APIM_Automation_Generic_Basic
+[INFO ] 2022-12-15 13:29:37.919 - com.informatica.pages.BasePage:copySwaggerURL 146==>  Copying Swagger URL
+[INFO ] 2022-12-15 13:29:44.636 - com.informatica.pages.BasePage:copySwaggerURL 150==>  Copied Swagger URL Text :https://emw1-apigw.dm-em.informaticacloud.com/t/apim.emw.com/APIM_Automation_Generic_Basic?swagger
+[INFO ] 2022-12-15 13:29:44.637 - com.informatica.pages.BasePage:runBasicSwaggerURL 200==>  Running Swagger URL of Basic API
+[INFO ] 2022-12-15 13:29:45.596 - com.informatica.tests.APIMSwaggerTest:validateBasicAPISwaggerURL 258==>  ================= validateBasicAPISwaggerURL : END ================== 
+[INFO ] 2022-12-15 13:29:45.602 - com.informatica.tests.APIMSwaggerTest:validateBasicAPISwagger 129==>  ================= validateBasicAPISwagger : START ================== 
+[INFO ] 2022-12-15 13:29:45.604 - com.informatica.pages.APIMSwaggerPage:switchToSwaggerTab 44==>  Clicking on Swagger tab of Managed API
+[ERROR] 2022-12-15 13:29:46.505 - com.informatica.pages.APIMSwaggerPage:switchToSwaggerTab 48==>  Exception while loading Swagger tab[Ljava.lang.StackTraceElement;@2c2729ea
+[ERROR] 2022-12-15 13:29:46.506 - com.informatica.tests.APIMSwaggerTest:validateBasicAPISwagger 172==>  Exception while validating Basic API Swagger tab : com.microsoft.playwright.PlaywrightException: Failed to read message from driver, pipe closed.

@@ -1,0 +1,23 @@
+[INFO ] 2022-12-15 23:28:26.388 - com.informatica.web.util.MyLogger:startLogger 18==>  
+
+************** Execution Started : APIPortalAPIGroupsTest**************
+
+[INFO ] 2022-12-15 23:28:28.860 - com.informatica.pages.LoginPage:<init> 26==>  Initiated loginPage object
+[INFO ] 2022-12-15 23:28:30.919 - com.informatica.pages.BasePage:loginIntoIICSApp 60==>  entering username and password
+[INFO ] 2022-12-15 23:28:32.816 - com.informatica.pages.BasePage:loginIntoIICSApp 63==>  Clicking on Login Button
+[INFO ] 2022-12-15 23:28:38.022 - com.informatica.pages.LoginPage:clickOnApiChiklet 62==>  Clicking on  API Portal chicklet
+[INFO ] 2022-12-15 23:28:48.809 - com.informatica.pages.APIPortalHomePage:<init> 29==>  Initiated API Portal HomePage object
+[INFO ] 2022-12-15 23:28:58.154 - com.informatica.pages.APIPortalHomePage:clickApiGroupsTab 116==>  Clicked on API Groups tab
+[INFO ] 2022-12-15 23:28:58.167 - com.informatica.pages.APIPortalAPIGroupsPage:<init> 26==>  Initiated APIRegistryPage object
+[INFO ] 2022-12-15 23:28:58.171 - com.informatica.pages.APIPage:<init> 21==>  Initiated API Page object
+[INFO ] 2022-12-15 23:28:58.178 - com.informatica.tests.APIPortalAPIGroupsTest:validateAPIURLInAPIGroup 66==>  ================= validateAPIURLInAPIGroup From APIPortal : START ================== 
+[INFO ] 2022-12-15 23:28:58.181 - com.informatica.pages.APIPortalAPIGroupsPage:clickOnAPIGroup 129==>  Filtering the APIGroup Name
+[INFO ] 2022-12-15 23:28:58.304 - com.informatica.pages.APIPortalAPIGroupsPage:clickOnAPIGroup 133==>  clicking on apiGroup with apiGroupNam : APIM_Automation_Grp and ApiGroupContext/APIM_Automation_Grp
+[INFO ] 2022-12-15 23:28:58.305 - com.informatica.pages.APIPortalAPIGroupsPage:clickOnAPIGroup 137==>  APIGroupWithContext webelement is: //div[@class='d-section__header']//span[contains(text(),'API Groups')]/ancestor::div[@class='d-section__header']/following-sibling::div//span[text()='APIM_Automation_Grp']/ancestor::td/following-sibling::td//span[text()='/APIM_Automation_Grp']
+[INFO ] 2022-12-15 23:28:58.838 - com.informatica.pages.APIPortalAPIGroupsPage:clickOnAPIInAPIGroup 153==>  clicking on the APIs in Group
+[INFO ] 2022-12-15 23:28:58.940 - com.informatica.pages.APIPortalAPIGroupsPage:clickOnAPIInAPIGroup 155==>  Filtering the APIGroup Name
+[INFO ] 2022-12-15 23:28:59.079 - com.informatica.pages.APIPortalAPIGroupsPage:clickOnAPIInAPIGroup 158==>  clicking on api : APIM_Automation_Anon1
+[INFO ] 2022-12-15 23:28:59.080 - com.informatica.pages.APIPortalAPIGroupsPage:clickOnAPIInAPIGroup 161==>  API webelement is: //div//span[contains(text(),'APIs in Group')]//ancestor::div[@class='d-section__header']/following-sibling::div//tr[contains(@data-id,'REST_')]//td//span[@class='IconAndText']//span[text()='APIM_Automation_Anon1']
+[INFO ] 2022-12-15 23:28:59.455 - com.informatica.pages.APIPortalAPIGroupsPage:getURLFromAPIInAPIGroup 174==>  gettingUrl From APIInAPIGroup
+[INFO ] 2022-12-15 23:28:59.495 - com.informatica.pages.APIPortalAPIGroupsPage:clikCopyURLOFAPIInAPIGroup 195==>  clicking the copy URL Button From APIInAPIGroup
+[INFO ] 2022-12-15 23:28:59.980 - com.informatica.tests.APIPortalAPIGroupsTest:validateAPIURLInAPIGroup 86==>  ================= validateAPIURLInAPIGroup From APIPortal : END ================== 

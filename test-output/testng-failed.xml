@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Failed suite [APIM Tests]">
+  <test thread-count="5" parallel="tests" name="API_Groups(failed)">
+    <classes>
+      <class name="com.informatica.tests.APIGroupsTest">
+        <methods>
+          <include name="cleanUp"/>
+          <include name="ValidateHeadersAPiGroups"/>
+          <include name="init"/>
+          <include name="validateCreateAPIGroupWithContext"/>
+          <include name="captureStatus"/>
+          <include name="validateUserNavigatedtoAPiGroups"/>
+          <include name="validateRenameAPIGroup"/>
+          <include name="beforeSuite"/>
+          <include name="validateRemoveAPIGroup"/>
+          <include name="tearDown"/>
+          <include name="register"/>
+          <include name="validateCreateAPIGroupWithOutContext"/>
+        </methods>
+      </class> <!-- com.informatica.tests.APIGroupsTest -->
+    </classes>
+  </test> <!-- API_Groups(failed) -->
+  <test thread-count="5" parallel="tests" name="API_Portal_Registry(failed)">
+    <classes>
+      <class name="com.informatica.tests.APIPortalRegistryTest">
+        <methods>
+          <include name="cleanUp"/>
+          <include name="ValidateSwaggerTab"/>
+          <include name="run_anonymous_Managed_API"/>
+          <include name="init"/>
+          <include name="captureStatus"/>
+          <include name="validateSwaggerURLinAPIPortal"/>
+          <include name="run_basic_Managed_API"/>
+          <include name="beforeSuite"/>
+          <include name="tearDown"/>
+          <include name="register"/>
+        </methods>
+      </class> <!-- com.informatica.tests.APIPortalRegistryTest -->
+    </classes>
+  </test> <!-- API_Portal_Registry(failed) -->
+  <test thread-count="5" parallel="tests" name="APIM_OAuth2(failed)">
+    <classes>
+      <class name="com.informatica.tests.PoliciesAuthorizationTest">
+        <methods>
+          <include name="cleanUp"/>
+          <include name="ValdiateEditOAuth2Client"/>
+          <include name="ValdiateDeleteOAuth2Client"/>
+          <include name="ValdiateCreateOAuth2Client" invocation-numbers="0"/>
+          <include name="captureStatus"/>
+          <include name="beforeSuite"/>
+          <include name="tearDown"/>
+          <include name="register"/>
+          <include name="init"/>
+        </methods>
+      </class> <!-- com.informatica.tests.PoliciesAuthorizationTest -->
+    </classes>
+  </test> <!-- APIM_OAuth2(failed) -->
+  <test thread-count="5" parallel="tests" name="APIM_Home_Page(failed)">
+    <classes>
+      <class name="com.informatica.tests.APIMRegisteryTest">
+        <methods>
+          <include name="cleanUp"/>
+          <include name="DeleteManagagedAPI" invocation-numbers="0"/>
+          <include name="CreateNewVersionAPI" invocation-numbers="0"/>
+          <include name="captureStatus"/>
+          <include name="register"/>
+          <include name="ValidateHeadersAPiRegistry"/>
+          <include name="Search_InActiveServiceNot_AvailiableStatus"/>
+          <include name="CreateManagagedAPI" invocation-numbers="0"/>
+          <include name="SearchInActiveStatus"/>
+          <include name="Search_ActiveServiceNot_AvailiableStatus"/>
+          <include name="beforeSuite"/>
+          <include name="tearDown"/>
+          <include name="SearchActiveStatus"/>
+          <include name="init"/>
+        </methods>
+      </class> <!-- com.informatica.tests.APIMRegisteryTest -->
+    </classes>
+  </test> <!-- APIM_Home_Page(failed) -->
+  <test thread-count="5" parallel="tests" name="APIM_CustomAPI(failed)">
+    <classes>
+      <class name="com.informatica.tests.CustomAPITest">
+        <methods>
+          <include name="ValdiateTestAndCreateCustomAPI"/>
+          <include name="ValdiateAddGroupToCustomApi" invocation-numbers="0"/>
+          <include name="ValdiateAddRatelimitToCustomApi" invocation-numbers="0"/>
+          <include name="cleanUp"/>
+          <include name="captureStatus"/>
+          <include name="beforeSuite"/>
+          <include name="tearDown"/>
+          <include name="ValdiateAddIpFilteringToCustomApi" invocation-numbers="0"/>
+          <include name="ValdiateDeleteCustomAPI" invocation-numbers="0"/>
+          <include name="register"/>
+          <include name="init"/>
+        </methods>
+      </class> <!-- com.informatica.tests.CustomAPITest -->
+    </classes>
+  </test> <!-- APIM_CustomAPI(failed) -->
+  <test thread-count="5" parallel="tests" name="APIM_Swagger(failed)">
+    <classes>
+      <class name="com.informatica.tests.APIMSwaggerTest">
+        <methods>
+          <include name="cleanUp"/>
+          <include name="validateAnonAPISwagger" invocation-numbers="0"/>
+          <include name="validateBasicAPISwaggerURL" invocation-numbers="0"/>
+          <include name="captureStatus"/>
+          <include name="beforeSuite"/>
+          <include name="tearDown"/>
+          <include name="register"/>
+          <include name="validateAnonAPISwaggerURL" invocation-numbers="0"/>
+          <include name="validateBasicAPISwagger" invocation-numbers="0"/>
+          <include name="init"/>
+        </methods>
+      </class> <!-- com.informatica.tests.APIMSwaggerTest -->
+    </classes>
+  </test> <!-- APIM_Swagger(failed) -->
+  <test thread-count="5" parallel="tests" name="RateLimit(failed)">
+    <classes>
+      <class name="com.informatica.tests.RateLimitTest">
+        <methods>
+          <include name="cleanUp"/>
+          <include name="init"/>
+          <include name="captureStatus"/>
+          <include name="verifyRateLimitPolicyAppliedToBasicApi" invocation-numbers="0"/>
+          <include name="beforeSuite"/>
+          <include name="tearDown"/>
+          <include name="register"/>
+        </methods>
+      </class> <!-- com.informatica.tests.RateLimitTest -->
+    </classes>
+  </test> <!-- RateLimit(failed) -->
+  <test thread-count="5" parallel="tests" name="Managed_API_Page(failed)">
+    <classes>
+      <class name="com.informatica.tests.managedAPITest">
+        <methods>
+          <include name="cleanUp"/>
+          <include name="ClickOnEnablePrivacyPolicyWarning" invocation-numbers="0"/>
+          <include name="validateWSDLURL" invocation-numbers="0"/>
+          <include name="accessAnonManagedAPI" invocation-numbers="0"/>
+          <include name="accessBasicManagedAPI" invocation-numbers="0"/>
+          <include name="init"/>
+          <include name="captureStatus"/>
+          <include name="beforeSuite"/>
+          <include name="tearDown"/>
+          <include name="register"/>
+        </methods>
+      </class> <!-- com.informatica.tests.managedAPITest -->
+    </classes>
+  </test> <!-- Managed_API_Page(failed) -->
+</suite> <!-- Failed suite [APIM Tests] -->

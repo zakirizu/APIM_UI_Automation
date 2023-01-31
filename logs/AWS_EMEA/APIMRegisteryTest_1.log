@@ -1,0 +1,92 @@
+[INFO ] 2022-12-15 13:27:20.916 - com.informatica.web.util.MyLogger:startLogger 18==>  
+
+************** Execution Started : APIMRegisteryTest**************
+
+[INFO ] 2022-12-15 13:27:27.553 - com.informatica.pages.BasePage:loginIntoIICSApp 60==>  entering username and password
+[INFO ] 2022-12-15 13:27:28.763 - com.informatica.pages.BasePage:loginIntoIICSApp 63==>  Clicking on Login Button
+[INFO ] 2022-12-15 13:27:34.050 - com.informatica.pages.LoginPage:<init> 26==>  Initiated loginPage object
+[INFO ] 2022-12-15 13:27:34.052 - com.informatica.pages.LoginPage:ClickonAPIMChiklet 48==>  Clicking on  APIM Chikclet
+[INFO ] 2022-12-15 13:27:46.393 - com.informatica.pages.APIMRegistryPage:<init> 18==>  Initiated APIMRegistryPage object
+[INFO ] 2022-12-15 13:27:46.395 - com.informatica.tests.APIMRegisteryTest:SearchActiveStatus 54==>  ================= SearchActiveStatusValdiations : START ================== 
+[INFO ] 2022-12-15 13:27:46.407 - com.informatica.pages.APIMRegistryPage:selectFullPage 108==>  Selecting the Full Records
+[INFO ] 2022-12-15 13:27:47.381 - com.informatica.tests.APIMRegisteryTest:SearchActiveStatus 66==>  ================= SearchActiveStatusValdiations : END ================== 
+[INFO ] 2022-12-15 13:27:47.385 - com.informatica.tests.APIMRegisteryTest:SearchInActiveStatus 74==>  ================= SearchINActiveStatusValdiations : START ================== 
+[INFO ] 2022-12-15 13:27:47.385 - com.informatica.pages.APIMRegistryPage:SearchInActiveStatus 124==>  Getting In-Active Status Records
+[INFO ] 2022-12-15 13:27:47.413 - com.informatica.tests.APIMRegisteryTest:SearchInActiveStatus 83==>  ================= SearchINActiveStatusValdiations : END ================== 
+[INFO ] 2022-12-15 13:27:47.415 - com.informatica.tests.APIMRegisteryTest:Search_ActiveServiceNot_AvailiableStatus 91==>  ================= SearchINActiveStatusValdiations : START ================== 
+[INFO ] 2022-12-15 13:27:47.416 - com.informatica.pages.APIMRegistryPage:Search_ActiveServicenotAvailiable_Status 134==>  Getting Active Service Not Availiable Status Records
+[INFO ] 2022-12-15 13:27:47.429 - com.informatica.tests.APIMRegisteryTest:Search_ActiveServiceNot_AvailiableStatus 100==>  ================= SearchINActiveStatusValdiations : END ================== 
+[INFO ] 2022-12-15 13:27:47.432 - com.informatica.tests.APIMRegisteryTest:Search_InActiveServiceNot_AvailiableStatus 108==>  ================= SearchINActiveStatusNotAvailiableValdiations : START ================== 
+[INFO ] 2022-12-15 13:27:47.433 - com.informatica.pages.APIMRegistryPage:Search_InActiveServicenotAvailiable_Status 144==>  Getting In-Active Service Not Availiable Status Records
+[INFO ] 2022-12-15 13:27:47.443 - com.informatica.tests.APIMRegisteryTest:Search_InActiveServiceNot_AvailiableStatus 117==>  ================= SearchINActiveStatusNotAvailiableValdiations : END ================== 
+[INFO ] 2022-12-15 13:27:47.445 - com.informatica.tests.APIMRegisteryTest:ValidateHeadersAPiRegistry 125==>  ================= ValidateHeadersAPiRegistry : START ================== 
+[INFO ] 2022-12-15 13:27:47.446 - com.informatica.pages.APIMRegistryPage:getAPIRegisteryHeaders 154==>  Getting API Registery Page Hear Columns Data
+[INFO ] 2022-12-15 13:27:47.601 - com.informatica.pages.APIMRegistryPage:getAPIRegisteryHeaders 171==>  Actual report headers : [Name, Version, Service Name, Protocol, Status, Authentication Method, Group, Description]
+[INFO ] 2022-12-15 13:27:47.602 - com.informatica.pages.APIMRegistryPage:getAPIRegisteryHeaders 154==>  Getting API Registery Page Hear Columns Data
+[INFO ] 2022-12-15 13:27:47.747 - com.informatica.pages.APIMRegistryPage:getAPIRegisteryHeaders 171==>  Actual report headers : [Name, Version, Service Name, Protocol, Status, Authentication Method, Group, Description]
+[INFO ] 2022-12-15 13:27:47.748 - com.informatica.web.util.ReportsTestValidator:getExpectedHeadersAPIMRegistery 29==>  Expected Response of APIM Registery headers : [Name, Version, Service Name, Protocol, Status, Authentication Method, Group, Description]
+[INFO ] 2022-12-15 13:27:47.749 - com.informatica.tests.APIMRegisteryTest:ValidateHeadersAPiRegistry 139==>  ================= ValidateHeadersAPiRegistry : END ================== 
+[INFO ] 2022-12-15 13:27:47.753 - com.informatica.tests.APIMRegisteryTest:CreateManagagedAPI 196==>  ================= CreateManagagedAPIValidation : START ================== 
+[INFO ] 2022-12-15 13:27:47.754 - com.informatica.tests.APIMRegisteryTest:CreateManagagedAPI 198==>  Check if the managed API exists
+[INFO ] 2022-12-15 13:27:47.755 - com.informatica.pages.APIMRegistryPage:CheckManagedAPIStatus 737==>  Search an API
+[INFO ] 2022-12-15 13:27:48.150 - com.informatica.pages.APIMRegistryPage:CreateManagedAPI 581==>  Search an API
+[INFO ] 2022-12-15 13:27:50.953 - com.informatica.pages.APIMRegistryPage:ReloadPage 559==>  Reloading the page
+[INFO ] 2022-12-15 13:28:01.976 - com.informatica.pages.APIMRegistryPage:CreateManagedAPI 604==>  Created the Managed API
+[INFO ] 2022-12-15 13:28:01.977 - com.informatica.pages.APIMRegistryPage:DeleteManagedAPI 662==>  Search an API
+[INFO ] 2022-12-15 13:28:07.565 - com.informatica.pages.APIMRegistryPage:DeleteManagedAPI 682==>  Deactivate Message :The selected Managed API "APIM_Automation_JWT" cannot be deactivated. Refresh the Managed API list and check it still exists.
+[INFO ] 2022-12-15 13:28:17.612 - com.informatica.pages.APIMRegistryPage:DeleteManagedAPI 704==>  Deactivate Message :The Managed API "APIM_Automation_JWT" was deactivated successfully.
+[INFO ] 2022-12-15 13:28:17.613 - com.informatica.pages.BasePage:CheckPageisLoading 326==>  Checking Page is Loading :: START
+[INFO ] 2022-12-15 13:28:22.646 - com.informatica.pages.APIMRegistryPage:DeleteManagedAPI 716==>  Deleted the Managed API post Validation
+[INFO ] 2022-12-15 13:28:22.647 - com.informatica.pages.APIMRegistryPage:ReloadPage 559==>  Reloading the page
+[INFO ] 2022-12-15 13:28:27.653 - com.informatica.tests.APIMRegisteryTest:CreateManagagedAPI 220==>  ================= CreateManagagedAPIValidation : END ================== 
+[INFO ] 2022-12-15 13:28:27.657 - com.informatica.tests.APIMRegisteryTest:CreateNewVersionAPI 238==>  ================= CreateNewVersionAPI : START ================== 
+[INFO ] 2022-12-15 13:28:27.658 - com.informatica.tests.APIMRegisteryTest:CreateNewVersionAPI 240==>  Check if the managed API exists in CreateNewVersionAPI
+[INFO ] 2022-12-15 13:28:27.659 - com.informatica.pages.APIMRegistryPage:CheckManagedAPIStatus 737==>  Search an API
+[INFO ] 2022-12-15 13:28:27.808 - com.informatica.pages.APIMRegistryPage:CheckManagedAPIStatus 737==>  Search an API
+[INFO ] 2022-12-15 13:28:27.894 - com.informatica.pages.APIMRegistryPage:CheckManagedAPIStatus 737==>  Search an API
+[INFO ] 2022-12-15 13:28:27.992 - com.informatica.pages.APIMRegistryPage:CreateManagedAPI 581==>  Search an API
+[INFO ] 2022-12-15 13:28:30.367 - com.informatica.pages.APIMRegistryPage:ReloadPage 559==>  Reloading the page
+[INFO ] 2022-12-15 13:28:38.439 - com.informatica.pages.APIMRegistryPage:CreateManagedAPI 604==>  Created the Managed API
+[INFO ] 2022-12-15 13:28:38.441 - com.informatica.pages.APIMRegistryPage:CreateNewVersion 770==>  Search an API
+[INFO ] 2022-12-15 13:28:41.228 - com.informatica.pages.APIMRegistryPage:CreateNewVersion 786==>  Create button is Enabled
+[INFO ] 2022-12-15 13:28:45.167 - com.informatica.pages.APIMRegistryPage:CreateNewVersion 770==>  Search an API
+[INFO ] 2022-12-15 13:28:48.242 - com.informatica.pages.APIMRegistryPage:CreateNewVersion 786==>  Create button is Enabled
+[INFO ] 2022-12-15 13:28:48.464 - com.informatica.pages.APIMRegistryPage:CreateNewVersionStatus 809==>  Search an API
+[INFO ] 2022-12-15 13:28:54.550 - com.informatica.pages.APIMRegistryPage:ReloadPage 559==>  Reloading the page
+[INFO ] 2022-12-15 13:29:01.677 - com.informatica.pages.APIMRegistryPage:DeleteManagedAPI 662==>  Search an API
+[INFO ] 2022-12-15 13:29:09.419 - com.informatica.pages.APIMRegistryPage:DeleteManagedAPI 682==>  Deactivate Message :The Managed API "APIM_Automation_NewVersion1" was deactivated successfully.
+[INFO ] 2022-12-15 13:29:10.582 - com.informatica.pages.APIMRegistryPage:DeleteManagedAPI 704==>  Deactivate Message :The Managed API "APIM_Automation_NewVersion1" was deleted successfully.
+[INFO ] 2022-12-15 13:29:10.582 - com.informatica.pages.BasePage:CheckPageisLoading 326==>  Checking Page is Loading :: START
+[INFO ] 2022-12-15 13:29:10.585 - com.informatica.pages.APIMRegistryPage:DeleteManagedAPI 716==>  Deleted the Managed API post Validation
+[INFO ] 2022-12-15 13:29:10.586 - com.informatica.pages.APIMRegistryPage:DeleteManagedAPI 662==>  Search an API
+[INFO ] 2022-12-15 13:29:21.057 - com.informatica.pages.APIMRegistryPage:DeleteManagedAPI 682==>  Deactivate Message :The Managed API "APIM_Automation_NewVersion1" was deactivated successfully.
+[INFO ] 2022-12-15 13:29:23.889 - com.informatica.pages.APIMRegistryPage:DeleteManagedAPI 704==>  Deactivate Message :The Managed API "APIM_Automation_NewVersion1" was deleted successfully.
+[INFO ] 2022-12-15 13:29:23.891 - com.informatica.pages.BasePage:CheckPageisLoading 326==>  Checking Page is Loading :: START
+[INFO ] 2022-12-15 13:29:23.896 - com.informatica.pages.APIMRegistryPage:DeleteManagedAPI 716==>  Deleted the Managed API post Validation
+[INFO ] 2022-12-15 13:29:23.897 - com.informatica.pages.APIMRegistryPage:DeleteManagedAPI 662==>  Search an API
+[INFO ] 2022-12-15 13:29:34.018 - com.informatica.pages.APIMRegistryPage:DeleteManagedAPI 682==>  Deactivate Message :The Managed API "APIM_Automation_NewVersion1" was deactivated successfully.
+[INFO ] 2022-12-15 13:29:36.942 - com.informatica.pages.APIMRegistryPage:DeleteManagedAPI 704==>  Deactivate Message :The Managed API "APIM_Automation_NewVersion1" was deleted successfully.
+[INFO ] 2022-12-15 13:29:36.943 - com.informatica.pages.BasePage:CheckPageisLoading 326==>  Checking Page is Loading :: START
+[INFO ] 2022-12-15 13:29:36.947 - com.informatica.pages.APIMRegistryPage:DeleteManagedAPI 716==>  Deleted the Managed API post Validation
+[INFO ] 2022-12-15 13:29:36.950 - com.informatica.tests.APIMRegisteryTest:CreateNewVersionAPI 297==>  ================= CreateNewVersionAPI : END ================== 
+[INFO ] 2022-12-15 13:29:36.958 - com.informatica.tests.APIMRegisteryTest:DeleteManagagedAPI 317==>  ================= DeleteManagagedAPIValidation : START ================== 
+[INFO ] 2022-12-15 13:29:36.960 - com.informatica.tests.APIMRegisteryTest:DeleteManagagedAPI 319==>  Check if the managed API exists in DeleteManagagedAPI
+[INFO ] 2022-12-15 13:29:36.961 - com.informatica.pages.APIMRegistryPage:CheckManagedAPIStatus 737==>  Search an API
+[INFO ] 2022-12-15 13:29:37.093 - com.informatica.pages.APIMRegistryPage:CreateManagedAPI 581==>  Search an API
+[INFO ] 2022-12-15 13:29:39.473 - com.informatica.pages.APIMRegistryPage:ReloadPage 559==>  Reloading the page
+[INFO ] 2022-12-15 13:29:45.581 - com.informatica.pages.APIMRegistryPage:CreateManagedAPI 604==>  Created the Managed API
+[INFO ] 2022-12-15 13:29:45.582 - com.informatica.pages.APIMRegistryPage:CheckManagedAPIStatus 737==>  Search an API
+[INFO ] 2022-12-15 13:29:45.838 - com.informatica.pages.APIMRegistryPage:DeleteManagedAPI 662==>  Search an API
+[INFO ] 2022-12-15 13:29:58.146 - com.informatica.pages.APIMRegistryPage:DeleteManagedAPI 682==>  Deactivate Message :The Managed API "APIM_Automation_JWT" was deactivated successfully.
+[INFO ] 2022-12-15 13:29:59.298 - com.informatica.pages.APIMRegistryPage:DeleteManagedAPI 704==>  Deactivate Message :The Managed API "APIM_Automation_JWT" was deleted successfully.
+[INFO ] 2022-12-15 13:29:59.300 - com.informatica.pages.BasePage:CheckPageisLoading 326==>  Checking Page is Loading :: START
+[INFO ] 2022-12-15 13:29:59.307 - com.informatica.pages.APIMRegistryPage:DeleteManagedAPI 716==>  Deleted the Managed API post Validation
+[INFO ] 2022-12-15 13:29:59.309 - com.informatica.tests.APIMRegisteryTest:DeleteManagagedAPI 345==>  ================= DeleteManagagedAPIValidation : END ================== 
+[INFO ] 2022-12-15 13:29:59.313 - com.informatica.tests.APIMRegisteryTest:validateManagedAPIDropdown 365==>  ================= validateManagedAPIDropdown : START ================== 
+[INFO ] 2022-12-15 13:29:59.314 - com.informatica.pages.APIMRegistryPage:getServicesDropdownList 400==>  Expanding Services Dropdown
+[INFO ] 2022-12-15 13:29:59.363 - com.informatica.pages.APIMRegistryPage:getServicesDropdownList 403==>  Getting list of dropdown options
+[INFO ] 2022-12-15 13:29:59.397 - com.informatica.pages.APIMRegistryPage:getServicesDropdownList 410==>  Actual dropdown options : [All Services, Available Services, Managed APIs]
+[INFO ] 2022-12-15 13:29:59.398 - com.informatica.web.util.ReportsTestValidator:getExpectedAPIRegistryDropdownList 123==>  Expected Response of APIM Registery dropdown list : [All Services, Available Services, Managed APIs]
+[INFO ] 2022-12-15 13:29:59.399 - com.informatica.pages.APIMRegistryPage:selectAPIRegistryDropdownOption 433==>  Selecting Dropdown OptionManaged APIsfrom API registry
+[INFO ] 2022-12-15 13:29:59.486 - com.informatica.pages.APIMRegistryPage:checkStatusNotBlank 465==>  Checking status visible for Managed APIs
+[INFO ] 2022-12-15 13:29:59.491 - com.informatica.tests.APIMRegisteryTest:validateManagedAPIDropdown 387==>  ================= validateManagedAPIDropdown : END ================== 

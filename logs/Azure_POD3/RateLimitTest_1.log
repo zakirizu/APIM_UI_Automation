@@ -1,0 +1,45 @@
+[INFO ] 2022-12-15 23:32:34.993 - com.informatica.web.util.MyLogger:startLogger 18==>  
+
+************** Execution Started : RateLimitTest**************
+
+[INFO ] 2022-12-15 23:32:36.090 - com.informatica.pages.LoginPage:<init> 26==>  Initiated loginPage object
+[INFO ] 2022-12-15 23:32:37.766 - com.informatica.pages.BasePage:loginIntoIICSApp 60==>  entering username and password
+[INFO ] 2022-12-15 23:32:39.084 - com.informatica.pages.BasePage:loginIntoIICSApp 63==>  Clicking on Login Button
+[INFO ] 2022-12-15 23:32:43.986 - com.informatica.pages.LoginPage:ClickonAPIMChiklet 48==>  Clicking on  APIM Chikclet
+[INFO ] 2022-12-15 23:33:04.619 - com.informatica.pages.APIMRegistryPage:<init> 18==>  Initiated APIMRegistryPage object
+[INFO ] 2022-12-15 23:33:04.636 - com.informatica.tests.RateLimitTest:verifyRateLimitPolicyAppliedToAnonymousApi 150==>  ================= verifyRateLimitPolicyAppliedToAnonymousApi : START ================== 
+[INFO ] 2022-12-15 23:33:04.637 - com.informatica.tests.RateLimitTest:verifyRateLimitPolicyAppliedToAnonymousApi 153==>  Testcase Start: verifyRateLimitPolicyAppliedToAnonymousApi
+[INFO ] 2022-12-15 23:33:04.637 - com.informatica.pages.APIMRegistryPage:clickonAPIRegistry 224==>  Clicking on  API Registry
+[INFO ] 2022-12-15 23:33:04.782 - com.informatica.pages.APIMRegistryPage:find 336==>  Finding 'APIM_Automation_Anon1'
+[INFO ] 2022-12-15 23:33:04.876 - com.informatica.pages.APIMRegistryPage:clickOnApiInGrid 504==>  Clicking on API - APIM_Automation_Anon1
+[INFO ] 2022-12-15 23:33:05.110 - com.informatica.pages.ApiDetailsPolicyPage:clickPoliciesTab 31==>  Switch to Policies Tab
+[INFO ] 2022-12-15 23:33:06.252 - com.informatica.pages.ApiDetailsPolicyPage:configureRateLimit 44==>  Configuring Rate Limit...
+[INFO ] 2022-12-15 23:33:06.426 - com.informatica.pages.ApiDetailsPolicyPage:configureRateLimit 56==>  Found the requested tier in the dropdown.
+[INFO ] 2022-12-15 23:33:10.965 - com.informatica.pages.ApiDetailsPolicyPage:configureRateLimit 61==>  Save Message: The Managed API "APIM_Automation_Anon1" was updated successfully.
+[INFO ] 2022-12-15 23:33:12.749 - com.informatica.pages.ApiDetailsPolicyPage:getSelectedTierConfiguration 114==>  Fetching the Selected Tier Configuration.
+[INFO ] 2022-12-15 23:33:12.761 - com.informatica.pages.ApiDetailsPolicyPage:getSelectedTierConfiguration 116==>  The Selected Tier Configuration: Number of Calls: 2; Time Frame: 30 seconds
+[INFO ] 2022-12-15 23:33:12.762 - com.informatica.tests.RateLimitTest:getNumberOfCalls 58==>  Number of Calls: 2
+[INFO ] 2022-12-15 23:33:12.763 - com.informatica.pages.ApiDetailsGeneralPage:clickGeneralTab 48==>  Switch to General Tab
+[INFO ] 2022-12-15 23:33:12.834 - com.informatica.pages.ApiDetailsGeneralPage:copyApiUrl 76==>  Copying API URL...
+[INFO ] 2022-12-15 23:33:12.848 - com.informatica.pages.ApiDetailsGeneralPage:copyApiUrl 78==>  Copied API URL: https://usw3-apigw.dm1-us.informaticacloud.com/t/7xw8udflcwpcrtoxodd74h.com/APIM_Automation_Grp/APIM_Automation_Anon1
+[INFO ] 2022-12-15 23:33:12.848 - com.informatica.pages.ApiDetailsGeneralPage:executeUrlTillRateLimitExceed 250==>  Running the API URL[https://usw3-apigw.dm1-us.informaticacloud.com/t/7xw8udflcwpcrtoxodd74h.com/APIM_Automation_Grp/APIM_Automation_Anon1] for 7 times i.e., till Rate Limit exceeds.
+[INFO ] 2022-12-15 23:33:12.849 - com.informatica.pages.ApiDetailsGeneralPage:executeUrlInNewTabAndClose 222==>  API Hit Number : 1
+[INFO ] 2022-12-15 23:33:17.415 - com.informatica.pages.ApiDetailsGeneralPage:executeUrlInNewTabAndClose 222==>  API Hit Number : 2
+[INFO ] 2022-12-15 23:33:21.447 - com.informatica.pages.ApiDetailsGeneralPage:executeUrlInNewTabAndClose 222==>  API Hit Number : 3
+[INFO ] 2022-12-15 23:33:25.590 - com.informatica.pages.ApiDetailsGeneralPage:executeUrlInNewTabAndClose 227==>  Got Forbidden Message on 3 times i.e., till Rate Limit exceeds.
+[INFO ] 2022-12-15 23:33:25.591 - com.informatica.pages.ApiDetailsGeneralPage:executeUrlTillRateLimitExceed 257==>  Response: <am:fault xmlns:am="http://informatica.com">
+<am:message>Forbidden</am:message>
+<am:description>Rate Limit Reached</am:description>
+</am:fault>
+[INFO ] 2022-12-15 23:33:25.593 - com.informatica.pages.ApiDetailsPolicyPage:clickPoliciesTab 31==>  Switch to Policies Tab
+[INFO ] 2022-12-15 23:33:25.761 - com.informatica.pages.ApiDetailsPolicyPage:unconfigureRateLimit 87==>  Unconfiguring Rate Limit...
+[INFO ] 2022-12-15 23:33:30.663 - com.informatica.pages.ApiDetailsPolicyPage:unconfigureRateLimit 94==>  Save Message: The Managed API "APIM_Automation_Anon1" was updated successfully.
+[INFO ] 2022-12-15 23:33:32.424 - com.informatica.pages.ApiDetailsGeneralPage:closeApiDetailsPage 349==>  Closing API Details Page...
+[INFO ] 2022-12-15 23:33:32.632 - com.informatica.tests.RateLimitTest:verifyRateLimitPolicyAppliedToAnonymousApi 159==>  Testcase End: verifyRateLimitPolicyAppliedToAnonymousApi
+[INFO ] 2022-12-15 23:33:32.632 - com.informatica.tests.RateLimitTest:verifyRateLimitPolicyAppliedToAnonymousApi 164==>  ================= verifyRateLimitPolicyAppliedToAnonymousApi : END ================== 
+[INFO ] 2022-12-15 23:33:32.635 - com.informatica.tests.RateLimitTest:verifyRateLimitPolicyAppliedToBasicApi 177==>  ================= verifyRateLimitPolicyAppliedToBasicApi : START ================== 
+[INFO ] 2022-12-15 23:33:32.636 - com.informatica.tests.RateLimitTest:verifyRateLimitPolicyAppliedToBasicApi 180==>  Testcase Start: verifyRateLimitPolicyAppliedToBasicApi
+[INFO ] 2022-12-15 23:33:32.649 - com.informatica.pages.APIMRegistryPage:clickonAPIRegistry 224==>  Clicking on  API Registry
+[INFO ] 2022-12-15 23:33:32.757 - com.informatica.pages.APIMRegistryPage:find 336==>  Finding 'APIM_Automation_Basic'
+[INFO ] 2022-12-15 23:33:32.812 - com.informatica.pages.APIMRegistryPage:clickOnApiInGrid 504==>  Clicking on API - APIM_Automation_Basic
+[INFO ] 2022-12-15 23:34:32.893 - com.informatica.pages.ApiDetailsPolicyPage:clickPoliciesTab 31==>  Switch to Policies Tab

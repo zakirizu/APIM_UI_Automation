@@ -1,0 +1,116 @@
+[INFO ] 2022-12-15 23:26:53.087 - com.informatica.web.util.MyLogger:startLogger 18==>  
+
+************** Execution Started : APIMRegisteryTest**************
+
+[INFO ] 2022-12-15 23:27:08.176 - com.informatica.pages.BasePage:loginIntoIICSApp 60==>  entering username and password
+[INFO ] 2022-12-15 23:27:09.389 - com.informatica.pages.BasePage:loginIntoIICSApp 63==>  Clicking on Login Button
+[INFO ] 2022-12-15 23:27:18.521 - com.informatica.pages.LoginPage:<init> 26==>  Initiated loginPage object
+[INFO ] 2022-12-15 23:27:18.524 - com.informatica.pages.LoginPage:ClickonAPIMChiklet 48==>  Clicking on  APIM Chikclet
+[INFO ] 2022-12-15 23:28:03.624 - com.informatica.pages.APIMRegistryPage:<init> 18==>  Initiated APIMRegistryPage object
+[INFO ] 2022-12-15 23:28:03.628 - com.informatica.tests.APIMRegisteryTest:SearchActiveStatus 54==>  ================= SearchActiveStatusValdiations : START ================== 
+[INFO ] 2022-12-15 23:28:03.723 - com.informatica.pages.APIMRegistryPage:selectFullPage 108==>  Selecting the Full Records
+[ERROR] 2022-12-15 23:29:03.744 - com.informatica.tests.APIMRegisteryTest:SearchActiveStatus 62==>  Exception while validating SearchActiveStatus : com.microsoft.playwright.TimeoutError: Error {
+  message='Timeout 60000ms exceeded.
+=========================== logs ===========================
+waiting for selector "text=Items Per Page" to be visible
+============================================================
+  name='TimeoutError
+  stack='TimeoutError: Timeout 60000ms exceeded.
+=========================== logs ===========================
+waiting for selector "text=Items Per Page" to be visible
+============================================================
+    at ProgressController.run (C:\Users\jashaik\AppData\Local\Temp\playwright-java-5376866736254237440\package\lib\server\progress.js:96:26)
+    at Frame.waitForSelector (C:\Users\jashaik\AppData\Local\Temp\playwright-java-5376866736254237440\package\lib\server\frames.js:760:23)
+    at FrameDispatcher.waitForSelector (C:\Users\jashaik\AppData\Local\Temp\playwright-java-5376866736254237440\package\lib\dispatchers\frameDispatcher.js:104:110)
+    at DispatcherConnection.dispatch (C:\Users\jashaik\AppData\Local\Temp\playwright-java-5376866736254237440\package\lib\dispatchers\dispatcher.js:352:46)
+}
+[INFO ] 2022-12-15 23:29:04.173 - com.informatica.tests.APIMRegisteryTest:SearchInActiveStatus 74==>  ================= SearchINActiveStatusValdiations : START ================== 
+[INFO ] 2022-12-15 23:29:04.173 - com.informatica.pages.APIMRegistryPage:SearchInActiveStatus 124==>  Getting In-Active Status Records
+[INFO ] 2022-12-15 23:29:04.532 - com.informatica.tests.APIMRegisteryTest:Search_ActiveServiceNot_AvailiableStatus 91==>  ================= SearchINActiveStatusValdiations : START ================== 
+[INFO ] 2022-12-15 23:29:04.533 - com.informatica.pages.APIMRegistryPage:Search_ActiveServicenotAvailiable_Status 134==>  Getting Active Service Not Availiable Status Records
+[INFO ] 2022-12-15 23:29:04.917 - com.informatica.tests.APIMRegisteryTest:Search_InActiveServiceNot_AvailiableStatus 108==>  ================= SearchINActiveStatusNotAvailiableValdiations : START ================== 
+[INFO ] 2022-12-15 23:29:04.918 - com.informatica.pages.APIMRegistryPage:Search_InActiveServicenotAvailiable_Status 144==>  Getting In-Active Service Not Availiable Status Records
+[INFO ] 2022-12-15 23:29:05.302 - com.informatica.tests.APIMRegisteryTest:ValidateHeadersAPiRegistry 125==>  ================= ValidateHeadersAPiRegistry : START ================== 
+[INFO ] 2022-12-15 23:29:05.303 - com.informatica.pages.APIMRegistryPage:getAPIRegisteryHeaders 154==>  Getting API Registery Page Hear Columns Data
+[ERROR] 2022-12-15 23:30:05.335 - com.informatica.tests.APIMRegisteryTest:ValidateHeadersAPiRegistry 135==>  Exception while validating HeadersAPiRegistry : com.microsoft.playwright.TimeoutError: Error {
+  message='Timeout 60000ms exceeded.
+=========================== logs ===========================
+waiting for selector "text=Items Per Page" to be visible
+============================================================
+  name='TimeoutError
+  stack='TimeoutError: Timeout 60000ms exceeded.
+=========================== logs ===========================
+waiting for selector "text=Items Per Page" to be visible
+============================================================
+    at ProgressController.run (C:\Users\jashaik\AppData\Local\Temp\playwright-java-5376866736254237440\package\lib\server\progress.js:96:26)
+    at Frame.waitForSelector (C:\Users\jashaik\AppData\Local\Temp\playwright-java-5376866736254237440\package\lib\server\frames.js:760:23)
+    at FrameDispatcher.waitForSelector (C:\Users\jashaik\AppData\Local\Temp\playwright-java-5376866736254237440\package\lib\dispatchers\frameDispatcher.js:104:110)
+    at DispatcherConnection.dispatch (C:\Users\jashaik\AppData\Local\Temp\playwright-java-5376866736254237440\package\lib\dispatchers\dispatcher.js:352:46)
+}
+[INFO ] 2022-12-15 23:30:05.606 - com.informatica.tests.APIMRegisteryTest:CreateManagagedAPI 196==>  ================= CreateManagagedAPIValidation : START ================== 
+[INFO ] 2022-12-15 23:30:05.610 - com.informatica.tests.APIMRegisteryTest:CreateManagagedAPI 198==>  Check if the managed API exists
+[INFO ] 2022-12-15 23:30:05.611 - com.informatica.pages.APIMRegistryPage:CheckManagedAPIStatus 737==>  Search an API
+[INFO ] 2022-12-15 23:30:05.766 - com.informatica.pages.APIMRegistryPage:CreateManagedAPI 581==>  Search an API
+[ERROR] 2022-12-15 23:31:07.856 - com.informatica.tests.APIMRegisteryTest:CreateManagagedAPI 216==>  Exception while creating CreateManagagedAPIValidation : com.microsoft.playwright.TimeoutError: Error {
+  message='Timeout 60000ms exceeded.
+=========================== logs ===========================
+waiting for selector "//tr[@data-id='REST_APIM_Automation_JWT']"
+============================================================
+  name='TimeoutError
+  stack='TimeoutError: Timeout 60000ms exceeded.
+=========================== logs ===========================
+waiting for selector "//tr[@data-id='REST_APIM_Automation_JWT']"
+============================================================
+    at ProgressController.run (C:\Users\jashaik\AppData\Local\Temp\playwright-java-5376866736254237440\package\lib\server\progress.js:96:26)
+    at Frame.waitForSelector (C:\Users\jashaik\AppData\Local\Temp\playwright-java-5376866736254237440\package\lib\server\frames.js:760:23)
+    at FrameDispatcher.waitForSelector (C:\Users\jashaik\AppData\Local\Temp\playwright-java-5376866736254237440\package\lib\dispatchers\frameDispatcher.js:104:110)
+    at DispatcherConnection.dispatch (C:\Users\jashaik\AppData\Local\Temp\playwright-java-5376866736254237440\package\lib\dispatchers\dispatcher.js:352:46)
+}
+[INFO ] 2022-12-15 23:31:08.121 - com.informatica.tests.APIMRegisteryTest:CreateNewVersionAPI 238==>  ================= CreateNewVersionAPI : START ================== 
+[INFO ] 2022-12-15 23:31:08.122 - com.informatica.tests.APIMRegisteryTest:CreateNewVersionAPI 240==>  Check if the managed API exists in CreateNewVersionAPI
+[INFO ] 2022-12-15 23:31:08.123 - com.informatica.pages.APIMRegistryPage:CheckManagedAPIStatus 737==>  Search an API
+[INFO ] 2022-12-15 23:31:08.210 - com.informatica.pages.APIMRegistryPage:CheckManagedAPIStatus 737==>  Search an API
+[INFO ] 2022-12-15 23:31:08.288 - com.informatica.pages.APIMRegistryPage:CheckManagedAPIStatus 737==>  Search an API
+[INFO ] 2022-12-15 23:31:08.373 - com.informatica.pages.APIMRegistryPage:CreateManagedAPI 581==>  Search an API
+[ERROR] 2022-12-15 23:32:10.468 - com.informatica.tests.APIMRegisteryTest:CreateNewVersionAPI 293==>  Exception while creating CreateNewVersionAPI : com.microsoft.playwright.TimeoutError: Error {
+  message='Timeout 60000ms exceeded.
+=========================== logs ===========================
+waiting for selector "//tr[@data-id='REST_APIM_Automation_NewVersion1']"
+============================================================
+  name='TimeoutError
+  stack='TimeoutError: Timeout 60000ms exceeded.
+=========================== logs ===========================
+waiting for selector "//tr[@data-id='REST_APIM_Automation_NewVersion1']"
+============================================================
+    at ProgressController.run (C:\Users\jashaik\AppData\Local\Temp\playwright-java-5376866736254237440\package\lib\server\progress.js:96:26)
+    at Frame.waitForSelector (C:\Users\jashaik\AppData\Local\Temp\playwright-java-5376866736254237440\package\lib\server\frames.js:760:23)
+    at FrameDispatcher.waitForSelector (C:\Users\jashaik\AppData\Local\Temp\playwright-java-5376866736254237440\package\lib\dispatchers\frameDispatcher.js:104:110)
+    at DispatcherConnection.dispatch (C:\Users\jashaik\AppData\Local\Temp\playwright-java-5376866736254237440\package\lib\dispatchers\dispatcher.js:352:46)
+}
+[INFO ] 2022-12-15 23:32:10.760 - com.informatica.tests.APIMRegisteryTest:DeleteManagagedAPI 317==>  ================= DeleteManagagedAPIValidation : START ================== 
+[INFO ] 2022-12-15 23:32:10.761 - com.informatica.tests.APIMRegisteryTest:DeleteManagagedAPI 319==>  Check if the managed API exists in DeleteManagagedAPI
+[INFO ] 2022-12-15 23:32:10.761 - com.informatica.pages.APIMRegistryPage:CheckManagedAPIStatus 737==>  Search an API
+[INFO ] 2022-12-15 23:32:10.855 - com.informatica.pages.APIMRegistryPage:CreateManagedAPI 581==>  Search an API
+[ERROR] 2022-12-15 23:33:12.969 - com.informatica.tests.APIMRegisteryTest:DeleteManagagedAPI 340==>  Exception while deleting DeleteManagagedAPIValidation : com.microsoft.playwright.TimeoutError: Error {
+  message='Timeout 60000ms exceeded.
+=========================== logs ===========================
+waiting for selector "//tr[@data-id='REST_APIM_Automation_JWT']"
+============================================================
+  name='TimeoutError
+  stack='TimeoutError: Timeout 60000ms exceeded.
+=========================== logs ===========================
+waiting for selector "//tr[@data-id='REST_APIM_Automation_JWT']"
+============================================================
+    at ProgressController.run (C:\Users\jashaik\AppData\Local\Temp\playwright-java-5376866736254237440\package\lib\server\progress.js:96:26)
+    at Frame.waitForSelector (C:\Users\jashaik\AppData\Local\Temp\playwright-java-5376866736254237440\package\lib\server\frames.js:760:23)
+    at FrameDispatcher.waitForSelector (C:\Users\jashaik\AppData\Local\Temp\playwright-java-5376866736254237440\package\lib\dispatchers\frameDispatcher.js:104:110)
+    at DispatcherConnection.dispatch (C:\Users\jashaik\AppData\Local\Temp\playwright-java-5376866736254237440\package\lib\dispatchers\dispatcher.js:352:46)
+}
+[INFO ] 2022-12-15 23:33:13.176 - com.informatica.tests.APIMRegisteryTest:validateManagedAPIDropdown 365==>  ================= validateManagedAPIDropdown : START ================== 
+[INFO ] 2022-12-15 23:33:13.177 - com.informatica.pages.APIMRegistryPage:getServicesDropdownList 400==>  Expanding Services Dropdown
+[INFO ] 2022-12-15 23:33:13.249 - com.informatica.pages.APIMRegistryPage:getServicesDropdownList 403==>  Getting list of dropdown options
+[INFO ] 2022-12-15 23:33:13.299 - com.informatica.pages.APIMRegistryPage:getServicesDropdownList 410==>  Actual dropdown options : [All Services, Available Services, Managed APIs]
+[INFO ] 2022-12-15 23:33:13.300 - com.informatica.web.util.ReportsTestValidator:getExpectedAPIRegistryDropdownList 123==>  Expected Response of APIM Registery dropdown list : [All Services, Available Services, Managed APIs]
+[INFO ] 2022-12-15 23:33:13.301 - com.informatica.pages.APIMRegistryPage:selectAPIRegistryDropdownOption 433==>  Selecting Dropdown OptionManaged APIsfrom API registry
+[INFO ] 2022-12-15 23:33:13.414 - com.informatica.pages.APIMRegistryPage:checkStatusNotBlank 465==>  Checking status visible for Managed APIs
+[INFO ] 2022-12-15 23:33:13.421 - com.informatica.tests.APIMRegisteryTest:validateManagedAPIDropdown 387==>  ================= validateManagedAPIDropdown : END ================== 

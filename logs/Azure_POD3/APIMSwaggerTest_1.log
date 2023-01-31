@@ -1,0 +1,79 @@
+[INFO ] 2022-12-15 23:30:22.716 - com.informatica.web.util.MyLogger:startLogger 18==>  
+
+************** Execution Started : APIMSwaggerTest**************
+
+[INFO ] 2022-12-15 23:30:23.652 - com.informatica.pages.LoginPage:<init> 26==>  Initiated loginPage object
+[INFO ] 2022-12-15 23:30:25.439 - com.informatica.pages.BasePage:loginIntoIICSApp 60==>  entering username and password
+[INFO ] 2022-12-15 23:30:26.811 - com.informatica.pages.BasePage:loginIntoIICSApp 63==>  Clicking on Login Button
+[INFO ] 2022-12-15 23:30:31.916 - com.informatica.pages.LoginPage:ClickonAPIMChiklet 48==>  Clicking on  APIM Chikclet
+[INFO ] 2022-12-15 23:30:47.675 - com.informatica.pages.APIMRegistryPage:<init> 18==>  Initiated APIMRegistryPage object
+[INFO ] 2022-12-15 23:30:47.692 - com.informatica.tests.APIMSwaggerTest:validateAnonAPISwaggerURL 194==>  ================= validateAnonAPISwaggerURL : START ================== 
+[INFO ] 2022-12-15 23:30:47.795 - com.informatica.pages.APIMRegistryPage:clickOnApiInGrid 504==>  Clicking on API - APIM_Automation_Generic_Anon1
+[ERROR] 2022-12-15 23:31:47.876 - com.informatica.tests.APIMSwaggerTest:validateAnonAPISwaggerURL 213==>  Exception while validating Anonymous API Swagger URL : com.microsoft.playwright.TimeoutError: Error {
+  message='Timeout 60000ms exceeded.
+=========================== logs ===========================
+waiting for selector "//tr[@data-id='REST_APIM_Automation_Generic_Anon1_1.0.0']"
+============================================================
+  name='TimeoutError
+  stack='TimeoutError: Timeout 60000ms exceeded.
+=========================== logs ===========================
+waiting for selector "//tr[@data-id='REST_APIM_Automation_Generic_Anon1_1.0.0']"
+============================================================
+    at ProgressController.run (C:\Users\jashaik\AppData\Local\Temp\playwright-java-5376866736254237440\package\lib\server\progress.js:96:26)
+    at Frame.click (C:\Users\jashaik\AppData\Local\Temp\playwright-java-5376866736254237440\package\lib\server\frames.js:1111:23)
+    at FrameDispatcher.click (C:\Users\jashaik\AppData\Local\Temp\playwright-java-5376866736254237440\package\lib\dispatchers\frameDispatcher.js:166:30)
+    at DispatcherConnection.dispatch (C:\Users\jashaik\AppData\Local\Temp\playwright-java-5376866736254237440\package\lib\dispatchers\dispatcher.js:352:46)
+}
+[INFO ] 2022-12-15 23:31:48.098 - com.informatica.tests.APIMSwaggerTest:validateAnonAPISwagger 77==>  ================= validateAnonAPISwagger : START ================== 
+[INFO ] 2022-12-15 23:31:48.099 - com.informatica.pages.APIMSwaggerPage:switchToSwaggerTab 44==>  Clicking on Swagger tab of Managed API
+[ERROR] 2022-12-15 23:32:48.106 - com.informatica.pages.APIMSwaggerPage:switchToSwaggerTab 48==>  Exception while loading Swagger tab[Ljava.lang.StackTraceElement;@30988183
+[ERROR] 2022-12-15 23:32:48.107 - com.informatica.tests.APIMSwaggerTest:validateAnonAPISwagger 107==>  Exception while validating Anonymous API Swagger tab : com.microsoft.playwright.TimeoutError: Error {
+  message='Timeout 60000ms exceeded.
+=========================== logs ===========================
+waiting for selector "//span[text()='Swagger']"
+============================================================
+  name='TimeoutError
+  stack='TimeoutError: Timeout 60000ms exceeded.
+=========================== logs ===========================
+waiting for selector "//span[text()='Swagger']"
+============================================================
+    at ProgressController.run (C:\Users\jashaik\AppData\Local\Temp\playwright-java-5376866736254237440\package\lib\server\progress.js:96:26)
+    at Frame.click (C:\Users\jashaik\AppData\Local\Temp\playwright-java-5376866736254237440\package\lib\server\frames.js:1111:23)
+    at FrameDispatcher.click (C:\Users\jashaik\AppData\Local\Temp\playwright-java-5376866736254237440\package\lib\dispatchers\frameDispatcher.js:166:30)
+    at DispatcherConnection.dispatch (C:\Users\jashaik\AppData\Local\Temp\playwright-java-5376866736254237440\package\lib\dispatchers\dispatcher.js:352:46)
+}
+[INFO ] 2022-12-15 23:32:48.388 - com.informatica.tests.APIMSwaggerTest:validateBasicAPISwaggerURL 235==>  ================= validateBasicAPISwaggerURL : START ================== 
+[INFO ] 2022-12-15 23:32:48.482 - com.informatica.pages.APIMRegistryPage:clickOnApiInGrid 504==>  Clicking on API - APIM_Automation_Generic_Basic
+[ERROR] 2022-12-15 23:33:48.569 - com.informatica.tests.APIMSwaggerTest:validateBasicAPISwaggerURL 253==>  Exception while validating Basic API Swagger URL : com.microsoft.playwright.TimeoutError: Error {
+  message='Timeout 60000ms exceeded.
+=========================== logs ===========================
+waiting for selector "//tr[@data-id='REST_APIM_Automation_Generic_Basic_1.0.0']"
+============================================================
+  name='TimeoutError
+  stack='TimeoutError: Timeout 60000ms exceeded.
+=========================== logs ===========================
+waiting for selector "//tr[@data-id='REST_APIM_Automation_Generic_Basic_1.0.0']"
+============================================================
+    at ProgressController.run (C:\Users\jashaik\AppData\Local\Temp\playwright-java-5376866736254237440\package\lib\server\progress.js:96:26)
+    at Frame.click (C:\Users\jashaik\AppData\Local\Temp\playwright-java-5376866736254237440\package\lib\server\frames.js:1111:23)
+    at FrameDispatcher.click (C:\Users\jashaik\AppData\Local\Temp\playwright-java-5376866736254237440\package\lib\dispatchers\frameDispatcher.js:166:30)
+    at DispatcherConnection.dispatch (C:\Users\jashaik\AppData\Local\Temp\playwright-java-5376866736254237440\package\lib\dispatchers\dispatcher.js:352:46)
+}
+[INFO ] 2022-12-15 23:33:48.916 - com.informatica.tests.APIMSwaggerTest:validateBasicAPISwagger 129==>  ================= validateBasicAPISwagger : START ================== 
+[INFO ] 2022-12-15 23:33:48.916 - com.informatica.pages.APIMSwaggerPage:switchToSwaggerTab 44==>  Clicking on Swagger tab of Managed API
+[ERROR] 2022-12-15 23:34:48.935 - com.informatica.pages.APIMSwaggerPage:switchToSwaggerTab 48==>  Exception while loading Swagger tab[Ljava.lang.StackTraceElement;@59c57d98
+[ERROR] 2022-12-15 23:34:48.936 - com.informatica.tests.APIMSwaggerTest:validateBasicAPISwagger 172==>  Exception while validating Basic API Swagger tab : com.microsoft.playwright.TimeoutError: Error {
+  message='Timeout 60000ms exceeded.
+=========================== logs ===========================
+waiting for selector "//span[text()='Swagger']"
+============================================================
+  name='TimeoutError
+  stack='TimeoutError: Timeout 60000ms exceeded.
+=========================== logs ===========================
+waiting for selector "//span[text()='Swagger']"
+============================================================
+    at ProgressController.run (C:\Users\jashaik\AppData\Local\Temp\playwright-java-5376866736254237440\package\lib\server\progress.js:96:26)
+    at Frame.click (C:\Users\jashaik\AppData\Local\Temp\playwright-java-5376866736254237440\package\lib\server\frames.js:1111:23)
+    at FrameDispatcher.click (C:\Users\jashaik\AppData\Local\Temp\playwright-java-5376866736254237440\package\lib\dispatchers\frameDispatcher.js:166:30)
+    at DispatcherConnection.dispatch (C:\Users\jashaik\AppData\Local\Temp\playwright-java-5376866736254237440\package\lib\dispatchers\dispatcher.js:352:46)
+}

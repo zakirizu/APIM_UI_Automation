@@ -1,0 +1,27 @@
+[INFO ] 2022-12-15 23:28:26.892 - com.informatica.web.util.MyLogger:startLogger 18==>  
+
+************** Execution Started : ApimAnalyticsTest**************
+
+[INFO ] 2022-12-15 23:28:29.522 - com.informatica.pages.LoginPage:<init> 26==>  Initiated loginPage object
+[INFO ] 2022-12-15 23:28:31.774 - com.informatica.pages.BasePage:loginIntoIICSApp 60==>  entering username and password
+[INFO ] 2022-12-15 23:28:33.128 - com.informatica.pages.BasePage:loginIntoIICSApp 63==>  Clicking on Login Button
+[INFO ] 2022-12-15 23:28:40.482 - com.informatica.pages.LoginPage:ClickonAPIMChiklet 48==>  Clicking on  APIM Chikclet
+[INFO ] 2022-12-15 23:28:48.808 - com.informatica.pages.APIMHomePage:<init> 20==>  Initiated APIMHomePage object
+[INFO ] 2022-12-15 23:28:48.809 - com.informatica.pages.AnalyticsPage:<init> 23==>  Initiated ApimAnalyticsPage object
+[INFO ] 2022-12-15 23:28:48.811 - com.informatica.web.util.LoggerUtil:info 54==>  Started validating analytics overview page
+[INFO ] 2022-12-15 23:28:48.816 - com.informatica.tests.ApimAnalyticsTest:validateOverviewTab 127==>  validateOverviewPage :: START
+[INFO ] 2022-12-15 23:28:54.738 - com.informatica.pages.APIMHomePage:clickAnalytics 32==>  Clicked Analytics Tab
+[INFO ] 2022-12-15 23:29:00.099 - com.informatica.tests.ApimAnalyticsTest:validateOverviewTab 151==>  validateOverviewPage :: END
+[INFO ] 2022-12-15 23:29:00.100 - com.informatica.web.util.LoggerUtil:info 54==>  Completed validating analytics overview page
+[INFO ] 2022-12-15 23:29:00.103 - com.informatica.web.util.LoggerUtil:info 54==>  Started validating analytics activity page
+[INFO ] 2022-12-15 23:29:00.104 - com.informatica.tests.ApimAnalyticsTest:validateActivityLogTab 165==>  validateActivityLogTab :: START
+[INFO ] 2022-12-15 23:29:00.283 - com.informatica.pages.APIMHomePage:clickAnalytics 32==>  Clicked Analytics Tab
+[INFO ] 2022-12-15 23:29:00.603 - com.informatica.tests.ApimAnalyticsTest:validateActivityLogTab 190==>  validateActivityLogTab :: END
+[INFO ] 2022-12-15 23:29:00.603 - com.informatica.web.util.LoggerUtil:info 54==>  Completed validating analytics activity page
+[INFO ] 2022-12-15 23:29:00.608 - com.informatica.web.util.LoggerUtil:info 54==>  Started validating analytics events log page
+[INFO ] 2022-12-15 23:29:00.610 - com.informatica.tests.ApimAnalyticsTest:validateEventsLogTab 203==>  validateEventsLogTab :: START
+[INFO ] 2022-12-15 23:29:11.547 - com.informatica.pages.APIMHomePage:clickAnalytics 32==>  Clicked Analytics Tab
+[INFO ] 2022-12-15 23:29:11.552 - com.informatica.pages.AnalyticsPage:clickEventsLogTab 93==>  Clicking on  EventlogTab 
+[INFO ] 2022-12-15 23:29:11.700 - com.informatica.pages.BasePage:CheckPageisLoading 326==>  Checking Page is Loading :: START
+[INFO ] 2022-12-15 23:30:22.091 - com.informatica.tests.ApimAnalyticsTest:validateEventsLogTab 227==>  validateEventsLogTab :: END
+[INFO ] 2022-12-15 23:30:22.091 - com.informatica.web.util.LoggerUtil:info 54==>  Completed validating analytics events log page

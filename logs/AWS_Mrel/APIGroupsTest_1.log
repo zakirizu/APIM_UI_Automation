@@ -1,0 +1,29 @@
+[INFO ] 2022-12-14 14:34:23.381 - com.informatica.web.util.MyLogger:startLogger 18==>  
+
+************** Execution Started : APIGroupsTest**************
+
+[INFO ] 2022-12-14 14:34:30.418 - com.informatica.pages.BasePage:loginIntoIICSApp 60==>  entering username and password
+[INFO ] 2022-12-14 14:34:31.887 - com.informatica.pages.BasePage:loginIntoIICSApp 63==>  Clicking on Login Button
+[INFO ] 2022-12-14 14:34:38.010 - com.informatica.pages.LoginPage:<init> 26==>  Initiated loginPage object
+[INFO ] 2022-12-14 14:34:38.011 - com.informatica.pages.LoginPage:ClickonAPIMChiklet 48==>  Clicking on  APIM Chikclet
+[INFO ] 2022-12-14 14:35:00.478 - com.informatica.pages.APIMRegistryPage:<init> 18==>  Initiated APIMRegistryPage object
+[INFO ] 2022-12-14 14:35:00.538 - com.informatica.tests.APIMGroupsRegressionScenarios:groupConectAcceptsFrom1to65_TC20 388==>  ================= Group Context Range Validation 1 to 65: START ================== 
+[INFO ] 2022-12-14 14:35:00.540 - com.informatica.pages.APIGroupsPage:CreationOfGroupWithNoAPIsAddedToGroup 601==>  creating the APIGroup :Automation_Dec142022_14_35_00_539
+[INFO ] 2022-12-14 14:35:12.201 - com.informatica.pages.APIGroupsPage:CreationOfGroupWithNoAPIsAddedToGroup 612==>  closing the Group Creation  page for Group :Automation_Dec142022_14_35_00_539
+[INFO ] 2022-12-14 14:35:13.931 - com.informatica.pages.APIGroupsPage:CreationOfGroupWithNoAPIsAddedToGroup 615==>  the message after creation of Group : The Group "Automation_Dec142022_14_35_00_539" was created successfully.
+[INFO ] 2022-12-14 14:35:14.220 - com.informatica.tests.APIMGroupsRegressionScenarios:groupConectAcceptsFrom1to65_TC20 398==>  Validting the Group accepts chars in the given range 
+[INFO ] 2022-12-14 14:35:14.221 - com.informatica.pages.APIGroupsPage:checkGroupContextAccepts1to65 1057==>  Updating the Group Context
+[INFO ] 2022-12-14 14:35:15.112 - com.informatica.pages.APIGroupsPage:checkGroupContextAccepts1to65 1069==>  Valdiating Error message is not displayed when user enter single char
+[INFO ] 2022-12-14 14:35:15.118 - com.informatica.pages.APIGroupsPage:checkGroupContextAccepts1to65 1079==>  System accepts chars within defined range /z
+[INFO ] 2022-12-14 14:35:15.249 - com.informatica.pages.APIGroupsPage:checkGroupContextAccepts1to65 1086==>  Valdiating Error message is displayed when user enter more than 65 char
+[INFO ] 2022-12-14 14:35:15.253 - com.informatica.pages.APIGroupsPage:checkGroupContextAccepts1to65 1089==>  System display error message when text in context exceeds 65 chars /zaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+[INFO ] 2022-12-14 14:35:15.367 - com.informatica.pages.APIGroupsPage:checkGroupContextAccepts1to65 1103==>  Valdiating Error message is Not displayed when user enter less than 65 char
+[INFO ] 2022-12-14 14:35:15.369 - com.informatica.pages.APIGroupsPage:checkGroupContextAccepts1to65 1112==>  System accepts context withing range /AutomationContext_Dec142022_14_35_15_320
+[INFO ] 2022-12-14 14:35:15.428 - com.informatica.pages.BasePage:CheckPageisLoading 326==>  Checking Page is Loading :: START
+[INFO ] 2022-12-14 14:35:30.764 - com.informatica.pages.APIGroupsPage:checkGroupContextAccepts1to65 1119==>  Group Context is Verified within a range of 1 to 52 chars succesfully
+[INFO ] 2022-12-14 14:35:30.765 - com.informatica.tests.APIMGroupsRegressionScenarios:groupConectAcceptsFrom1to65_TC20 400==>  Removing API from the Group
+[INFO ] 2022-12-14 14:35:30.766 - com.informatica.pages.APIGroupsPage:removeAPIGroup 411==>  remvoing the APIGroup :Automation_Dec142022_14_35_00_539
+[INFO ] 2022-12-14 14:35:31.119 - com.informatica.pages.APIGroupsPage:removeAPIGroup 417==>  finding the Group :Automation_Dec142022_14_35_00_539in APIGroups Page
+[INFO ] 2022-12-14 14:35:33.283 - com.informatica.pages.APIGroupsPage:removeAPIGroup 423==>  clicked on the three dots button on the Group :Automation_Dec142022_14_35_00_539
+[INFO ] 2022-12-14 14:35:33.337 - com.informatica.pages.APIGroupsPage:removeAPIGroup 425==>  clicked on the delete button on the Group :Automation_Dec142022_14_35_00_539
+[INFO ] 2022-12-14 14:35:43.408 - com.informatica.tests.APIMGroupsRegressionScenarios:groupConectAcceptsFrom1to65_TC20 413==>  ================= Group Context Range Validation 1 to 65: END ================== 

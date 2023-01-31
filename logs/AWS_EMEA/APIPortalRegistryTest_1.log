@@ -1,0 +1,32 @@
+[INFO ] 2022-12-15 13:27:20.903 - com.informatica.web.util.MyLogger:startLogger 18==>  
+
+************** Execution Started : APIPortalRegistryTest**************
+
+[INFO ] 2022-12-15 13:27:24.818 - com.informatica.pages.LoginPage:<init> 26==>  Initiated loginPage object
+[INFO ] 2022-12-15 13:27:27.473 - com.informatica.pages.BasePage:loginIntoIICSApp 60==>  entering username and password
+[INFO ] 2022-12-15 13:27:28.292 - com.informatica.pages.BasePage:loginIntoIICSApp 63==>  Clicking on Login Button
+[INFO ] 2022-12-15 13:27:33.834 - com.informatica.pages.LoginPage:clickOnApiChiklet 62==>  Clicking on  API Portal chicklet
+[INFO ] 2022-12-15 13:27:46.121 - com.informatica.pages.APIPortalHomePage:<init> 29==>  Initiated API Portal HomePage object
+[INFO ] 2022-12-15 13:27:46.125 - com.informatica.pages.APIPortalRegistryPage:<init> 28==>  Initiated APIRegistryPage object
+[INFO ] 2022-12-15 13:27:46.128 - com.informatica.pages.APIPage:<init> 21==>  Initiated API Page object
+[INFO ] 2022-12-15 13:27:46.132 - com.informatica.tests.APIPortalRegistryTest:ValidateSwaggerTab 68==>  ================= ValidateSwaggerTab : START ================== 
+[INFO ] 2022-12-15 13:27:56.294 - com.informatica.pages.APIPortalHomePage:clickApiRegistryTab 96==>  Clicked on API Registry tab
+[INFO ] 2022-12-15 13:27:56.344 - com.informatica.pages.APIPortalRegistryPage:clickOnApiInGrid 247==>  Clicking on API - APIM_Automation_Generic_Basic
+[INFO ] 2022-12-15 13:27:58.781 - com.informatica.pages.APIPortalRegistryPage:clickOnSwaggerTab 264==>  Clicking on Swagger Tab
+[INFO ] 2022-12-15 13:27:59.027 - com.informatica.pages.APIPage:executeApi 39==>  Click on Post button 
+[INFO ] 2022-12-15 13:28:09.133 - com.informatica.pages.APIPage:executeApi 41==>  Click on Try It Out button 
+[INFO ] 2022-12-15 13:28:09.375 - com.informatica.pages.APIPage:executeApi 43==>  Click on Execute button 
+[INFO ] 2022-12-15 13:28:15.934 - com.informatica.tests.APIPortalRegistryTest:ValidateSwaggerTab 88==>  ================= ValidateSwaggerTab : END ================== 
+[INFO ] 2022-12-15 13:28:15.938 - com.informatica.tests.APIPortalRegistryTest:run_anonymous_Managed_API 98==>  ================= run_anonymous_Managed_API : START ================== 
+[INFO ] 2022-12-15 13:28:24.555 - com.informatica.pages.APIPortalHomePage:clickApiRegistryTab 96==>  Clicked on API Registry tab
+[INFO ] 2022-12-15 13:28:24.651 - com.informatica.pages.APIPortalRegistryPage:clickOnApiInGrid 247==>  Clicking on API - APIM_Automation_Generic_Anon1
+[INFO ] 2022-12-15 13:28:26.101 - com.informatica.tests.APIPortalRegistryTest:run_anonymous_Managed_API 117==>  ================= run_anonymous_Managed_API : END ================== 
+[INFO ] 2022-12-15 13:28:26.102 - com.informatica.tests.APIPortalRegistryTest:validateSwaggerURLinAPIPortal 151==>  ================= validateSwaggerURLinAPIPortal: START ================== 
+[INFO ] 2022-12-15 13:28:26.103 - com.informatica.pages.BasePage:copySwaggerURL 146==>  Copying Swagger URL
+[INFO ] 2022-12-15 13:28:26.178 - com.informatica.pages.BasePage:copySwaggerURL 150==>  Copied Swagger URL Text :https://emw1-apigw.dm-em.informaticacloud.com/t/apim.emw.com/APIM_Automation_Generic_Anon1?swagger
+[INFO ] 2022-12-15 13:28:26.179 - com.informatica.pages.BasePage:runAnonSwaggerURL 169==>  Running Swagger URL of Anonymous API
+[INFO ] 2022-12-15 13:28:27.018 - com.informatica.tests.APIPortalRegistryTest:validateSwaggerURLinAPIPortal 171==>  ================= validateSwaggerURLinAPIPortal: END ================== 
+[INFO ] 2022-12-15 13:28:27.021 - com.informatica.tests.APIPortalRegistryTest:run_basic_Managed_API 127==>  ================= run_basic_Managed_API : START ================== 
+[INFO ] 2022-12-15 13:28:34.148 - com.informatica.pages.APIPortalHomePage:clickApiRegistryTab 96==>  Clicked on API Registry tab
+[INFO ] 2022-12-15 13:28:34.188 - com.informatica.pages.APIPortalRegistryPage:clickOnApiInGrid 247==>  Clicking on API - APIM_Automation_Generic_Basic
+[INFO ] 2022-12-15 13:28:37.869 - com.informatica.tests.APIPortalRegistryTest:run_basic_Managed_API 145==>  ================= run_basic_Managed_API : END ================== 

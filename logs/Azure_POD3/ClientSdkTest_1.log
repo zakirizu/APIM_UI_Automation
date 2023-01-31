@@ -1,0 +1,28 @@
+[INFO ] 2022-12-15 23:33:21.382 - com.informatica.web.util.MyLogger:startLogger 18==>  
+
+************** Execution Started : ClientSdkTest**************
+
+[INFO ] 2022-12-15 23:33:22.601 - com.informatica.pages.LoginPage:<init> 26==>  Initiated loginPage object
+[INFO ] 2022-12-15 23:33:24.338 - com.informatica.pages.BasePage:loginIntoIICSApp 60==>  entering username and password
+[INFO ] 2022-12-15 23:33:25.744 - com.informatica.pages.BasePage:loginIntoIICSApp 63==>  Clicking on Login Button
+[INFO ] 2022-12-15 23:33:30.912 - com.informatica.pages.LoginPage:ClickonAPIMChiklet 48==>  Clicking on  APIM Chikclet
+[INFO ] 2022-12-15 23:33:49.506 - com.informatica.pages.APIMRegistryPage:<init> 18==>  Initiated APIMRegistryPage object
+[INFO ] 2022-12-15 23:33:49.508 - com.informatica.tests.ClientSdkTest:verifyClientSdkItemsAndDownload 57==>  Testcase Start: verifyClientSdkItemsAndDownload
+[INFO ] 2022-12-15 23:33:49.508 - com.informatica.pages.APIMRegistryPage:clickonAPIRegistry 224==>  Clicking on  API Registry
+[INFO ] 2022-12-15 23:33:49.678 - com.informatica.pages.APIMRegistryPage:find 336==>  Finding 'APIM_Automation_Anon1'
+[INFO ] 2022-12-15 23:33:49.848 - com.informatica.pages.APIMRegistryPage:clickOnApiInGrid 504==>  Clicking on API - APIM_Automation_Anon1
+[INFO ] 2022-12-15 23:33:50.087 - com.informatica.pages.ApiDetailsGeneralPage:clickGeneralTab 48==>  Switch to General Tab
+[INFO ] 2022-12-15 23:33:51.079 - com.informatica.pages.ApiDetailsGeneralPage:getClientSdkCount 274==>  Getting Number of Client SDKs...
+[INFO ] 2022-12-15 23:33:51.191 - com.informatica.pages.ApiDetailsGeneralPage:getClientSdkCount 278==>  Total Number of Client SDKs: 9
+[INFO ] 2022-12-15 23:33:51.192 - com.informatica.pages.ApiDetailsGeneralPage:getClientSdkList 288==>  Getting List of Client SDK Dropdown Items...
+[INFO ] 2022-12-15 23:33:51.192 - com.informatica.pages.ApiDetailsGeneralPage:getClientSdkCount 274==>  Getting Number of Client SDKs...
+[INFO ] 2022-12-15 23:33:51.297 - com.informatica.pages.ApiDetailsGeneralPage:getClientSdkCount 278==>  Total Number of Client SDKs: 9
+[INFO ] 2022-12-15 23:33:51.480 - com.informatica.pages.ApiDetailsGeneralPage:getClientSdkList 298==>  Client SDK Dropdown Items are: [Java, Android, Javascript, Nodejs-Server, Python, Ruby, Csharp, Csharp-Dotnet2, Aspnetcore]
+[INFO ] 2022-12-15 23:33:51.482 - com.informatica.pages.ApiDetailsGeneralPage:getSelectedClientSdk 308==>  Getting the Selected Client SDK...
+[INFO ] 2022-12-15 23:33:51.482 - com.informatica.pages.ApiDetailsGeneralPage:getClientSdkCount 274==>  Getting Number of Client SDKs...
+[INFO ] 2022-12-15 23:33:51.574 - com.informatica.pages.ApiDetailsGeneralPage:getClientSdkCount 278==>  Total Number of Client SDKs: 9
+[INFO ] 2022-12-15 23:33:51.712 - com.informatica.pages.ApiDetailsGeneralPage:getSelectedClientSdk 321==>  The Selected Client SDK is: Java
+[INFO ] 2022-12-15 23:33:51.714 - com.informatica.pages.ApiDetailsGeneralPage:downloadClientSdk 333==>  Downloading Client SDK...
+[INFO ] 2022-12-15 23:33:55.905 - com.informatica.pages.ApiDetailsGeneralPage:downloadClientSdk 336==>  java SDK generated successfully
+[INFO ] 2022-12-15 23:33:57.649 - com.informatica.pages.ApiDetailsGeneralPage:closeApiDetailsPage 349==>  Closing API Details Page...
+[INFO ] 2022-12-15 23:33:57.764 - com.informatica.tests.ClientSdkTest:verifyClientSdkItemsAndDownload 98==>  Testcase End: verifyClientSdkItemsAndDownload

@@ -1,0 +1,24 @@
+[INFO ] 2022-12-15 13:27:36.349 - com.informatica.web.util.MyLogger:startLogger 18==>  
+
+************** Execution Started : APIPortalHomeTest**************
+
+[INFO ] 2022-12-15 13:27:37.394 - com.informatica.pages.LoginPage:<init> 26==>  Initiated loginPage object
+[INFO ] 2022-12-15 13:27:39.791 - com.informatica.pages.BasePage:loginIntoIICSApp 60==>  entering username and password
+[INFO ] 2022-12-15 13:27:41.044 - com.informatica.pages.BasePage:loginIntoIICSApp 63==>  Clicking on Login Button
+[INFO ] 2022-12-15 13:27:45.545 - com.informatica.pages.LoginPage:clickOnApiChiklet 62==>  Clicking on  API Portal chicklet
+[INFO ] 2022-12-15 13:27:51.277 - com.informatica.pages.APIPortalHomePage:<init> 29==>  Initiated API Portal HomePage object
+[INFO ] 2022-12-15 13:27:51.280 - com.informatica.tests.APIPortalHomeTest:validateAnalyticsOverviewTab 58==>  ================= validateAnalyticsOverviewTab : START ================== 
+[INFO ] 2022-12-15 13:28:01.500 - com.informatica.pages.APIPortalHomePage:CheckPageisLoading 215==>  Checking Page is Loading :: START
+[INFO ] 2022-12-15 13:28:01.510 - com.informatica.pages.APIPortalHomePage:clickApiPortalHomePage 68==>  Clicked on API portal home page
+[INFO ] 2022-12-15 13:28:01.512 - com.informatica.pages.APIPortalHomePage:validateOverviewTab 186==>  validateOverviewTab :: START
+[INFO ] 2022-12-15 13:28:01.559 - com.informatica.pages.APIPortalHomePage:validateApiUsageGraphDates 166==>  Actual dates populated on the Graph are: [12/9, 12/10, 12/11, 12/12, 12/13, 12/14, 12/15, 0, 10, 20, 30, 40]
+[INFO ] 2022-12-15 13:28:01.561 - com.informatica.pages.APIPortalHomePage:validateApiUsageGraphDates 170==>   Expected date values should be populated on the Graph are: [12/15, 12/14, 12/13, 12/12, 12/11, 12/10, 12/9]
+[INFO ] 2022-12-15 13:28:01.562 - com.informatica.tests.APIPortalHomeTest:validateAnalyticsOverviewTab 78==>  ================= validateAnalyticsOverviewTab : END ================== 
+[INFO ] 2022-12-15 13:28:01.566 - com.informatica.tests.APIPortalHomeTest:validateTopApisTab 90==>  ================= validateTopApisTab : START ================== 
+[INFO ] 2022-12-15 13:28:01.592 - com.informatica.pages.APIPortalHomePage:CheckPageisLoading 215==>  Checking Page is Loading :: START
+[INFO ] 2022-12-15 13:28:01.597 - com.informatica.pages.APIPortalHomePage:clickApiPortalHomePage 68==>  Clicked on API portal home page
+[INFO ] 2022-12-15 13:28:01.625 - com.informatica.pages.APIPortalHomePage:validateTopApisCount 200==>  validateTopApis :: START
+[INFO ] 2022-12-15 13:28:01.625 - com.informatica.pages.APIPortalHomePage:CheckPageisLoading 215==>  Checking Page is Loading :: START
+[INFO ] 2022-12-15 13:28:01.632 - com.informatica.pages.APIPortalHomePage:validateTopApisCount 205==>  count of api's are :6
+[INFO ] 2022-12-15 13:28:01.646 - com.informatica.tests.APIPortalHomeTest:validateTopApisTab 128==>  API count present in the Top API's tab is true
+[INFO ] 2022-12-15 13:28:01.647 - com.informatica.tests.APIPortalHomeTest:validateTopApisTab 140==>  ================= validateTopApisTab : END ================== 

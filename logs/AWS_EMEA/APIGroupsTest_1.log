@@ -1,0 +1,99 @@
+[INFO ] 2022-12-15 13:27:20.920 - com.informatica.web.util.MyLogger:startLogger 18==>  
+
+************** Execution Started : APIGroupsTest**************
+
+[INFO ] 2022-12-15 13:27:27.205 - com.informatica.pages.BasePage:loginIntoIICSApp 60==>  entering username and password
+[INFO ] 2022-12-15 13:27:28.142 - com.informatica.pages.BasePage:loginIntoIICSApp 63==>  Clicking on Login Button
+[INFO ] 2022-12-15 13:27:34.304 - com.informatica.pages.LoginPage:<init> 26==>  Initiated loginPage object
+[INFO ] 2022-12-15 13:27:34.309 - com.informatica.pages.LoginPage:ClickonAPIMChiklet 48==>  Clicking on  APIM Chikclet
+[INFO ] 2022-12-15 13:27:46.489 - com.informatica.pages.APIMRegistryPage:<init> 18==>  Initiated APIMRegistryPage object
+[INFO ] 2022-12-15 13:27:46.490 - com.informatica.pages.APIMRegistryPage:ClickonAPIGroups 231==>  Clicking on  API Group
+[INFO ] 2022-12-15 13:27:46.909 - com.informatica.tests.APIGroupsTest:validateUserNavigatedtoAPiGroups 55==>  ================= validateUserNavigatedtoAPiGroups : START ================== 
+[INFO ] 2022-12-15 13:27:46.911 - com.informatica.pages.APIGroupsPage:getPageTitle 113==>  Getting Page Title on  API Group
+[INFO ] 2022-12-15 13:27:46.931 - com.informatica.tests.APIGroupsTest:validateUserNavigatedtoAPiGroups 66==>  ================= validateUserNavigatedtoAPiGroups : END ================== 
+[INFO ] 2022-12-15 13:27:46.937 - com.informatica.tests.APIGroupsTest:ValidateHeadersAPiGroups 74==>  ================= ValidateHeadersAPiGroups : START ================== 
+[INFO ] 2022-12-15 13:27:46.939 - com.informatica.pages.APIGroupsPage:getAPIGroupHeaders 120==>  Getting API Group Page header Data
+[INFO ] 2022-12-15 13:27:47.014 - com.informatica.pages.APIGroupsPage:getAPIGroupHeaders 137==>  Actual API Group headers : [Name, Context, Description]
+[INFO ] 2022-12-15 13:27:47.021 - com.informatica.web.util.ReportsTestValidator:getExpectedHeadersAPIMGroups 39==>  Expected Response of APIM Registery headers : [Name, Context, Description]
+[INFO ] 2022-12-15 13:27:47.021 - com.informatica.tests.APIGroupsTest:ValidateHeadersAPiGroups 89==>  ================= ValidateHeadersAPiGroups : END ================== 
+[INFO ] 2022-12-15 13:27:47.027 - com.informatica.tests.APIGroupsTest:validateCreateAPIGroupWithContext 108==>  ================= CreateAPIGroupWithContext : START ================== 
+[INFO ] 2022-12-15 13:27:47.028 - com.informatica.tests.APIGroupsTest:validateCreateAPIGroupWithContext 117==>  Checking if Group -->APIM_Automation_APIGroupWithContext<-- already Exist
+[INFO ] 2022-12-15 13:27:47.029 - com.informatica.pages.APIGroupsPage:checkIFAPIGroupExist 193==>  finding the group -->APIM_Automation_APIGroupWithContext<-- from API Groups
+[INFO ] 2022-12-15 13:27:47.268 - com.informatica.pages.APIGroupsPage:setAPIGroupPageSize 161==>  Groups avaialble are less than 10, so not changing the page size
+[INFO ] 2022-12-15 13:27:47.270 - com.informatica.pages.APIGroupsPage:checkIFAPIGroupExist 200==>  finding the Group :APIM_Automation_APIGroupWithContextin APIGroups Page
+[INFO ] 2022-12-15 13:27:47.339 - com.informatica.pages.APIGroupsPage:createAPIGroup 234==>  creating the APIGroup :APIM_Automation_APIGroupWithContext
+[INFO ] 2022-12-15 13:27:48.478 - com.informatica.pages.APIGroupsPage:createAPIGroup 246==>  group Details have been filled successfully for Group :APIM_Automation_APIGroupWithContext
+[INFO ] 2022-12-15 13:27:48.479 - com.informatica.pages.APIGroupsPage:createAPIGroup 247==>  adding APIs to Group :APIM_Automation_APIGroupWithContext
+[INFO ] 2022-12-15 13:27:48.605 - com.informatica.pages.APIGroupsPage:createAPIGroup 253==>  adding APIs to Group is completed for Group :APIM_Automation_APIGroupWithContext
+[INFO ] 2022-12-15 13:27:53.736 - com.informatica.pages.APIGroupsPage:createAPIGroup 264==>  closing the Group Creation  page for Group :APIM_Automation_APIGroupWithContext
+[INFO ] 2022-12-15 13:27:55.436 - com.informatica.pages.APIGroupsPage:createAPIGroup 267==>  the message after creation of Group : The Group "APIM_Automation_APIGroupWithContext" was created successfully.
+[INFO ] 2022-12-15 13:27:55.810 - com.informatica.tests.APIGroupsTest:validateCreateAPIGroupWithContext 130==>  Group Creation for APIM_Automation_APIGroupWithContext is Completed Successfully
+[INFO ] 2022-12-15 13:27:55.812 - com.informatica.tests.APIGroupsTest:validateCreateAPIGroupWithContext 132==>  validating the managedAPI url in the Group APIM_Automation_APIGroupWithContext
+[INFO ] 2022-12-15 13:27:56.535 - com.informatica.pages.APIGroupsPage:validateAPIURLInAPIGroup 310==>  finding the Group :APIM_Automation_APIGroupWithContextin APIGroups Page
+[INFO ] 2022-12-15 13:27:57.199 - com.informatica.pages.APIGroupsPage:validateAPIURLInAPIGroup 314==>  found the Group :APIM_Automation_APIGroupWithContext
+[INFO ] 2022-12-15 13:27:58.139 - com.informatica.pages.APIGroupsPage:validateAPIURLInAPIGroup 321==>  navigated to the APIsINGroup Section for Group :APIM_Automation_APIGroupWithContext
+[INFO ] 2022-12-15 13:27:58.140 - com.informatica.pages.APIGroupsPage:validateAPIURLInAPIGroup 327==>  framing API Url for withContext
+[INFO ] 2022-12-15 13:27:58.141 - com.informatica.pages.APIGroupsPage:validateAPIURLInAPIGroup 333==>  clicking the copyURL Button 
+[INFO ] 2022-12-15 13:28:00.895 - com.informatica.pages.APIGroupsPage:validateAPIURLInAPIGroup 340==>  managedAPIURLFromGroup-->https://emw1-apigw.dm-em.informaticacloud.com/t/apim.emw.com/Automation/GroupContext/APIM_APIGroups_Automation_Anon1
+[INFO ] 2022-12-15 13:28:00.896 - com.informatica.pages.APIGroupsPage:validateAPIURLInAPIGroup 341==>  urlFromCopyURLButton-->https://emw1-apigw.dm-em.informaticacloud.com/t/apim.emw.com/Automation/GroupContext/APIM_APIGroups_Automation_Anon1
+[INFO ] 2022-12-15 13:28:01.548 - com.informatica.pages.APIGroupsPage:validateAPIURLInAPIGroup 346==>  created the APIGroup
+[INFO ] 2022-12-15 13:28:01.550 - com.informatica.pages.APIGroupsPage:checkIFAPIGroupExist 193==>  finding the group -->APIM_Automation_APIGroupWithContext<-- from API Groups
+[INFO ] 2022-12-15 13:28:02.098 - com.informatica.pages.APIGroupsPage:setAPIGroupPageSize 161==>  Groups avaialble are less than 10, so not changing the page size
+[INFO ] 2022-12-15 13:28:02.099 - com.informatica.pages.APIGroupsPage:checkIFAPIGroupExist 200==>  finding the Group :APIM_Automation_APIGroupWithContextin APIGroups Page
+[INFO ] 2022-12-15 13:28:02.142 - com.informatica.tests.APIGroupsTest:validateCreateAPIGroupWithContext 140==>  the Group creation is completed for GroupAPIM_Automation_APIGroupWithContext
+[INFO ] 2022-12-15 13:28:02.143 - com.informatica.tests.APIGroupsTest:validateCreateAPIGroupWithContext 149==>  ================= CreateAPIGroupWithContext : END ================== 
+[INFO ] 2022-12-15 13:28:02.148 - com.informatica.tests.APIGroupsTest:validateCreateAPIGroupWithOutContext 169==>  ================= CreateAPIGroupWithOutContext : START ================== 
+[INFO ] 2022-12-15 13:28:02.150 - com.informatica.tests.APIGroupsTest:validateCreateAPIGroupWithOutContext 179==>  Checking if Group -->APIM_Automation_APIGroupWithoutContext<-- already Exist
+[INFO ] 2022-12-15 13:28:02.151 - com.informatica.pages.APIGroupsPage:checkIFAPIGroupExist 193==>  finding the group -->APIM_Automation_APIGroupWithoutContext<-- from API Groups
+[INFO ] 2022-12-15 13:28:02.294 - com.informatica.pages.APIGroupsPage:setAPIGroupPageSize 161==>  Groups avaialble are less than 10, so not changing the page size
+[INFO ] 2022-12-15 13:28:02.295 - com.informatica.pages.APIGroupsPage:checkIFAPIGroupExist 200==>  finding the Group :APIM_Automation_APIGroupWithoutContextin APIGroups Page
+[INFO ] 2022-12-15 13:28:02.345 - com.informatica.tests.APIGroupsTest:validateCreateAPIGroupWithOutContext 183==>  Group Exist APIM_Automation_APIGroupWithoutContextso deleting it before trying to Create
+[INFO ] 2022-12-15 13:28:02.346 - com.informatica.pages.APIGroupsPage:removeAPIGroup 413==>  remvoing the APIGroup :APIM_Automation_APIGroupWithoutContext
+[INFO ] 2022-12-15 13:28:02.477 - com.informatica.pages.APIGroupsPage:removeAPIGroup 419==>  finding the Group :APIM_Automation_APIGroupWithoutContextin APIGroups Page
+[INFO ] 2022-12-15 13:28:04.589 - com.informatica.pages.APIGroupsPage:removeAPIGroup 425==>  clicked on the three dots button on the Group :APIM_Automation_APIGroupWithoutContext
+[INFO ] 2022-12-15 13:28:04.654 - com.informatica.pages.APIGroupsPage:removeAPIGroup 427==>  clicked on the delete button on the Group :APIM_Automation_APIGroupWithoutContext
+[INFO ] 2022-12-15 13:28:10.238 - com.informatica.pages.APIGroupsPage:createAPIGroup 234==>  creating the APIGroup :APIM_Automation_APIGroupWithoutContext
+[INFO ] 2022-12-15 13:28:11.177 - com.informatica.pages.APIGroupsPage:createAPIGroup 246==>  group Details have been filled successfully for Group :APIM_Automation_APIGroupWithoutContext
+[INFO ] 2022-12-15 13:28:11.178 - com.informatica.pages.APIGroupsPage:createAPIGroup 247==>  adding APIs to Group :APIM_Automation_APIGroupWithoutContext
+[INFO ] 2022-12-15 13:28:11.313 - com.informatica.pages.APIGroupsPage:createAPIGroup 253==>  adding APIs to Group is completed for Group :APIM_Automation_APIGroupWithoutContext
+[ERROR] 2022-12-15 13:28:11.562 - com.informatica.pages.BasePage:clickElement 279==>  the Element is not Visible//div[@class='d-dialog__footer__buttons button-group']//button//span[text()='Save']
+[INFO ] 2022-12-15 13:28:19.340 - com.informatica.pages.APIGroupsPage:createAPIGroup 264==>  closing the Group Creation  page for Group :APIM_Automation_APIGroupWithoutContext
+[INFO ] 2022-12-15 13:28:20.927 - com.informatica.pages.APIGroupsPage:createAPIGroup 267==>  the message after creation of Group : The Group "APIM_Automation_APIGroupWithoutContext" was created successfully.
+[INFO ] 2022-12-15 13:28:21.315 - com.informatica.tests.APIGroupsTest:validateCreateAPIGroupWithOutContext 192==>  Group Creation for APIM_Automation_APIGroupWithoutContext is Completed Successfully
+[INFO ] 2022-12-15 13:28:21.317 - com.informatica.tests.APIGroupsTest:validateCreateAPIGroupWithOutContext 194==>  validating the managedAPI url in the Group APIM_Automation_APIGroupWithoutContext
+[INFO ] 2022-12-15 13:28:21.806 - com.informatica.pages.APIGroupsPage:validateAPIURLInAPIGroup 310==>  finding the Group :APIM_Automation_APIGroupWithoutContextin APIGroups Page
+[INFO ] 2022-12-15 13:28:22.299 - com.informatica.pages.APIGroupsPage:validateAPIURLInAPIGroup 314==>  found the Group :APIM_Automation_APIGroupWithoutContext
+[INFO ] 2022-12-15 13:28:22.675 - com.informatica.pages.APIGroupsPage:validateAPIURLInAPIGroup 321==>  navigated to the APIsINGroup Section for Group :APIM_Automation_APIGroupWithoutContext
+[INFO ] 2022-12-15 13:28:22.677 - com.informatica.pages.APIGroupsPage:validateAPIURLInAPIGroup 330==>  framing API Url for withoutContext
+[INFO ] 2022-12-15 13:28:22.677 - com.informatica.pages.APIGroupsPage:validateAPIURLInAPIGroup 333==>  clicking the copyURL Button 
+[INFO ] 2022-12-15 13:28:26.693 - com.informatica.pages.APIGroupsPage:validateAPIURLInAPIGroup 340==>  managedAPIURLFromGroup-->https://emw1-apigw.dm-em.informaticacloud.com/t/apim.emw.com/APIM_APIGroups_Automation_Anon11
+[INFO ] 2022-12-15 13:28:26.694 - com.informatica.pages.APIGroupsPage:validateAPIURLInAPIGroup 341==>  urlFromCopyURLButton-->https://emw1-apigw.dm-em.informaticacloud.com/t/apim.emw.com/APIM_APIGroups_Automation_Anon11
+[INFO ] 2022-12-15 13:28:27.366 - com.informatica.pages.APIGroupsPage:validateAPIURLInAPIGroup 346==>  created the APIGroup
+[INFO ] 2022-12-15 13:28:27.367 - com.informatica.pages.APIGroupsPage:checkIFAPIGroupExist 193==>  finding the group -->APIM_Automation_APIGroupWithoutContext<-- from API Groups
+[INFO ] 2022-12-15 13:28:27.786 - com.informatica.pages.APIGroupsPage:setAPIGroupPageSize 161==>  Groups avaialble are less than 10, so not changing the page size
+[INFO ] 2022-12-15 13:28:27.787 - com.informatica.pages.APIGroupsPage:checkIFAPIGroupExist 200==>  finding the Group :APIM_Automation_APIGroupWithoutContextin APIGroups Page
+[INFO ] 2022-12-15 13:28:27.834 - com.informatica.tests.APIGroupsTest:validateCreateAPIGroupWithOutContext 201==>  the Group creation is completed for GroupAPIM_Automation_APIGroupWithoutContext
+[INFO ] 2022-12-15 13:28:27.836 - com.informatica.tests.APIGroupsTest:validateCreateAPIGroupWithOutContext 210==>  ================= CreateAPIGroupWithOutContext : END ================== 
+[INFO ] 2022-12-15 13:28:27.842 - com.informatica.tests.APIGroupsTest:validateRenameAPIGroup 222==>  =================  renameAPIGroup : START ================== 
+[INFO ] 2022-12-15 13:28:27.844 - com.informatica.pages.APIGroupsPage:reNameAPIGroup 368==>  renaming the APIGroup :APIM_Automation_APIGroupWithContext
+[INFO ] 2022-12-15 13:28:27.972 - com.informatica.pages.APIGroupsPage:reNameAPIGroup 374==>  finding the Group :APIM_Automation_APIGroupWithContextin APIGroups Page
+[INFO ] 2022-12-15 13:28:30.136 - com.informatica.pages.APIGroupsPage:reNameAPIGroup 380==>  clicked on the three dots button on the Group :APIM_Automation_APIGroupWithContext
+[INFO ] 2022-12-15 13:28:30.219 - com.informatica.pages.APIGroupsPage:reNameAPIGroup 382==>  clicked on the Rename button on the Group :APIM_Automation_APIGroupWithContext
+[INFO ] 2022-12-15 13:28:30.319 - com.informatica.pages.APIGroupsPage:reNameAPIGroup 386==>  renaming the Group is clicked
+[INFO ] 2022-12-15 13:28:34.933 - com.informatica.pages.APIGroupsPage:reNameAPIGroup 390==>  the message after Rename of Group: The Group "APIM_Automation_APIGroupWithContext" was updated successfully.
+[INFO ] 2022-12-15 13:28:34.934 - com.informatica.tests.APIGroupsTest:validateRenameAPIGroup 234==>  checking if the updatedGroupName APIM_Automation_APIGroupWithContext_updated is present in the APIGroup List 
+[INFO ] 2022-12-15 13:28:34.935 - com.informatica.pages.APIGroupsPage:checkIFAPIGroupExist 193==>  finding the group -->APIM_Automation_APIGroupWithContext_updated<-- from API Groups
+[INFO ] 2022-12-15 13:28:35.114 - com.informatica.pages.APIGroupsPage:setAPIGroupPageSize 161==>  Groups avaialble are less than 10, so not changing the page size
+[INFO ] 2022-12-15 13:28:35.115 - com.informatica.pages.APIGroupsPage:checkIFAPIGroupExist 200==>  finding the Group :APIM_Automation_APIGroupWithContext_updatedin APIGroups Page
+[INFO ] 2022-12-15 13:28:35.162 - com.informatica.tests.APIGroupsTest:validateRenameAPIGroup 236==>  the apigroup name returned is :APIM_Automation_APIGroupWithContext_updated
+[INFO ] 2022-12-15 13:28:35.164 - com.informatica.tests.APIGroupsTest:validateRenameAPIGroup 244==>  =================  renameAPIGroup : END ================== 
+[INFO ] 2022-12-15 13:28:35.169 - com.informatica.tests.APIGroupsTest:validateRemoveAPIGroup 257==>  =================  removeAPIGroup : START ================== 
+[INFO ] 2022-12-15 13:28:35.171 - com.informatica.pages.APIGroupsPage:removeAPIGroup 413==>  remvoing the APIGroup :APIM_Automation_APIGroupWithContext_updated
+[INFO ] 2022-12-15 13:28:35.363 - com.informatica.pages.APIGroupsPage:removeAPIGroup 419==>  finding the Group :APIM_Automation_APIGroupWithContext_updatedin APIGroups Page
+[INFO ] 2022-12-15 13:28:37.578 - com.informatica.pages.APIGroupsPage:removeAPIGroup 425==>  clicked on the three dots button on the Group :APIM_Automation_APIGroupWithContext_updated
+[INFO ] 2022-12-15 13:28:37.655 - com.informatica.pages.APIGroupsPage:removeAPIGroup 427==>  clicked on the delete button on the Group :APIM_Automation_APIGroupWithContext_updated
+[INFO ] 2022-12-15 13:28:43.389 - com.informatica.pages.APIGroupsPage:checkIFAPIGroupExist 193==>  finding the group -->APIM_Automation_APIGroupWithContext_updated<-- from API Groups
+[INFO ] 2022-12-15 13:28:43.623 - com.informatica.pages.APIGroupsPage:setAPIGroupPageSize 161==>  Groups avaialble are less than 10, so not changing the page size
+[INFO ] 2022-12-15 13:28:43.623 - com.informatica.pages.APIGroupsPage:checkIFAPIGroupExist 200==>  finding the Group :APIM_Automation_APIGroupWithContext_updatedin APIGroups Page
+[INFO ] 2022-12-15 13:28:43.662 - com.informatica.tests.APIGroupsTest:validateRemoveAPIGroup 267==>  the apigroup name returned is :APIM_Automation_APIGroupWithContext_updated
+[INFO ] 2022-12-15 13:28:43.663 - com.informatica.tests.APIGroupsTest:validateRemoveAPIGroup 276==>  =================  removeAPIGroup : END ================== 

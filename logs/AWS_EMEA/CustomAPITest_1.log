@@ -1,0 +1,50 @@
+[INFO ] 2022-12-15 13:28:44.202 - com.informatica.web.util.MyLogger:startLogger 18==>  
+
+************** Execution Started : CustomAPITest**************
+
+[INFO ] 2022-12-15 13:28:47.456 - com.informatica.pages.BasePage:loginIntoIICSApp 60==>  entering username and password
+[INFO ] 2022-12-15 13:28:48.311 - com.informatica.pages.BasePage:loginIntoIICSApp 63==>  Clicking on Login Button
+[INFO ] 2022-12-15 13:28:52.755 - com.informatica.pages.LoginPage:<init> 26==>  Initiated loginPage object
+[INFO ] 2022-12-15 13:28:52.756 - com.informatica.pages.LoginPage:ClickonAPIMChiklet 48==>  Clicking on  APIM Chikclet
+[INFO ] 2022-12-15 13:29:05.512 - com.informatica.pages.APIMRegistryPage:<init> 18==>  Initiated APIMRegistryPage object
+[INFO ] 2022-12-15 13:29:05.517 - com.informatica.tests.CustomAPITest:ValdiateTestAndCreateCustomAPI 45==>  ================= ValdiateTestCustomAPI : START ================== 
+[INFO ] 2022-12-15 13:29:05.705 - com.informatica.pages.APIMRegistryPage:ValdiateAPIPresentInAPIRegistery 515==>  Clicking on API - CustomAPI_Automation
+[INFO ] 2022-12-15 13:29:05.711 - com.informatica.pages.APIMRegistryPage:ClickonCreateCustomAPI 267==>  Clicking on  Analytics Tab
+[INFO ] 2022-12-15 13:29:05.813 - com.informatica.tests.CustomAPITest:ValdiateTestAndCreateCustomAPI 66==>  Validating the Test URL Message
+[INFO ] 2022-12-15 13:29:22.486 - com.informatica.tests.CustomAPITest:ValdiateTestAndCreateCustomAPI 73==>  Actual Save Message :The Managed API "CustomAPI_Automation" was created successfully.
+[INFO ] 2022-12-15 13:29:22.488 - com.informatica.tests.CustomAPITest:ValdiateTestAndCreateCustomAPI 76==>  Expected Save Message :The Managed API "CustomAPI_Automation" was created successfully.
+[INFO ] 2022-12-15 13:29:22.489 - com.informatica.pages.APIMRegistryPage:ReloadPage 559==>  Reloading the page
+[INFO ] 2022-12-15 13:29:30.891 - com.informatica.pages.APIMRegistryPage:ValdiateAPIPresentInAPIRegistery 515==>  Clicking on API - CustomAPI_Automation
+[INFO ] 2022-12-15 13:29:30.908 - com.informatica.tests.CustomAPITest:ValdiateTestAndCreateCustomAPI 81==>  Checking the Created Custom API Present in Registery :true
+[INFO ] 2022-12-15 13:29:30.909 - com.informatica.tests.CustomAPITest:ValdiateTestAndCreateCustomAPI 84==>  Validating the Create Custom API, Custom API is Created and Present in API Regsitery Page
+[INFO ] 2022-12-15 13:29:30.910 - com.informatica.tests.CustomAPITest:ValdiateTestAndCreateCustomAPI 95==>  ================= ValdiateTestCustomAPI : END ================== 
+[INFO ] 2022-12-15 13:29:30.912 - com.informatica.tests.CustomAPITest:ValdiateAddRatelimitToCustomApi 102==>  ================= Validating the Update Custom API with RateLimit : START ================== 
+[INFO ] 2022-12-15 13:29:30.929 - com.informatica.pages.APIMRegistryPage:clickOnApiInGrid 504==>  Clicking on API - CustomAPI_Automation
+[INFO ] 2022-12-15 13:29:31.172 - com.informatica.pages.managedAPIPage:ClickonManagedAPIPolicies 119==>  Clicking on  Policies tab
+[INFO ] 2022-12-15 13:29:35.865 - com.informatica.pages.CustomAPIPage:selectAPIRegistryDropdownOption 122==>  Selecting Dropdown OptionAPIM_Automation_Tierfrom API registry
+[INFO ] 2022-12-15 13:29:42.542 - com.informatica.tests.CustomAPITest:ValdiateAddRatelimitToCustomApi 114==>  Actual Save Message :The Managed API "CustomAPI_Automation" was updated successfully.
+[INFO ] 2022-12-15 13:29:42.544 - com.informatica.tests.CustomAPITest:ValdiateAddRatelimitToCustomApi 117==>  Expected Save Message :The Managed API "CustomAPI_Automation" was updated successfully.
+[INFO ] 2022-12-15 13:29:42.547 - com.informatica.tests.CustomAPITest:ValdiateAddRatelimitToCustomApi 121==>  Validating the Update Custom API with RateLimit
+[INFO ] 2022-12-15 13:29:42.551 - com.informatica.tests.CustomAPITest:ValdiateAddRatelimitToCustomApi 132==>  ================= Validating the Update Custom API with RateLimit : END ================== 
+[INFO ] 2022-12-15 13:29:42.555 - com.informatica.tests.CustomAPITest:ValdiateAddIpFilteringToCustomApi 139==>  ================= Validating the Update Custom API with IpFiltering : START ================== 
+[INFO ] 2022-12-15 13:29:42.661 - com.informatica.pages.APIMRegistryPage:clickOnApiInGrid 504==>  Clicking on API - CustomAPI_Automation
+[INFO ] 2022-12-15 13:29:42.992 - com.informatica.pages.managedAPIPage:ClickonManagedAPIPolicies 119==>  Clicking on  Policies tab
+[INFO ] 2022-12-15 13:29:55.202 - com.informatica.tests.CustomAPITest:ValdiateAddIpFilteringToCustomApi 150==>  Actual Save Message :The Managed API "CustomAPI_Automation" was updated successfully.
+[INFO ] 2022-12-15 13:29:55.204 - com.informatica.tests.CustomAPITest:ValdiateAddIpFilteringToCustomApi 153==>  Expected Save Message :The Managed API "CustomAPI_Automation" was updated successfully.
+[INFO ] 2022-12-15 13:29:55.206 - com.informatica.tests.CustomAPITest:ValdiateAddIpFilteringToCustomApi 159==>  Validating the Update Custom API with IpFiltering
+[INFO ] 2022-12-15 13:29:55.209 - com.informatica.tests.CustomAPITest:ValdiateAddIpFilteringToCustomApi 170==>  ================= Validating the Update Custom API with IpFiltering : END ================== 
+[INFO ] 2022-12-15 13:29:55.214 - com.informatica.tests.CustomAPITest:ValdiateAddGroupToCustomApi 177==>  ================= Validating the Update Custom API with Groups: START ================== 
+[INFO ] 2022-12-15 13:29:55.244 - com.informatica.pages.APIMRegistryPage:clickOnApiInGrid 504==>  Clicking on API - CustomAPI_Automation
+[INFO ] 2022-12-15 13:29:57.689 - com.informatica.pages.CustomAPIPage:selectAPIRegistryDropdownOption 122==>  Selecting Dropdown OptionAPIM_Automation_Grpfrom API registry
+[INFO ] 2022-12-15 13:30:00.812 - com.informatica.tests.CustomAPITest:ValdiateAddGroupToCustomApi 187==>  Actual Save Message :The selected Managed APIs was added successfully to Group "APIM_Automation_Grp".
+[INFO ] 2022-12-15 13:30:00.813 - com.informatica.tests.CustomAPITest:ValdiateAddGroupToCustomApi 190==>  Expected Save Message :The selected Managed APIs was added successfully to Group "APIM_Automation_Grp".
+[INFO ] 2022-12-15 13:30:00.817 - com.informatica.tests.CustomAPITest:ValdiateAddGroupToCustomApi 205==>  ================= Validating the Update Custom API with Groups: : END ================== 
+[INFO ] 2022-12-15 13:30:00.822 - com.informatica.tests.CustomAPITest:ValdiateDeleteCustomAPI 212==>  ================= Validating the Delete Custom API: START ================== 
+[INFO ] 2022-12-15 13:30:00.823 - com.informatica.pages.APIMRegistryPage:DeleteManagedAPI 662==>  Search an API
+[INFO ] 2022-12-15 13:30:08.094 - com.informatica.pages.APIMRegistryPage:DeleteManagedAPI 682==>  Deactivate Message :The Managed API "CustomAPI_Automation" was deactivated successfully.
+[INFO ] 2022-12-15 13:30:09.357 - com.informatica.pages.APIMRegistryPage:DeleteManagedAPI 704==>  Deactivate Message :The Managed API "CustomAPI_Automation" was deleted successfully.
+[INFO ] 2022-12-15 13:30:09.358 - com.informatica.pages.BasePage:CheckPageisLoading 326==>  Checking Page is Loading :: START
+[INFO ] 2022-12-15 13:30:09.363 - com.informatica.pages.APIMRegistryPage:DeleteManagedAPI 716==>  Deleted the Managed API post Validation
+[INFO ] 2022-12-15 13:30:09.453 - com.informatica.pages.APIMRegistryPage:ValdiateAPIPresentInAPIRegistery 515==>  Clicking on API - CustomAPI_Automation
+[INFO ] 2022-12-15 13:30:09.461 - com.informatica.tests.CustomAPITest:ValdiateDeleteCustomAPI 223==>  Validating the Delete Custom API, Custom API is Deleted and Not Present in API Regsitery Page
+[INFO ] 2022-12-15 13:30:09.462 - com.informatica.tests.CustomAPITest:ValdiateDeleteCustomAPI 234==>  =================  Validating the Delete Custom API: : END ================== 

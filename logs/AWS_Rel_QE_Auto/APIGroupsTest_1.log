@@ -1,0 +1,6 @@
+[INFO ] 2022-12-06 11:25:22.407 - com.informatica.web.util.MyLogger:startLogger 18==>  
+
+************** Execution Started : APIGroupsTest**************
+
+[INFO ] 2022-12-06 11:25:40.728 - com.informatica.pages.BasePage:loginIntoIICSApp 60==>  entering username and password
+[INFO ] 2022-12-06 11:25:41.592 - com.informatica.pages.BasePage:loginIntoIICSApp 63==>  Clicking on Login Button

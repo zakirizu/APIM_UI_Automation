@@ -1,0 +1,9 @@
+[INFO ] 2022-12-15 23:26:53.066 - com.informatica.web.util.MyLogger:startLogger 18==>  
+
+************** Execution Started : APIGroupsTest**************
+
+[INFO ] 2022-12-15 23:27:08.131 - com.informatica.pages.BasePage:loginIntoIICSApp 60==>  entering username and password
+[INFO ] 2022-12-15 23:27:09.389 - com.informatica.pages.BasePage:loginIntoIICSApp 63==>  Clicking on Login Button
+[INFO ] 2022-12-15 23:27:18.093 - com.informatica.pages.LoginPage:<init> 26==>  Initiated loginPage object
+[INFO ] 2022-12-15 23:27:18.095 - com.informatica.pages.LoginPage:ClickonAPIMChiklet 48==>  Clicking on  APIM Chikclet
+[ERROR] 2022-12-15 23:28:25.079 - com.informatica.tests.APIGroupsTest:init 46==>  Exception while navigating to APIM  : com.microsoft.playwright.TimeoutError: Timeout 60000ms exceeded

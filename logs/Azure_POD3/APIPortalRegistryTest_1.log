@@ -1,0 +1,9 @@
+[INFO ] 2022-12-15 23:26:53.097 - com.informatica.web.util.MyLogger:startLogger 18==>  
+
+************** Execution Started : APIPortalRegistryTest**************
+
+[INFO ] 2022-12-15 23:27:02.416 - com.informatica.pages.LoginPage:<init> 26==>  Initiated loginPage object
+[INFO ] 2022-12-15 23:27:08.295 - com.informatica.pages.BasePage:loginIntoIICSApp 60==>  entering username and password
+[INFO ] 2022-12-15 23:27:09.576 - com.informatica.pages.BasePage:loginIntoIICSApp 63==>  Clicking on Login Button
+[INFO ] 2022-12-15 23:27:18.268 - com.informatica.pages.LoginPage:clickOnApiChiklet 62==>  Clicking on  API Portal chicklet
+[ERROR] 2022-12-15 23:28:25.946 - com.informatica.tests.APIPortalRegistryTest:init 53==>  Exception while navigating to API  : com.microsoft.playwright.TimeoutError: Timeout 60000ms exceeded

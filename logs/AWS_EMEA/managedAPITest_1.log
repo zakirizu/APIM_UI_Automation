@@ -1,0 +1,84 @@
+[INFO ] 2022-12-15 13:27:20.899 - com.informatica.web.util.MyLogger:startLogger 18==>  
+
+************** Execution Started : managedAPITest**************
+
+[INFO ] 2022-12-15 13:27:27.205 - com.informatica.pages.BasePage:loginIntoIICSApp 60==>  entering username and password
+[INFO ] 2022-12-15 13:27:28.440 - com.informatica.pages.BasePage:loginIntoIICSApp 63==>  Clicking on Login Button
+[INFO ] 2022-12-15 13:27:34.561 - com.informatica.pages.LoginPage:<init> 26==>  Initiated loginPage object
+[INFO ] 2022-12-15 13:27:34.562 - com.informatica.pages.LoginPage:ClickonAPIMChiklet 48==>  Clicking on  APIM Chikclet
+[INFO ] 2022-12-15 13:27:38.771 - com.informatica.pages.APIMRegistryPage:<init> 18==>  Initiated APIMRegistryPage object
+[INFO ] 2022-12-15 13:27:38.775 - com.informatica.pages.AnalyticsPage:<init> 23==>  Initiated ApimAnalyticsPage object
+[INFO ] 2022-12-15 13:27:38.782 - com.informatica.tests.managedAPITest:accessAnonManagedAPI 95==>  ================= AccessAnonManagedAPiValdiations : START ================== 
+[INFO ] 2022-12-15 13:27:38.783 - com.informatica.pages.APIMRegistryPage:clickOnAPIRegistry 354==>  Clicking on  API Registry
+[INFO ] 2022-12-15 13:27:46.736 - com.informatica.pages.APIMRegistryPage:clickOnApiInGrid 504==>  Clicking on API - APIM_Automation_Generic_Anon1
+[INFO ] 2022-12-15 13:27:49.475 - com.informatica.pages.APIMRegistryPage:closeOpenedAPI 377==>  Closing API APIM_Automation_Generic_Anon1
+[INFO ] 2022-12-15 13:27:49.607 - com.informatica.tests.managedAPITest:accessAnonManagedAPI 123==>  ================= AccessAnonManagedAPiValdiations : END ================== 
+[INFO ] 2022-12-15 13:27:49.613 - com.informatica.tests.managedAPITest:accessBasicManagedAPI 141==>  ================= AccessBasicManagedAPIValdiations : START ================== 
+[INFO ] 2022-12-15 13:27:49.615 - com.informatica.pages.APIMRegistryPage:clickOnAPIRegistry 354==>  Clicking on  API Registry
+[INFO ] 2022-12-15 13:27:49.735 - com.informatica.pages.APIMRegistryPage:clickOnApiInGrid 504==>  Clicking on API - APIM_Automation_Generic_Basic
+[INFO ] 2022-12-15 13:27:59.042 - com.informatica.pages.APIMRegistryPage:closeOpenedAPI 377==>  Closing API APIM_Automation_Generic_Basic
+[INFO ] 2022-12-15 13:27:59.405 - com.informatica.tests.managedAPITest:accessBasicManagedAPI 160==>  ================= AccessBasicManagedAPIValdiations : END ================== 
+[INFO ] 2022-12-15 13:27:59.411 - com.informatica.tests.managedAPITest:validateWSDLURL 178==>  ================= validateWSDLURL : START ================== 
+[INFO ] 2022-12-15 13:27:59.411 - com.informatica.pages.APIMRegistryPage:clickOnAPIRegistry 354==>  Clicking on  API Registry
+[INFO ] 2022-12-15 13:27:59.561 - com.informatica.pages.APIMRegistryPage:clickOnApiInGrid 504==>  Clicking on API - APIM_Automation_Generic_Anon1
+[INFO ] 2022-12-15 13:27:59.755 - com.informatica.pages.BasePage:copyWSDLURL 227==>  Copying WSDL URL
+[INFO ] 2022-12-15 13:28:00.863 - com.informatica.pages.BasePage:copyWSDLURL 231==>  Copied WSDL URL Text :https://emw1-apigw.dm-em.informaticacloud.com/t/apim.emw.com/APIM_Automation_Generic_Anon11?wsdl
+[INFO ] 2022-12-15 13:28:00.865 - com.informatica.pages.BasePage:runAnonWSDLURL 250==>  Running WSDL URL of Anonymous API
+[INFO ] 2022-12-15 13:28:04.192 - com.informatica.tests.managedAPITest:validateWSDLURL 202==>  ================= validateWSDLURL : END ================== 
+[INFO ] 2022-12-15 13:28:04.197 - com.informatica.tests.managedAPITest:ClickOnEnablePrivacyPolicyWarning 220==>  ================= ClickOnEnablePrivacyPolicyWarningValidation : START ================== 
+[INFO ] 2022-12-15 13:28:04.199 - com.informatica.pages.APIMRegistryPage:clickOnAPIRegistry 354==>  Clicking on  API Registry
+[INFO ] 2022-12-15 13:28:04.310 - com.informatica.pages.APIMRegistryPage:CheckManagedAPIStatus 737==>  Search an API
+[INFO ] 2022-12-15 13:28:04.433 - com.informatica.pages.APIMRegistryPage:CreateManagedAPI 581==>  Search an API
+[INFO ] 2022-12-15 13:28:06.803 - com.informatica.pages.APIMRegistryPage:ReloadPage 559==>  Reloading the page
+[INFO ] 2022-12-15 13:28:16.276 - com.informatica.pages.APIMRegistryPage:CreateManagedAPI 604==>  Created the Managed API
+[INFO ] 2022-12-15 13:28:16.278 - com.informatica.pages.APIMRegistryPage:EditManagedAPI 631==>  Search an API
+[INFO ] 2022-12-15 13:28:25.939 - com.informatica.tests.managedAPITest:ClickOnEnablePrivacyPolicyWarning 240==>  ================= PrivacyManagedAPIWarningExecutionValdiations : START ================== 
+[INFO ] 2022-12-15 13:28:45.977 - com.informatica.pages.APIMRegistryPage:ClickonAnalytcis 255==>  Clicking on  Analytics Tab
+[INFO ] 2022-12-15 13:28:46.132 - com.informatica.pages.BasePage:CheckPageisLoading 326==>  Checking Page is Loading :: START
+[INFO ] 2022-12-15 13:28:56.172 - com.informatica.pages.AnalyticsPage:clickEventsLogTab 93==>  Clicking on  EventlogTab 
+[INFO ] 2022-12-15 13:28:56.259 - com.informatica.pages.BasePage:CheckPageisLoading 326==>  Checking Page is Loading :: START
+[INFO ] 2022-12-15 13:29:01.292 - com.informatica.pages.AnalyticsPage:clickShowLog 113==>  Clicking on Show Log Button 
+[INFO ] 2022-12-15 13:29:01.381 - com.informatica.pages.BasePage:CheckPageisLoading 326==>  Checking Page is Loading :: START
+[INFO ] 2022-12-15 13:29:06.423 - com.informatica.pages.AnalyticsPage:validateTheRecordsInEventLog 229==>  validateTheRecordsInEventLog :: START
+[INFO ] 2022-12-15 13:29:06.711 - com.informatica.pages.AnalyticsPage:validateTheRecordsInEventLog 237==>  Event status :: 200 OK
+[INFO ] 2022-12-15 13:29:06.712 - com.informatica.pages.AnalyticsPage:validateTheRecordsInEventLog 238==>  Event description :: Warning: There was a privacy policy leakage in the response. Details: email address. 1 item. first item: /EmailOp
+[INFO ] 2022-12-15 13:29:06.712 - com.informatica.pages.AnalyticsPage:validateTheRecordsInEventLog 242==>  validateEventLogPage :: END
+[INFO ] 2022-12-15 13:29:06.713 - com.informatica.pages.APIMRegistryPage:clickOnAPIRegistry 354==>  Clicking on  API Registry
+[INFO ] 2022-12-15 13:29:10.775 - com.informatica.pages.APIMRegistryPage:ReloadPage 559==>  Reloading the page
+[INFO ] 2022-12-15 13:29:22.972 - com.informatica.pages.APIMRegistryPage:DeleteManagedAPI 662==>  Search an API
+[INFO ] 2022-12-15 13:29:30.828 - com.informatica.pages.APIMRegistryPage:DeleteManagedAPI 682==>  Deactivate Message :The Managed API "APIM_Automation_AnonPrivacy" was deactivated successfully.
+[INFO ] 2022-12-15 13:29:36.350 - com.informatica.pages.APIMRegistryPage:DeleteManagedAPI 704==>  Deactivate Message :The Managed API "APIM_Automation_AnonPrivacy" was deleted successfully.
+[INFO ] 2022-12-15 13:29:36.351 - com.informatica.pages.BasePage:CheckPageisLoading 326==>  Checking Page is Loading :: START
+[INFO ] 2022-12-15 13:29:36.358 - com.informatica.pages.APIMRegistryPage:DeleteManagedAPI 716==>  Deleted the Managed API post Validation
+[INFO ] 2022-12-15 13:29:36.359 - com.informatica.pages.APIMRegistryPage:ReloadPage 559==>  Reloading the page
+[INFO ] 2022-12-15 13:29:42.286 - com.informatica.tests.managedAPITest:ClickOnEnablePrivacyPolicyWarning 274==>  ================= ClickOnEnablePrivacyPolicyWarningValidation : END ================== 
+[INFO ] 2022-12-15 13:29:42.291 - com.informatica.pages.APIMRegistryPage:clickOnAPIRegistry 354==>  Clicking on  API Registry
+[INFO ] 2022-12-15 13:29:42.510 - com.informatica.tests.managedAPITest:ClickOnEnablePrivacyPolicyBlock 292==>  ================= ClickOnEnablePrivacyPolicyBlockValidation : START ================== 
+[INFO ] 2022-12-15 13:29:42.511 - com.informatica.pages.APIMRegistryPage:CheckManagedAPIStatus 737==>  Search an API
+[INFO ] 2022-12-15 13:29:42.741 - com.informatica.pages.APIMRegistryPage:CreateManagedAPI 581==>  Search an API
+[INFO ] 2022-12-15 13:29:45.151 - com.informatica.pages.APIMRegistryPage:ReloadPage 559==>  Reloading the page
+[INFO ] 2022-12-15 13:29:54.659 - com.informatica.pages.APIMRegistryPage:CreateManagedAPI 604==>  Created the Managed API
+[INFO ] 2022-12-15 13:29:54.660 - com.informatica.pages.APIMRegistryPage:EditManagedAPI 631==>  Search an API
+[INFO ] 2022-12-15 13:30:05.502 - com.informatica.tests.managedAPITest:ClickOnEnablePrivacyPolicyBlock 312==>  ================= PrivacyManagedAPIBlockExecutionValdiations : START ================== 
+[INFO ] 2022-12-15 13:30:18.744 - com.informatica.pages.APIMRegistryPage:ClickonAnalytcis 255==>  Clicking on  Analytics Tab
+[INFO ] 2022-12-15 13:30:18.884 - com.informatica.pages.BasePage:CheckPageisLoading 326==>  Checking Page is Loading :: START
+[INFO ] 2022-12-15 13:30:28.925 - com.informatica.pages.AnalyticsPage:clickEventsLogTab 93==>  Clicking on  EventlogTab 
+[INFO ] 2022-12-15 13:30:28.991 - com.informatica.pages.BasePage:CheckPageisLoading 326==>  Checking Page is Loading :: START
+[INFO ] 2022-12-15 13:30:39.020 - com.informatica.pages.AnalyticsPage:clickShowLog 113==>  Clicking on Show Log Button 
+[INFO ] 2022-12-15 13:30:39.074 - com.informatica.pages.BasePage:CheckPageisLoading 326==>  Checking Page is Loading :: START
+[INFO ] 2022-12-15 13:30:44.108 - com.informatica.pages.AnalyticsPage:validateTheRecordsInEventLog 229==>  validateTheRecordsInEventLog :: START
+[INFO ] 2022-12-15 13:30:44.203 - com.informatica.pages.AnalyticsPage:validateTheRecordsInEventLog 237==>  Event status :: 200 OK
+[INFO ] 2022-12-15 13:30:44.203 - com.informatica.pages.AnalyticsPage:validateTheRecordsInEventLog 238==>  Event description :: Warning: There was a privacy policy leakage in the response. Details: email address. 1 item. first item: /EmailOp
+[INFO ] 2022-12-15 13:30:44.203 - com.informatica.pages.AnalyticsPage:validateTheRecordsInEventLog 242==>  validateEventLogPage :: END
+[INFO ] 2022-12-15 13:30:44.203 - com.informatica.pages.AnalyticsPage:validateTheRecordsInEventLog 229==>  validateTheRecordsInEventLog :: START
+[INFO ] 2022-12-15 13:30:48.004 - com.informatica.pages.AnalyticsPage:validateTheRecordsInEventLog 237==>  Event status :: 403 Forbidden
+[INFO ] 2022-12-15 13:30:48.004 - com.informatica.pages.AnalyticsPage:validateTheRecordsInEventLog 238==>  Event description :: Blocked: The message was blocked because of a potential privacy policy breach in the response. Details: email address. 1 item. first item: /EmailOp
+[INFO ] 2022-12-15 13:30:48.005 - com.informatica.pages.AnalyticsPage:validateTheRecordsInEventLog 242==>  validateEventLogPage :: END
+[INFO ] 2022-12-15 13:30:48.005 - com.informatica.pages.APIMRegistryPage:clickOnAPIRegistry 354==>  Clicking on  API Registry
+[INFO ] 2022-12-15 13:30:51.747 - com.informatica.pages.APIMRegistryPage:ReloadPage 559==>  Reloading the page
+[INFO ] 2022-12-15 13:30:56.323 - com.informatica.pages.APIMRegistryPage:DeleteManagedAPI 662==>  Search an API
+[INFO ] 2022-12-15 13:31:03.492 - com.informatica.pages.APIMRegistryPage:DeleteManagedAPI 682==>  Deactivate Message :The Managed API "APIM_Automation_AnonPrivacy" was deactivated successfully.
+[INFO ] 2022-12-15 13:31:04.599 - com.informatica.pages.APIMRegistryPage:DeleteManagedAPI 704==>  Deactivate Message :The Managed API "APIM_Automation_AnonPrivacy" was deleted successfully.
+[INFO ] 2022-12-15 13:31:04.600 - com.informatica.pages.BasePage:CheckPageisLoading 326==>  Checking Page is Loading :: START
+[INFO ] 2022-12-15 13:31:04.606 - com.informatica.pages.APIMRegistryPage:DeleteManagedAPI 716==>  Deleted the Managed API post Validation
+[INFO ] 2022-12-15 13:31:04.607 - com.informatica.tests.managedAPITest:ClickOnEnablePrivacyPolicyBlock 348==>  ================= ClickOnEnablePrivacyPolicyBlockValidation : END ================== 

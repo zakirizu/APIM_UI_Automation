@@ -1,0 +1,13 @@
+[INFO ] 2022-12-15 13:12:02.518 - com.informatica.web.util.MyLogger:startLogger 18==>  
+
+************** Execution Started : LoginTest**************
+
+[INFO ] 2022-12-15 13:12:09.177 - com.informatica.pages.BasePage:loginIntoIICSApp 60==>  entering username and password
+[INFO ] 2022-12-15 13:12:10.295 - com.informatica.pages.BasePage:loginIntoIICSApp 63==>  Clicking on Login Button
+[INFO ] 2022-12-15 13:12:15.828 - com.informatica.pages.LoginPage:<init> 26==>  Initiated loginPage object
+[INFO ] 2022-12-15 13:12:15.890 - com.informatica.tests.LoginTest:validateIICSLogin 48==>  ================= validateIICSLogin : START ================== 
+[INFO ] 2022-12-15 13:12:15.892 - com.informatica.pages.LoginPage:getTitle 31==>  Getting Page Title
+[INFO ] 2022-12-15 13:12:16.448 - com.informatica.tests.LoginTest:validateIICSLogin 67==>  ================= validateIICSLogin : END ================== 
+[INFO ] 2022-12-15 13:12:16.461 - com.informatica.tests.LoginTest:valdiateAPIMChiklet 74==>  ================= valdiateAPIMChiklet : START ================== 
+[INFO ] 2022-12-15 13:12:16.464 - com.informatica.pages.LoginPage:ValidateAPIMChiklet 40==>  Getting APIM Chikclet
+[INFO ] 2022-12-15 13:12:19.130 - com.informatica.tests.LoginTest:valdiateAPIMChiklet 86==>  ================= valdiateAPIMChiklet : END ================== 

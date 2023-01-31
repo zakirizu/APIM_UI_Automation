@@ -1,0 +1,52 @@
+[INFO ] 2022-12-15 13:14:40.809 - com.informatica.web.util.MyLogger:startLogger 18==>  
+
+************** Execution Started : CustomAPITest**************
+
+[INFO ] 2022-12-15 13:14:44.548 - com.informatica.pages.BasePage:loginIntoIICSApp 60==>  entering username and password
+[INFO ] 2022-12-15 13:14:45.214 - com.informatica.pages.BasePage:loginIntoIICSApp 63==>  Clicking on Login Button
+[INFO ] 2022-12-15 13:14:52.375 - com.informatica.pages.LoginPage:<init> 26==>  Initiated loginPage object
+[INFO ] 2022-12-15 13:14:52.376 - com.informatica.pages.LoginPage:ClickonAPIMChiklet 48==>  Clicking on  APIM Chikclet
+[INFO ] 2022-12-15 13:15:10.794 - com.informatica.pages.APIMRegistryPage:<init> 18==>  Initiated APIMRegistryPage object
+[INFO ] 2022-12-15 13:15:10.800 - com.informatica.tests.CustomAPITest:ValdiateTestAndCreateCustomAPI 45==>  ================= ValdiateTestCustomAPI : START ================== 
+[INFO ] 2022-12-15 13:15:11.036 - com.informatica.pages.APIMRegistryPage:ValdiateAPIPresentInAPIRegistery 515==>  Clicking on API - CustomAPI_Automation
+[INFO ] 2022-12-15 13:15:11.051 - com.informatica.tests.CustomAPITest:ValdiateTestAndCreateCustomAPI 54==>  Custom API For Automation is already Exists, so deleting the Custom API 
+[INFO ] 2022-12-15 13:15:11.052 - com.informatica.pages.APIMRegistryPage:DeleteManagedAPI 662==>  Search an API
+[INFO ] 2022-12-15 13:15:30.094 - com.informatica.pages.APIMRegistryPage:DeleteManagedAPI 682==>  Deactivate Message :The Managed API "CustomAPI_Automation" was deactivated successfully.
+[INFO ] 2022-12-15 13:15:36.172 - com.informatica.pages.APIMRegistryPage:DeleteManagedAPI 704==>  Deactivate Message :The Managed API "CustomAPI_Automation" was deleted successfully.
+[INFO ] 2022-12-15 13:15:36.173 - com.informatica.pages.BasePage:CheckPageisLoading 326==>  Checking Page is Loading :: START
+[INFO ] 2022-12-15 13:15:36.194 - com.informatica.pages.APIMRegistryPage:DeleteManagedAPI 716==>  Deleted the Managed API post Validation
+[INFO ] 2022-12-15 13:15:36.195 - com.informatica.pages.APIMRegistryPage:ReloadPage 559==>  Reloading the page
+[INFO ] 2022-12-15 13:15:58.377 - com.informatica.pages.APIMRegistryPage:ClickonCreateCustomAPI 267==>  Clicking on  Analytics Tab
+[INFO ] 2022-12-15 13:16:01.119 - com.informatica.tests.CustomAPITest:ValdiateTestAndCreateCustomAPI 66==>  Validating the Test URL Message
+[ERROR] 2022-12-15 13:16:30.971 - com.informatica.tests.CustomAPITest:ValdiateTestAndCreateCustomAPI 90==>  Exception while validating Create Custom APIcom.microsoft.playwright.PlaywrightException: Error {
+  message='Error: strict mode violation: "xpath=//i[@class='d-messagebubble__close']" resolved to 2 elements:
+    1) <i class="d-messagebubble__close"></i> aka playwright.$("[data-testid="message-bubble-close"] >> nth=0")
+    2) <i class="d-messagebubble__close"></i> aka playwright.$("[data-testid="message-bubble-close"] >> nth=1")
+
+=========================== logs ===========================
+waiting for selector "//i[@class='d-messagebubble__close']"
+  strict mode violation: "xpath=//i[@class='d-messagebubble__close']" resolved to 2 elements:
+    1) <i class="d-messagebubble__close"></i> aka playwright.$("[data-testid="message-bubble-close"] >> nth=0")
+    2) <i class="d-messagebubble__close"></i> aka playwright.$("[data-testid="message-bubble-close"] >> nth=1")
+
+============================================================
+  name='Error
+  stack='Error: Error: strict mode violation: "xpath=//i[@class='d-messagebubble__close']" resolved to 2 elements:
+    1) <i class="d-messagebubble__close"></i> aka playwright.$("[data-testid="message-bubble-close"] >> nth=0")
+    2) <i class="d-messagebubble__close"></i> aka playwright.$("[data-testid="message-bubble-close"] >> nth=1")
+
+=========================== logs ===========================
+waiting for selector "//i[@class='d-messagebubble__close']"
+  strict mode violation: "xpath=//i[@class='d-messagebubble__close']" resolved to 2 elements:
+    1) <i class="d-messagebubble__close"></i> aka playwright.$("[data-testid="message-bubble-close"] >> nth=0")
+    2) <i class="d-messagebubble__close"></i> aka playwright.$("[data-testid="message-bubble-close"] >> nth=1")
+
+============================================================
+    at CRExecutionContext.evaluateWithArguments (C:\Users\jashaik\AppData\Local\Temp\playwright-java-15223271997970755795\package\lib\server\chromium\crExecutionContext.js:103:33)
+    at runMicrotasks (<anonymous>)
+    at runNextTicks (node:internal/process/task_queues:61:5)
+    at processImmediate (node:internal/timers:437:9)
+    at async evaluateExpression (C:\Users\jashaik\AppData\Local\Temp\playwright-java-15223271997970755795\package\lib\server\javascript.js:263:12)
+    at async InjectedScriptPollHandler.finishHandle (C:\Users\jashaik\AppData\Local\Temp\playwright-java-15223271997970755795\package\lib\server\dom.js:1011:22)
+    at async RerunnableTask.rerun (C:\Users\jashaik\AppData\Local\Temp\playwright-java-15223271997970755795\package\lib\server\frames.js:1760:73)
+}

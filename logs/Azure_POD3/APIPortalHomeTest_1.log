@@ -1,0 +1,28 @@
+[INFO ] 2022-12-15 23:27:27.082 - com.informatica.web.util.MyLogger:startLogger 18==>  
+
+************** Execution Started : APIPortalHomeTest**************
+
+[INFO ] 2022-12-15 23:27:29.097 - com.informatica.pages.LoginPage:<init> 26==>  Initiated loginPage object
+[INFO ] 2022-12-15 23:27:32.043 - com.informatica.pages.BasePage:loginIntoIICSApp 60==>  entering username and password
+[INFO ] 2022-12-15 23:27:33.080 - com.informatica.pages.BasePage:loginIntoIICSApp 63==>  Clicking on Login Button
+[INFO ] 2022-12-15 23:27:44.073 - com.informatica.pages.LoginPage:clickOnApiChiklet 62==>  Clicking on  API Portal chicklet
+[INFO ] 2022-12-15 23:28:53.888 - com.informatica.pages.APIPortalHomePage:<init> 29==>  Initiated API Portal HomePage object
+[INFO ] 2022-12-15 23:28:53.891 - com.informatica.tests.APIPortalHomeTest:validateAnalyticsOverviewTab 58==>  ================= validateAnalyticsOverviewTab : START ================== 
+[INFO ] 2022-12-15 23:28:54.358 - com.informatica.pages.APIPortalHomePage:CheckPageisLoading 215==>  Checking Page is Loading :: START
+[INFO ] 2022-12-15 23:28:54.366 - com.informatica.pages.APIPortalHomePage:clickApiPortalHomePage 68==>  Clicked on API portal home page
+[INFO ] 2022-12-15 23:28:54.368 - com.informatica.pages.APIPortalHomePage:validateOverviewTab 186==>  validateOverviewTab :: START
+[INFO ] 2022-12-15 23:28:54.418 - com.informatica.pages.APIPortalHomePage:validateApiUsageGraphDates 166==>  Actual dates populated on the Graph are: [12/9, 12/10, 12/11, 12/12, 12/13, 12/14, 12/15, 0]
+[INFO ] 2022-12-15 23:28:54.420 - com.informatica.pages.APIPortalHomePage:validateApiUsageGraphDates 170==>   Expected date values should be populated on the Graph are: [12/15, 12/14, 12/13, 12/12, 12/11, 12/10, 12/9]
+[INFO ] 2022-12-15 23:28:54.421 - com.informatica.tests.APIPortalHomeTest:validateAnalyticsOverviewTab 78==>  ================= validateAnalyticsOverviewTab : END ================== 
+[INFO ] 2022-12-15 23:28:54.426 - com.informatica.tests.APIPortalHomeTest:validateTopApisTab 90==>  ================= validateTopApisTab : START ================== 
+[INFO ] 2022-12-15 23:28:54.540 - com.informatica.pages.APIPortalHomePage:CheckPageisLoading 215==>  Checking Page is Loading :: START
+[INFO ] 2022-12-15 23:28:54.546 - com.informatica.pages.APIPortalHomePage:clickApiPortalHomePage 68==>  Clicked on API portal home page
+[INFO ] 2022-12-15 23:28:54.558 - com.informatica.pages.APIPortalHomePage:validateTopApisCount 200==>  validateTopApis :: START
+[INFO ] 2022-12-15 23:28:54.559 - com.informatica.pages.APIPortalHomePage:CheckPageisLoading 215==>  Checking Page is Loading :: START
+[INFO ] 2022-12-15 23:28:54.569 - com.informatica.pages.APIPortalHomePage:validateTopApisCount 205==>  count of api's are :1
+[INFO ] 2022-12-15 23:28:54.574 - com.informatica.pages.BasePage:selectAPIRegistryDropdownOption 306==>  Selecting Dropdown OptionLast 90 daysfrom API registry
+[INFO ] 2022-12-15 23:28:54.812 - com.informatica.pages.APIPortalHomePage:validateTopApisCount 200==>  validateTopApis :: START
+[INFO ] 2022-12-15 23:28:54.814 - com.informatica.pages.APIPortalHomePage:CheckPageisLoading 215==>  Checking Page is Loading :: START
+[INFO ] 2022-12-15 23:28:59.844 - com.informatica.pages.APIPortalHomePage:validateTopApisCount 205==>  count of api's are :4
+[INFO ] 2022-12-15 23:28:59.854 - com.informatica.tests.APIPortalHomeTest:validateTopApisTab 121==>  API count present in the Top API's tab is true
+[INFO ] 2022-12-15 23:28:59.856 - com.informatica.tests.APIPortalHomeTest:validateTopApisTab 140==>  ================= validateTopApisTab : END ================== 

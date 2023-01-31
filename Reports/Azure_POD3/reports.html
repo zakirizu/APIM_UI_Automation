@@ -1,0 +1,3427 @@
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset='UTF-8' /> 
+	<meta name='description' content='' />
+	<meta name='robots' content='noodp, noydir' />
+	<meta name='viewport' content='width=device-width, initial-scale=1' />
+
+	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600' rel='stylesheet' type='text/css'>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link href='https://cdn.rawgit.com/anshooarora/extentreports-java/master/dist/css/extent.css' type='text/css' rel='stylesheet' />
+
+	<title>Demo Extent Reports</title>
+	
+</head>
+	<body class='extent dark default hide-overflow '>
+		<div id='theme-selector' alt='Click to toggle theme. To enable by default, use theme configuration.' title='Click to toggle theme. To enable by default, use theme configuration.'>
+			<span><i class='material-icons'>desktop_windows</i></span>
+		</div>
+
+<nav>
+	<div class="nav-wrapper">
+		<a href="http://extentreports.relevantcodes.com" class="brand-logo blue darken-3">Extent</a>
+
+		<!-- slideout menu -->
+		<ul id='slide-out' class='side-nav fixed hide-on-med-and-down'>
+			<li class='waves-effect active'><a href='#!' view='test-view' onclick="configureView(0);chartsView('test');"><i class='material-icons'>dashboard</i></a></li>
+						<li class='waves-effect'><a href='#!' view='category-view' onclick="configureView(1)"><i class='material-icons'>label_outline</i></a></li>
+			<li class='waves-effect'><a href='#!' onclick="configureView(-1);chartsView('dashboard');" view='dashboard-view'><i class='material-icons'>track_changes</i></i></a></li>
+		</ul>
+
+		<!-- report name -->
+		<span class='report-name'>Automation Report</span>
+		
+		<!-- report headline -->
+		<span class='report-headline'></span>
+
+		<!-- nav-right -->
+		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
+			<a>
+				<span class='suite-start-time'>15-Dec-2022, 11:26:51 pm</span>
+			</a>
+			<a>
+				<span>v3.0.0</span>
+			</a>
+		</ul>
+	</div>
+</nav>
+		<!-- container -->
+		<div class='container'>
+
+<div id='test-view' class='view'>
+				
+	<section id='controls'>
+		<div class='controls grey lighten-4'>
+			<!-- test toggle -->
+			<div class='chip transparent'>
+				<a class='dropdown-button tests-toggle' data-activates='tests-toggle' data-constrainwidth='true' data-beloworigin='true' data-hover='true' href='#'>
+					<i class='material-icons'>warning</i> Status
+				</a>
+				<ul id='tests-toggle' class='dropdown-content'>
+					<li status='pass'><a href='#!'>Pass <i class='material-icons green-text'>check_circle</i></a></li>
+					<li status='fail'><a href='#!'>Fail <i class='material-icons red-text'>cancel</i></a></li>
+					<li status='error'><a href='#!'>Error <i class='material-icons red-text lighten-2'>error</i></a></li>
+					<li status='warning'><a href='#!'>Warning <i class='material-icons orange-text'>warning</i></a></li>
+					<li status='skip'><a href='#!'>Skip <i class='material-icons cyan-text'>redo</i></a></li>
+					<li class='divider'></li>
+					<li status='clear' clear='true'><a href='#!'>Clear Filters <i class='material-icons'>clear</i></a></li>
+				</ul>
+			</div>
+			<!-- test toggle -->
+
+			<!-- category toggle -->
+						<div class='chip transparent'>
+				<a class='dropdown-button category-toggle' data-activates='category-toggle' data-constrainwidth='false' data-beloworigin='true' data-hover='true' href='#'>
+					<i class='material-icons'>local_offer</i> Category
+				</a>
+				<ul id='category-toggle' class='dropdown-content'>
+					<li><a href='#'>IICS_Login</a></li>
+					<li><a href='#'>Managed_API_Page</a></li>
+					<li><a href='#'>APIM_Home_Page</a></li>
+					<li><a href='#'>API_Groups</a></li>
+					<li><a href='#'>API_Portal_Registry</a></li>
+					<li><a href='#'>APIM_Analytics</a></li>
+					<li><a href='#'>API_Portal_Home</a></li>
+					<li><a href='#'>API_Groups_In_API_Portal</a></li>
+					<li><a href='#'>APIM_OAuth2</a></li>
+					<li><a href='#'>APIM_CustomAPI</a></li>
+					<li><a href='#'>APIM_Swagger</a></li>
+					<li><a href='#'>RateLimit</a></li>
+					<li><a href='#'>ClientSdk</a></li>
+					<li><a href='#'>OrgLevelPolicies</a></li>
+					<li class='divider'></li>
+					<li class='clear'><a href='#!' clear='true'>Clear Filters</a></li>
+				</ul>
+			</div>
+			<!-- category toggle -->
+
+			<!-- clear filters -->
+			<div class='chip transparent hide'>
+				<a class='' id='clear-filters' alt='Clear Filters' title='Clear Filters'>
+					<i class='material-icons'>close</i> Clear
+				</a>
+			</div>
+			<!-- clear filters -->
+
+			<!-- enable dashboard -->
+			<div id='toggle-test-view-charts' class='chip transparent'>
+				<a class='pink-text' id='enable-dashboard' alt='Enable Dashboard' title='Enable Dashboard'>
+					<i class='material-icons'>track_changes</i> Dashboard
+				</a>
+			</div>
+			<!-- enable dashboard -->
+
+			<!-- search -->
+			<div class='chip transparent' alt='Search Tests' title='Search Tests'>
+				<a href="#" class='search-div'>
+					<i class='material-icons'>search</i> Search
+				</a>
+
+				<div class='input-field left hide'>
+					<input id='search-tests' type='text' class='validate browser-default' placeholder='Search Tests...'>
+				</div>
+				
+			</div>
+			<!-- search -->
+		</div>
+	</section>
+
+
+<div id='test-view-charts' class='subview-full'>
+	<div id='charts-row' class='row nm-v nm-h'>
+		<div class='col s12 m6 l6 np-h'>
+			<div class='card-panel nm-v'>
+				<div class='left panel-name'>Tests</div>
+				<div class='chart-box'>
+					<canvas id='parent-analysis' width='100' height='80'></canvas>
+				</div>
+				<div class='block text-small'>
+					<span><span class='strong'>16</span> test(s) passed</span>
+				</div>
+				<div class='block text-small'>
+					<span class='strong'>24</span> test(s) failed, <span class='strong'>8</span> others
+				</div>
+			</div>
+		</div>
+		
+		<div class='col s12 m6 l6 np-h'>
+			<div class='card-panel nm-v'>
+				<div class='left panel-name'>Steps</div>
+				<div class='chart-box'>
+					<canvas id='child-analysis' width='100' height='80'></canvas>
+				</div>
+				<div class='block text-small'>
+					<span><span class='strong'>53</span> step(s) passed</span>
+				</div>
+				<div class='block text-small'>
+					<span class='strong'>67</span> step(s) failed, <span class='strong'>40</span> others
+				</div>
+			</div>
+		</div>
+		
+	</div>
+</div>
+
+	<div class='subview-left left'>
+		
+		<div class='view-summary'>
+			<h5>Tests</h5>
+
+			<ul id='test-collection' class='test-collection'>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='1'>
+					<div class='test-heading'>
+						<span class='test-name'>validateIICSLogin</span>
+						<span class='test-time'>15-Dec-2022, 11:27:18 pm</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>15-Dec-2022, 11:27:18 pm</span>
+	<span class='label end-time'>15-Dec-2022, 11:39:35 pm</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 12m 16s+379ms</span>
+</div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>IICS_Login</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>11:27:18 pm</td>
+					<td class='step-details'>Login into IICS</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>11:27:18 pm</td>
+					<td class='step-details'>Getting Page Title</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>11:27:20 pm</td>
+					<td class='step-details'>Method with name : validateIICSLogin is passed</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='2'>
+					<div class='test-heading'>
+						<span class='test-name'>valdiateAPIMChiklet</span>
+						<span class='test-time'>15-Dec-2022, 11:27:20 pm</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>15-Dec-2022, 11:27:20 pm</span>
+	<span class='label end-time'>15-Dec-2022, 11:39:35 pm</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 12m 14s+148ms</span>
+</div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>IICS_Login</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>11:27:20 pm</td>
+					<td class='step-details'>Validating on APIM Chiklet</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>11:27:24 pm</td>
+					<td class='step-details'>APIM Chiklet is Availibale</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>11:27:24 pm</td>
+					<td class='step-details'>Method with name : valdiateAPIMChiklet is passed</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='3'>
+					<div class='test-heading'>
+						<span class='test-name'>accessAnonManagedAPI</span>
+						<span class='test-time'>15-Dec-2022, 11:27:29 pm</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>15-Dec-2022, 11:27:29 pm</span>
+	<span class='label end-time'>15-Dec-2022, 11:39:35 pm</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 12m 5s+141ms</span>
+</div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>Managed_API_Page</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>11:27:29 pm</td>
+					<td class='step-details'>Getting Anonymous API URL</td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>11:28:30 pm</td>
+					<td class='step-details'>validating AccessAnonManagedAPi</td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>11:28:30 pm</td>
+					<td class='step-details'>java.lang.AssertionError</td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>11:28:30 pm</td>
+					<td class='step-details'>Method with name : accessAnonManagedAPI is failed</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='4'>
+					<div class='test-heading'>
+						<span class='test-name'>SearchActiveStatus</span>
+						<span class='test-time'>15-Dec-2022, 11:28:03 pm</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>15-Dec-2022, 11:28:03 pm</span>
+	<span class='label end-time'>15-Dec-2022, 11:39:35 pm</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 11m 31s+507ms</span>
+</div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>APIM_Home_Page</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>11:28:03 pm</td>
+					<td class='step-details'>Searching for Active Status</td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>11:29:03 pm</td>
+					<td class='step-details'>validating SearchActiveStatusValdiations</td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>11:29:03 pm</td>
+					<td class='step-details'>java.lang.AssertionError</td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>11:29:03 pm</td>
+					<td class='step-details'>Method with name : SearchActiveStatus is failed</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  unknown' status='unknown' bdd='false' test-id='5'>
+					<div class='test-heading'>
+						<span class='test-name'>validateUserNavigatedtoAPiGroups</span>
+						<span class='test-time'>15-Dec-2022, 11:28:25 pm</span>
+						<span class='test-status right unknown'>unknown</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>15-Dec-2022, 11:28:25 pm</span>
+	<span class='label end-time'>15-Dec-2022, 11:39:35 pm</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 11m 10s+48ms</span>
+</div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>API_Groups</span>
+			</div>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  unknown' status='unknown' bdd='false' test-id='6'>
+					<div class='test-heading'>
+						<span class='test-name'>ValidateHeadersAPiGroups</span>
+						<span class='test-time'>15-Dec-2022, 11:28:25 pm</span>
+						<span class='test-status right unknown'>unknown</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>15-Dec-2022, 11:28:25 pm</span>
+	<span class='label end-time'>15-Dec-2022, 11:39:35 pm</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 11m 10s+45ms</span>
+</div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>API_Groups</span>
+			</div>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  unknown' status='unknown' bdd='false' test-id='7'>
+					<div class='test-heading'>
+						<span class='test-name'>validateCreateAPIGroupWithContext</span>
+						<span class='test-time'>15-Dec-2022, 11:28:25 pm</span>
+						<span class='test-status right unknown'>unknown</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>15-Dec-2022, 11:28:25 pm</span>
+	<span class='label end-time'>15-Dec-2022, 11:39:35 pm</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 11m 10s+40ms</span>
+</div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>API_Groups</span>
+			</div>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  unknown' status='unknown' bdd='false' test-id='8'>
+					<div class='test-heading'>
+						<span class='test-name'>validateCreateAPIGroupWithOutContext</span>
+						<span class='test-time'>15-Dec-2022, 11:28:25 pm</span>
+						<span class='test-status right unknown'>unknown</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>15-Dec-2022, 11:28:25 pm</span>
+	<span class='label end-time'>15-Dec-2022, 11:39:35 pm</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 11m 10s+37ms</span>
+</div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>API_Groups</span>
+			</div>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  unknown' status='unknown' bdd='false' test-id='9'>
+					<div class='test-heading'>
+						<span class='test-name'>ValidateSwaggerTab</span>
+						<span class='test-time'>15-Dec-2022, 11:28:25 pm</span>
+						<span class='test-status right unknown'>unknown</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>15-Dec-2022, 11:28:25 pm</span>
+	<span class='label end-time'>15-Dec-2022, 11:39:35 pm</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 11m 9s+183ms</span>
+</div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>API_Portal_Registry</span>
+			</div>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  unknown' status='unknown' bdd='false' test-id='10'>
+					<div class='test-heading'>
+						<span class='test-name'>run_anonymous_Managed_API</span>
+						<span class='test-time'>15-Dec-2022, 11:28:25 pm</span>
+						<span class='test-status right unknown'>unknown</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>15-Dec-2022, 11:28:25 pm</span>
+	<span class='label end-time'>15-Dec-2022, 11:39:35 pm</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 11m 9s+182ms</span>
+</div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>API_Portal_Registry</span>
+			</div>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  unknown' status='unknown' bdd='false' test-id='11'>
+					<div class='test-heading'>
+						<span class='test-name'>validateSwaggerURLinAPIPortal</span>
+						<span class='test-time'>15-Dec-2022, 11:28:25 pm</span>
+						<span class='test-status right unknown'>unknown</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>15-Dec-2022, 11:28:25 pm</span>
+	<span class='label end-time'>15-Dec-2022, 11:39:35 pm</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 11m 9s+181ms</span>
+</div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>API_Portal_Registry</span>
+			</div>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  unknown' status='unknown' bdd='false' test-id='12'>
+					<div class='test-heading'>
+						<span class='test-name'>run_basic_Managed_API</span>
+						<span class='test-time'>15-Dec-2022, 11:28:25 pm</span>
+						<span class='test-status right unknown'>unknown</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>15-Dec-2022, 11:28:25 pm</span>
+	<span class='label end-time'>15-Dec-2022, 11:39:35 pm</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 11m 9s+180ms</span>
+</div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>API_Portal_Registry</span>
+			</div>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='13'>
+					<div class='test-heading'>
+						<span class='test-name'>accessBasicManagedAPI</span>
+						<span class='test-time'>15-Dec-2022, 11:28:30 pm</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>15-Dec-2022, 11:28:30 pm</span>
+	<span class='label end-time'>15-Dec-2022, 11:39:35 pm</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 11m 4s+515ms</span>
+</div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>Managed_API_Page</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>11:28:30 pm</td>
+					<td class='step-details'>Getting Basic API URL</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>11:28:46 pm</td>
+					<td class='step-details'>Clicking on Managed API</td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>11:29:47 pm</td>
+					<td class='step-details'>validating AccessBasicManagedAPI</td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>11:29:47 pm</td>
+					<td class='step-details'>java.lang.AssertionError</td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>11:29:47 pm</td>
+					<td class='step-details'>Method with name : accessBasicManagedAPI is failed</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='14'>
+					<div class='test-heading'>
+						<span class='test-name'>validateAnalyticsOverViewTab</span>
+						<span class='test-time'>15-Dec-2022, 11:28:48 pm</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>15-Dec-2022, 11:28:48 pm</span>
+	<span class='label end-time'>15-Dec-2022, 11:39:35 pm</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 10m 46s+322ms</span>
+</div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>APIM_Analytics</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>11:28:48 pm</td>
+					<td class='step-details'>Started validating analytics overview page</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>11:28:54 pm</td>
+					<td class='step-details'>Navigated to analytics tab</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>11:28:59 pm</td>
+					<td class='step-details'>Navigated to overview tab</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>11:29:00 pm</td>
+					<td class='step-details'>Completed validating analytics overview page</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>11:29:00 pm</td>
+					<td class='step-details'>Method with name : validateAnalyticsOverViewTab is passed</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='15'>
+					<div class='test-heading'>
+						<span class='test-name'>validateAnalyticsOverviewTab</span>
+						<span class='test-time'>15-Dec-2022, 11:28:53 pm</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>15-Dec-2022, 11:28:53 pm</span>
+	<span class='label end-time'>15-Dec-2022, 11:39:35 pm</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 10m 41s+242ms</span>
+</div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>API_Portal_Home</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>11:28:53 pm</td>
+					<td class='step-details'>================= validateAnalyticsOverviewTab : START ==================</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>11:28:54 pm</td>
+					<td class='step-details'>Clicked on API Portal Analytics Tab</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>11:28:54 pm</td>
+					<td class='step-details'>Overview tab with API usage trend graph is avaialble</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>11:28:54 pm</td>
+					<td class='step-details'>Verifying the dates present in the API Usgae Trend Graph</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>11:28:54 pm</td>
+					<td class='step-details'>================= validateAnalyticsOverviewTab : END ==================</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>11:28:54 pm</td>
+					<td class='step-details'>Method with name : validateAnalyticsOverviewTab is passed</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='16'>
+					<div class='test-heading'>
+						<span class='test-name'>validateTopApisTab</span>
+						<span class='test-time'>15-Dec-2022, 11:28:54 pm</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>15-Dec-2022, 11:28:54 pm</span>
+	<span class='label end-time'>15-Dec-2022, 11:39:35 pm</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 10m 40s+707ms</span>
+</div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>API_Portal_Home</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>11:28:54 pm</td>
+					<td class='step-details'>================= validateTopApisTab : START ==================</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>11:28:54 pm</td>
+					<td class='step-details'>Clicked on API Portal Analytics Tab</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>11:28:54 pm</td>
+					<td class='step-details'>Top API's tab headers are populated correctly</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>11:28:54 pm</td>
+					<td class='step-details'>Verify the Top API's tab to check whether API's are populated or not</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>11:28:54 pm</td>
+					<td class='step-details'>Records are not present for 7 days so selecting the Last 90 days</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>11:28:59 pm</td>
+					<td class='step-details'>API count present in the Top API's tab is: true</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>11:28:59 pm</td>
+					<td class='step-details'>Top API's tab is listed correctly</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>11:28:59 pm</td>
+					<td class='step-details'>================= validateTopApisTab : END ==================</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>11:28:59 pm</td>
+					<td class='step-details'>Method with name : validateTopApisTab is passed</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='17'>
+					<div class='test-heading'>
+						<span class='test-name'>validateAPIURLInAPIGroup</span>
+						<span class='test-time'>15-Dec-2022, 11:28:58 pm</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>15-Dec-2022, 11:28:58 pm</span>
+	<span class='label end-time'>15-Dec-2022, 11:39:35 pm</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 10m 36s+959ms</span>
+</div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>API_Groups_In_API_Portal</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>11:28:58 pm</td>
+					<td class='step-details'>click on apiGroup withContext</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>11:28:59 pm</td>
+					<td class='step-details'>click on API IN APIGroup</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>11:28:59 pm</td>
+					<td class='step-details'>Method with name : validateAPIURLInAPIGroup is passed</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='18'>
+					<div class='test-heading'>
+						<span class='test-name'>validateAnalyticsActivityLogTab</span>
+						<span class='test-time'>15-Dec-2022, 11:29:00 pm</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>15-Dec-2022, 11:29:00 pm</span>
+	<span class='label end-time'>15-Dec-2022, 11:39:35 pm</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 10m 35s+30ms</span>
+</div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>APIM_Analytics</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>11:29:00 pm</td>
+					<td class='step-details'>Started validating analytics activity page</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>11:29:00 pm</td>
+					<td class='step-details'>Navigated to analytics tab</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>11:29:00 pm</td>
+					<td class='step-details'>Navigated to activity log tab</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>11:29:00 pm</td>
+					<td class='step-details'>Completed validating analytics activity page</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>11:29:00 pm</td>
+					<td class='step-details'>Method with name : validateAnalyticsActivityLogTab is passed</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='19'>
+					<div class='test-heading'>
+						<span class='test-name'>validateAnalyticsEventsLogTab</span>
+						<span class='test-time'>15-Dec-2022, 11:29:00 pm</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>15-Dec-2022, 11:29:00 pm</span>
+	<span class='label end-time'>15-Dec-2022, 11:39:35 pm</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 10m 34s+525ms</span>
+</div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>APIM_Analytics</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>11:29:00 pm</td>
+					<td class='step-details'>Started validating analytics events log page</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>11:29:11 pm</td>
+					<td class='step-details'>Navigated to analytics tab</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>11:30:22 pm</td>
+					<td class='step-details'>Navigated to events log tab</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>11:30:22 pm</td>
+					<td class='step-details'>Completed validating analytics events log page</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>11:30:22 pm</td>
+					<td class='step-details'>Method with name : validateAnalyticsEventsLogTab is passed</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='20'>
+					<div class='test-heading'>
+						<span class='test-name'>SearchInActiveStatus</span>
+						<span class='test-time'>15-Dec-2022, 11:29:04 pm</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>15-Dec-2022, 11:29:04 pm</span>
+	<span class='label end-time'>15-Dec-2022, 11:39:35 pm</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 10m 30s+960ms</span>
+</div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>APIM_Home_Page</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>11:29:04 pm</td>
+					<td class='step-details'>Searching for IN-Active Status</td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>11:29:04 pm</td>
+					<td class='step-details'>java.lang.AssertionError</td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>11:29:04 pm</td>
+					<td class='step-details'>Method with name : SearchInActiveStatus is failed</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='21'>
+					<div class='test-heading'>
+						<span class='test-name'>Search_ActiveServiceNot_AvailiableStatus</span>
+						<span class='test-time'>15-Dec-2022, 11:29:04 pm</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>15-Dec-2022, 11:29:04 pm</span>
+	<span class='label end-time'>15-Dec-2022, 11:39:35 pm</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 10m 30s+601ms</span>
+</div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>APIM_Home_Page</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>11:29:04 pm</td>
+					<td class='step-details'>Searching for Active Not Availiable Status</td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>11:29:04 pm</td>
+					<td class='step-details'>java.lang.AssertionError</td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>11:29:04 pm</td>
+					<td class='step-details'>Method with name : Search_ActiveServiceNot_AvailiableStatus is failed</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='22'>
+					<div class='test-heading'>
+						<span class='test-name'>Search_InActiveServiceNot_AvailiableStatus</span>
+						<span class='test-time'>15-Dec-2022, 11:29:04 pm</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>15-Dec-2022, 11:29:04 pm</span>
+	<span class='label end-time'>15-Dec-2022, 11:39:35 pm</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 10m 30s+216ms</span>
+</div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>APIM_Home_Page</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>11:29:04 pm</td>
+					<td class='step-details'>Searching for In Active Not Availiable Status</td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>11:29:04 pm</td>
+					<td class='step-details'>java.lang.AssertionError</td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>11:29:04 pm</td>
+					<td class='step-details'>Method with name : Search_InActiveServiceNot_AvailiableStatus is failed</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='23'>
+					<div class='test-heading'>
+						<span class='test-name'>ValidateHeadersAPiRegistry</span>
+						<span class='test-time'>15-Dec-2022, 11:29:05 pm</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>15-Dec-2022, 11:29:05 pm</span>
+	<span class='label end-time'>15-Dec-2022, 11:39:35 pm</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 10m 29s+831ms</span>
+</div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>APIM_Home_Page</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>11:29:05 pm</td>
+					<td class='step-details'>Validating the API Registery column Names</td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>11:30:05 pm</td>
+					<td class='step-details'>validating HeadersAPiRegistry</td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>11:30:05 pm</td>
+					<td class='step-details'>java.lang.AssertionError</td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>11:30:05 pm</td>
+					<td class='step-details'>Method with name : ValidateHeadersAPiRegistry is failed</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='24'>
+					<div class='test-heading'>
+						<span class='test-name'>ValdiateCreateOAuth2Client</span>
+						<span class='test-time'>15-Dec-2022, 11:29:31 pm</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>15-Dec-2022, 11:29:31 pm</span>
+	<span class='label end-time'>15-Dec-2022, 11:39:35 pm</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 10m 4s+131ms</span>
+</div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>APIM_OAuth2</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>11:29:31 pm</td>
+					<td class='step-details'>Cliking on Create OAuth2 Client</td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>11:30:31 pm</td>
+					<td class='step-details'>validating Create OAuth2 Client</td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>11:30:31 pm</td>
+					<td class='step-details'>java.lang.AssertionError</td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>11:30:31 pm</td>
+					<td class='step-details'>Method with name : ValdiateCreateOAuth2Client is failed</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='25'>
+					<div class='test-heading'>
+						<span class='test-name'>ValdiateTestAndCreateCustomAPI</span>
+						<span class='test-time'>15-Dec-2022, 11:29:33 pm</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>15-Dec-2022, 11:29:33 pm</span>
+	<span class='label end-time'>15-Dec-2022, 11:39:35 pm</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 10m 1s+504ms</span>
+</div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>APIM_CustomAPI</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>11:30:03 pm</td>
+					<td class='step-details'>Validating the Test URL Message</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>11:30:14 pm</td>
+					<td class='step-details'>Actual Save Message :The Managed API "CustomAPI_Automation" was created successfully.</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>11:30:14 pm</td>
+					<td class='step-details'>Expected Save Message :The Managed API "CustomAPI_Automation" was created successfully.</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>11:30:24 pm</td>
+					<td class='step-details'>Validating the Create Custom API, Custom API is Created and Present in API Regsitery Page</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>11:30:24 pm</td>
+					<td class='step-details'>Able to Test and Create CustomAPI</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>11:30:24 pm</td>
+					<td class='step-details'>Method with name : ValdiateTestAndCreateCustomAPI is passed</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='26'>
+					<div class='test-heading'>
+						<span class='test-name'>validateWSDLURL</span>
+						<span class='test-time'>15-Dec-2022, 11:29:47 pm</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>15-Dec-2022, 11:29:47 pm</span>
+	<span class='label end-time'>15-Dec-2022, 11:39:35 pm</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 9m 47s+550ms</span>
+</div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>Managed_API_Page</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>11:29:47 pm</td>
+					<td class='step-details'>Getting WSDL URL</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>11:29:47 pm</td>
+					<td class='step-details'>Clicking on Managed API</td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>11:30:47 pm</td>
+					<td class='step-details'>validating WSDL URL</td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>11:30:47 pm</td>
+					<td class='step-details'>java.lang.AssertionError</td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>11:30:47 pm</td>
+					<td class='step-details'>Method with name : validateWSDLURL is failed</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='27'>
+					<div class='test-heading'>
+						<span class='test-name'>CreateManagagedAPI</span>
+						<span class='test-time'>15-Dec-2022, 11:30:05 pm</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>15-Dec-2022, 11:30:05 pm</span>
+	<span class='label end-time'>15-Dec-2022, 11:39:35 pm</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 9m 29s+531ms</span>
+</div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>APIM_Home_Page</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>11:30:05 pm</td>
+					<td class='step-details'>Managed API Creation</td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>11:31:07 pm</td>
+					<td class='step-details'>Creation of managed API CreateManagagedAPIValidation failed</td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>11:31:07 pm</td>
+					<td class='step-details'>java.lang.AssertionError</td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>11:31:07 pm</td>
+					<td class='step-details'>Method with name : CreateManagagedAPI is failed</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='28'>
+					<div class='test-heading'>
+						<span class='test-name'>ValdiateAddRatelimitToCustomApi</span>
+						<span class='test-time'>15-Dec-2022, 11:30:24 pm</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>15-Dec-2022, 11:30:24 pm</span>
+	<span class='label end-time'>15-Dec-2022, 11:39:35 pm</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 9m 10s+384ms</span>
+</div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>APIM_CustomAPI</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>11:30:29 pm</td>
+					<td class='step-details'>Actual Save Message :Failed to update the Managed API "CustomAPI_Automation"</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>11:30:29 pm</td>
+					<td class='step-details'>Expected Save Message :The Managed API "CustomAPI_Automation" was updated successfully.</td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>11:30:29 pm</td>
+					<td class='step-details'>java.lang.AssertionError</td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>11:30:29 pm</td>
+					<td class='step-details'>Method with name : ValdiateAddRatelimitToCustomApi is failed</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='29'>
+					<div class='test-heading'>
+						<span class='test-name'>ValdiateAddIpFilteringToCustomApi</span>
+						<span class='test-time'>15-Dec-2022, 11:30:29 pm</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>15-Dec-2022, 11:30:29 pm</span>
+	<span class='label end-time'>15-Dec-2022, 11:39:35 pm</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 9m 5s+287ms</span>
+</div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>APIM_CustomAPI</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>11:31:29 pm</td>
+					<td class='step-details'>validating update IpFiltering for CustomAPI</td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>11:31:29 pm</td>
+					<td class='step-details'>java.lang.AssertionError</td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>11:31:29 pm</td>
+					<td class='step-details'>Method with name : ValdiateAddIpFilteringToCustomApi is failed</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='30'>
+					<div class='test-heading'>
+						<span class='test-name'>ValdiateEditOAuth2Client</span>
+						<span class='test-time'>15-Dec-2022, 11:30:31 pm</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>15-Dec-2022, 11:30:31 pm</span>
+	<span class='label end-time'>15-Dec-2022, 11:39:35 pm</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 9m 3s+184ms</span>
+</div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>APIM_OAuth2</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>11:30:31 pm</td>
+					<td class='step-details'>Updating the  OAuth2 Client</td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>11:31:34 pm</td>
+					<td class='step-details'>validating Create OAuth2 Client</td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>11:31:34 pm</td>
+					<td class='step-details'>java.lang.AssertionError</td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>11:31:34 pm</td>
+					<td class='step-details'>Method with name : ValdiateEditOAuth2Client is failed</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='31'>
+					<div class='test-heading'>
+						<span class='test-name'>validateAnonAPISwaggerURL</span>
+						<span class='test-time'>15-Dec-2022, 11:30:47 pm</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>15-Dec-2022, 11:30:47 pm</span>
+	<span class='label end-time'>15-Dec-2022, 11:39:35 pm</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 8m 47s+442ms</span>
+</div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>APIM_Swagger</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>11:30:47 pm</td>
+					<td class='step-details'>Validating Swagger URL of Anonymous API</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>11:30:47 pm</td>
+					<td class='step-details'>Clicking on Managed API</td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>11:31:47 pm</td>
+					<td class='step-details'>validating Anonymous API Swagger URL</td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>11:31:47 pm</td>
+					<td class='step-details'>java.lang.AssertionError</td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>11:31:47 pm</td>
+					<td class='step-details'>Method with name : validateAnonAPISwaggerURL is failed</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='32'>
+					<div class='test-heading'>
+						<span class='test-name'>ClickOnEnablePrivacyPolicyWarning</span>
+						<span class='test-time'>15-Dec-2022, 11:30:48 pm</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>15-Dec-2022, 11:30:48 pm</span>
+	<span class='label end-time'>15-Dec-2022, 11:39:35 pm</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 8m 47s+51ms</span>
+</div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>Managed_API_Page</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>11:31:33 pm</td>
+					<td class='step-details'>Getting CopY URL for privacy execution</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>11:31:42 pm</td>
+					<td class='step-details'>First Hit Status:200</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>11:31:48 pm</td>
+					<td class='step-details'>Second Hit Status:200</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>11:34:09 pm</td>
+					<td class='step-details'>Checking log in Event logs</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>11:34:09 pm</td>
+					<td class='step-details'>Actual status code and Message:200 OK Warning: There was a privacy policy leakage in the response. Details: email address. 1 item. first item: /EmailOp</td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>11:35:09 pm</td>
+					<td class='step-details'>clicking ClickOnEnablePrivacyPolicyWarningValidation</td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>11:35:09 pm</td>
+					<td class='step-details'>java.lang.AssertionError</td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>11:35:09 pm</td>
+					<td class='step-details'>Method with name : ClickOnEnablePrivacyPolicyWarning is failed</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='33'>
+					<div class='test-heading'>
+						<span class='test-name'>CreateNewVersionAPI</span>
+						<span class='test-time'>15-Dec-2022, 11:31:08 pm</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>15-Dec-2022, 11:31:08 pm</span>
+	<span class='label end-time'>15-Dec-2022, 11:39:35 pm</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 8m 27s+12ms</span>
+</div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>APIM_Home_Page</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>11:31:08 pm</td>
+					<td class='step-details'>New version creation of managed API</td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>11:32:10 pm</td>
+					<td class='step-details'>creating CreateNewVersionAPI</td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>11:32:10 pm</td>
+					<td class='step-details'>java.lang.AssertionError</td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>11:32:10 pm</td>
+					<td class='step-details'>Method with name : CreateNewVersionAPI is failed</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='34'>
+					<div class='test-heading'>
+						<span class='test-name'>ValdiateAddGroupToCustomApi</span>
+						<span class='test-time'>15-Dec-2022, 11:31:30 pm</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>15-Dec-2022, 11:31:30 pm</span>
+	<span class='label end-time'>15-Dec-2022, 11:39:35 pm</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 8m 5s+45ms</span>
+</div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>APIM_CustomAPI</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>11:32:30 pm</td>
+					<td class='step-details'>validating update Groups for CustomAPI</td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>11:32:30 pm</td>
+					<td class='step-details'>java.lang.AssertionError</td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>11:32:30 pm</td>
+					<td class='step-details'>Method with name : ValdiateAddGroupToCustomApi is failed</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='35'>
+					<div class='test-heading'>
+						<span class='test-name'>ValdiateDeleteOAuth2Client</span>
+						<span class='test-time'>15-Dec-2022, 11:31:34 pm</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>15-Dec-2022, 11:31:34 pm</span>
+	<span class='label end-time'>15-Dec-2022, 11:39:35 pm</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 8m 0s+791ms</span>
+</div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>APIM_OAuth2</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>11:31:34 pm</td>
+					<td class='step-details'>Deleting the  OAuth2 Client</td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>11:32:34 pm</td>
+					<td class='step-details'>validating Deleting OAuth2 Client</td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>11:32:34 pm</td>
+					<td class='step-details'>java.lang.AssertionError</td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>11:32:34 pm</td>
+					<td class='step-details'>Method with name : ValdiateDeleteOAuth2Client is failed</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='36'>
+					<div class='test-heading'>
+						<span class='test-name'>validateAnonAPISwagger</span>
+						<span class='test-time'>15-Dec-2022, 11:31:48 pm</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>15-Dec-2022, 11:31:48 pm</span>
+	<span class='label end-time'>15-Dec-2022, 11:39:35 pm</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 7m 47s+35ms</span>
+</div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>APIM_Swagger</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>11:31:48 pm</td>
+					<td class='step-details'>Validating Swagger functionality of Anonymous API</td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>11:32:48 pm</td>
+					<td class='step-details'>validating Anonymous API Swagger tab</td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>11:32:48 pm</td>
+					<td class='step-details'>java.lang.AssertionError</td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>11:32:48 pm</td>
+					<td class='step-details'>Method with name : validateAnonAPISwagger is failed</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='37'>
+					<div class='test-heading'>
+						<span class='test-name'>DeleteManagagedAPI</span>
+						<span class='test-time'>15-Dec-2022, 11:32:10 pm</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>15-Dec-2022, 11:32:10 pm</span>
+	<span class='label end-time'>15-Dec-2022, 11:39:35 pm</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 7m 24s+372ms</span>
+</div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>APIM_Home_Page</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>11:32:10 pm</td>
+					<td class='step-details'>Delete API Creation</td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>11:33:12 pm</td>
+					<td class='step-details'>deleting DeleteManagagedAPIValidation</td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>11:33:12 pm</td>
+					<td class='step-details'>java.lang.AssertionError</td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>11:33:12 pm</td>
+					<td class='step-details'>Method with name : DeleteManagagedAPI is failed</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='38'>
+					<div class='test-heading'>
+						<span class='test-name'>ValdiateDeleteCustomAPI</span>
+						<span class='test-time'>15-Dec-2022, 11:32:30 pm</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>15-Dec-2022, 11:32:30 pm</span>
+	<span class='label end-time'>15-Dec-2022, 11:39:35 pm</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 7m 4s+777ms</span>
+</div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>APIM_CustomAPI</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>11:33:30 pm</td>
+					<td class='step-details'>validating Delete Custom API</td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>11:33:30 pm</td>
+					<td class='step-details'>java.lang.AssertionError</td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>11:33:30 pm</td>
+					<td class='step-details'>Method with name : ValdiateDeleteCustomAPI is failed</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='39'>
+					<div class='test-heading'>
+						<span class='test-name'>validateBasicAPISwaggerURL</span>
+						<span class='test-time'>15-Dec-2022, 11:32:48 pm</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>15-Dec-2022, 11:32:48 pm</span>
+	<span class='label end-time'>15-Dec-2022, 11:39:35 pm</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 6m 46s+745ms</span>
+</div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>APIM_Swagger</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>11:32:48 pm</td>
+					<td class='step-details'>Validating Swagger URL of Basic API</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>11:32:48 pm</td>
+					<td class='step-details'>Clicking on Managed API</td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>11:33:48 pm</td>
+					<td class='step-details'>validating Basic API Swagger URL</td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>11:33:48 pm</td>
+					<td class='step-details'>java.lang.AssertionError</td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>11:33:48 pm</td>
+					<td class='step-details'>Method with name : validateBasicAPISwaggerURL is failed</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='40'>
+					<div class='test-heading'>
+						<span class='test-name'>verifyRateLimitPolicyAppliedToAnonymousApi</span>
+						<span class='test-time'>15-Dec-2022, 11:33:04 pm</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>15-Dec-2022, 11:33:04 pm</span>
+	<span class='label end-time'>15-Dec-2022, 11:39:35 pm</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 6m 30s+497ms</span>
+</div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>RateLimit</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>11:33:25 pm</td>
+					<td class='step-details'>Response body After Tier Rate Limits completed  :<am:fault xmlns:am="http://informatica.com">
+<am:message>Forbidden</am:message>
+<am:description>Rate Limit Reached</am:description>
+</am:fault></td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>11:33:32 pm</td>
+					<td class='step-details'>Method with name : verifyRateLimitPolicyAppliedToAnonymousApi is passed</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='41'>
+					<div class='test-heading'>
+						<span class='test-name'>validateManagedAPIDropdown</span>
+						<span class='test-time'>15-Dec-2022, 11:33:13 pm</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>15-Dec-2022, 11:33:13 pm</span>
+	<span class='label end-time'>15-Dec-2022, 11:39:35 pm</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 6m 21s+959ms</span>
+</div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>APIM_Home_Page</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>11:33:13 pm</td>
+					<td class='step-details'>Valdiating the Managed API dropdown Action</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>11:33:13 pm</td>
+					<td class='step-details'>actualDropdownList:[All Services, Available Services, Managed APIs]</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>11:33:13 pm</td>
+					<td class='step-details'>expectedDropdownList:[All Services, Available Services, Managed APIs]</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>11:33:13 pm</td>
+					<td class='step-details'>Managed APIS have Proper Status:true</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>11:33:13 pm</td>
+					<td class='step-details'>Managed API dropdown displays only Managed APIs</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>11:33:13 pm</td>
+					<td class='step-details'>Method with name : validateManagedAPIDropdown is passed</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='42'>
+					<div class='test-heading'>
+						<span class='test-name'>verifyRateLimitPolicyAppliedToBasicApi</span>
+						<span class='test-time'>15-Dec-2022, 11:33:32 pm</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>15-Dec-2022, 11:33:32 pm</span>
+	<span class='label end-time'>15-Dec-2022, 11:39:35 pm</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 6m 2s+497ms</span>
+</div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>RateLimit</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>11:35:32 pm</td>
+					<td class='step-details'>com.microsoft.playwright.TimeoutError</td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>11:35:32 pm</td>
+					<td class='step-details'>Method with name : verifyRateLimitPolicyAppliedToBasicApi is failed</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='43'>
+					<div class='test-heading'>
+						<span class='test-name'>validateBasicAPISwagger</span>
+						<span class='test-time'>15-Dec-2022, 11:33:48 pm</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>15-Dec-2022, 11:33:48 pm</span>
+	<span class='label end-time'>15-Dec-2022, 11:39:35 pm</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 5m 46s+218ms</span>
+</div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>APIM_Swagger</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>11:33:48 pm</td>
+					<td class='step-details'>Validating Swagger functionality of Basic API</td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>11:34:48 pm</td>
+					<td class='step-details'>validating Basic API Swagger tab</td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>11:34:48 pm</td>
+					<td class='step-details'>java.lang.AssertionError</td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>11:34:48 pm</td>
+					<td class='step-details'>Method with name : validateBasicAPISwagger is failed</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='44'>
+					<div class='test-heading'>
+						<span class='test-name'>verifyClientSdkItemsAndDownload</span>
+						<span class='test-time'>15-Dec-2022, 11:33:49 pm</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>15-Dec-2022, 11:33:49 pm</span>
+	<span class='label end-time'>15-Dec-2022, 11:39:35 pm</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 5m 45s+625ms</span>
+</div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>ClientSdk</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>11:33:57 pm</td>
+					<td class='step-details'>Method with name : verifyClientSdkItemsAndDownload is passed</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='45'>
+					<div class='test-heading'>
+						<span class='test-name'>validateOrgRateLimitUI</span>
+						<span class='test-time'>15-Dec-2022, 11:34:21 pm</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>15-Dec-2022, 11:34:21 pm</span>
+	<span class='label end-time'>15-Dec-2022, 11:39:35 pm</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 5m 13s+852ms</span>
+</div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>OrgLevelPolicies</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>11:34:21 pm</td>
+					<td class='step-details'>Method with name : validateOrgRateLimitUI is passed</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='46'>
+					<div class='test-heading'>
+						<span class='test-name'>deleteDefaultOrgRateLimitTier</span>
+						<span class='test-time'>15-Dec-2022, 11:34:21 pm</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>15-Dec-2022, 11:34:21 pm</span>
+	<span class='label end-time'>15-Dec-2022, 11:39:35 pm</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 5m 13s+737ms</span>
+</div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>OrgLevelPolicies</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>11:34:24 pm</td>
+					<td class='step-details'>Method with name : deleteDefaultOrgRateLimitTier is passed</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='47'>
+					<div class='test-heading'>
+						<span class='test-name'>validateIpFilterPoliciesRetained</span>
+						<span class='test-time'>15-Dec-2022, 11:34:24 pm</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>15-Dec-2022, 11:34:24 pm</span>
+	<span class='label end-time'>15-Dec-2022, 11:39:35 pm</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 5m 10s+291ms</span>
+</div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>OrgLevelPolicies</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>11:34:24 pm</td>
+					<td class='step-details'>Method with name : validateIpFilterPoliciesRetained is passed</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='48'>
+					<div class='test-heading'>
+						<span class='test-name'>ClickOnEnablePrivacyPolicyBlock</span>
+						<span class='test-time'>15-Dec-2022, 11:35:09 pm</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>15-Dec-2022, 11:35:09 pm</span>
+	<span class='label end-time'>15-Dec-2022, 11:39:35 pm</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 4m 25s+332ms</span>
+</div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>Managed_API_Page</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>11:35:52 pm</td>
+					<td class='step-details'>Getting CopY URL for privacy execution</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>11:36:00 pm</td>
+					<td class='step-details'>First Hit Status:403</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>11:36:06 pm</td>
+					<td class='step-details'>Second Hit Status:403</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>11:38:17 pm</td>
+					<td class='step-details'>Checking log in Event logs</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>11:38:17 pm</td>
+					<td class='step-details'>Actual status code and Message:403 Forbidden Blocked: The message was blocked because of a potential privacy policy breach in the response. Details: email address. 1 item. first item: /EmailOp</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>11:39:34 pm</td>
+					<td class='step-details'>Clicked on Enable Privacy policy checkbox and validated Block privacy setting</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>11:39:34 pm</td>
+					<td class='step-details'>Method with name : ClickOnEnablePrivacyPolicyBlock is passed</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<!-- subview left -->
+
+	<div class='subview-right left'>
+		<div class='view-summary'>
+			<h5 class='test-name'></h5>
+
+			<div id='step-filters' class="right">
+				<span class="blue-text" status="info" alt="info" title="info"><i class="material-icons">info_outline</i></span>
+				<span class="green-text" status="pass" alt="pass" title="pass"><i class="material-icons">check_circle</i></span>
+				<span class="red-text" status="fail" alt="fail" title="fail"><i class="material-icons">cancel</i></span>
+				<span class="red-text text-darken-4" status="fatal" alt="fatal" title="fatal"><i class="material-icons">cancel</i></span>
+				<span class="pink-text text-lighten-1" status="error" alt="error" title="error"><i class="material-icons">error</i></span>
+				<span class="orange-text" alt="warning" status="warning" title="warning"><i class="material-icons">warning</i></span>
+				<span class="teal-text" status="skip" alt="skip" title="skip"><i class="material-icons">redo</i></span>
+				<span status="clear" alt="Clear filters" title="Clear filters"><i class="material-icons">clear</i></span>
+			</div>
+		</div>
+	</div>
+	<!-- subview right -->
+
+</div>
+<!-- test view --><div id='category-view' class='view hide'>
+
+	<section id='controls'>
+		<div class='controls grey lighten-4'>
+			<!-- search -->
+			<div class='chip transparent' alt='Search Tests' title='Search Tests'>
+				<a href="#" class='search-div'>
+					<i class='material-icons'>search</i> Search
+				</a>
+				
+				<div class='input-field left hide'>
+					<input id='search-tests' type='text' class='validate browser-default' placeholder='Search Tests...'>
+				</div>
+				
+			</div>
+			<!-- search -->
+		</div>
+	</section>
+
+	<div class='subview-left left'>
+		
+		<div class='view-summary'>
+			<h5>Categories</h5>
+			<ul id='category-collection' class='category-collection'>
+				
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>IICS_Login</span>
+						<span class='category-status right'>
+							<span class='label pass'>2</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span class='label green accent-4 white-text'>Passed: 2</span>
+							
+							
+						</div>
+					
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>15-Dec-2022, 11:27:18 pm</td>
+										<td class='linked' test-id='1'>validateIICSLogin</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>15-Dec-2022, 11:27:20 pm</td>
+										<td class='linked' test-id='2'>valdiateAPIMChiklet</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>Managed_API_Page</span>
+						<span class='category-status right'>
+							<span class='label pass'>1</span>
+							<span class='label fail'>4</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span class='label green accent-4 white-text'>Passed: 1</span>
+							<span class='label red lighten-1 white-text'>Failed: 4</span>
+							
+						</div>
+					
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>15-Dec-2022, 11:27:29 pm</td>
+										<td class='linked' test-id='3'>accessAnonManagedAPI</td>
+										<td><span class='test-status fail'>fail</span></td>
+									</tr>
+									<tr>
+										<td>15-Dec-2022, 11:28:30 pm</td>
+										<td class='linked' test-id='13'>accessBasicManagedAPI</td>
+										<td><span class='test-status fail'>fail</span></td>
+									</tr>
+									<tr>
+										<td>15-Dec-2022, 11:29:47 pm</td>
+										<td class='linked' test-id='26'>validateWSDLURL</td>
+										<td><span class='test-status fail'>fail</span></td>
+									</tr>
+									<tr>
+										<td>15-Dec-2022, 11:30:48 pm</td>
+										<td class='linked' test-id='32'>ClickOnEnablePrivacyPolicyWarning</td>
+										<td><span class='test-status fail'>fail</span></td>
+									</tr>
+									<tr>
+										<td>15-Dec-2022, 11:35:09 pm</td>
+										<td class='linked' test-id='48'>ClickOnEnablePrivacyPolicyBlock</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>APIM_Home_Page</span>
+						<span class='category-status right'>
+							<span class='label pass'>1</span>
+							<span class='label fail'>8</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span class='label green accent-4 white-text'>Passed: 1</span>
+							<span class='label red lighten-1 white-text'>Failed: 8</span>
+							
+						</div>
+					
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>15-Dec-2022, 11:28:03 pm</td>
+										<td class='linked' test-id='4'>SearchActiveStatus</td>
+										<td><span class='test-status fail'>fail</span></td>
+									</tr>
+									<tr>
+										<td>15-Dec-2022, 11:29:04 pm</td>
+										<td class='linked' test-id='20'>SearchInActiveStatus</td>
+										<td><span class='test-status fail'>fail</span></td>
+									</tr>
+									<tr>
+										<td>15-Dec-2022, 11:29:04 pm</td>
+										<td class='linked' test-id='21'>Search_ActiveServiceNot_AvailiableStatus</td>
+										<td><span class='test-status fail'>fail</span></td>
+									</tr>
+									<tr>
+										<td>15-Dec-2022, 11:29:04 pm</td>
+										<td class='linked' test-id='22'>Search_InActiveServiceNot_AvailiableStatus</td>
+										<td><span class='test-status fail'>fail</span></td>
+									</tr>
+									<tr>
+										<td>15-Dec-2022, 11:29:05 pm</td>
+										<td class='linked' test-id='23'>ValidateHeadersAPiRegistry</td>
+										<td><span class='test-status fail'>fail</span></td>
+									</tr>
+									<tr>
+										<td>15-Dec-2022, 11:30:05 pm</td>
+										<td class='linked' test-id='27'>CreateManagagedAPI</td>
+										<td><span class='test-status fail'>fail</span></td>
+									</tr>
+									<tr>
+										<td>15-Dec-2022, 11:31:08 pm</td>
+										<td class='linked' test-id='33'>CreateNewVersionAPI</td>
+										<td><span class='test-status fail'>fail</span></td>
+									</tr>
+									<tr>
+										<td>15-Dec-2022, 11:32:10 pm</td>
+										<td class='linked' test-id='37'>DeleteManagagedAPI</td>
+										<td><span class='test-status fail'>fail</span></td>
+									</tr>
+									<tr>
+										<td>15-Dec-2022, 11:33:13 pm</td>
+										<td class='linked' test-id='41'>validateManagedAPIDropdown</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>API_Groups</span>
+						<span class='category-status right'>
+							<span class='label others'>4</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							
+							
+							<span class='label yellow darken-2 white-text'>Others: 4</span>
+						</div>
+					
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>15-Dec-2022, 11:28:25 pm</td>
+										<td class='linked' test-id='5'>validateUserNavigatedtoAPiGroups</td>
+										<td><span class='test-status unknown'>unknown</span></td>
+									</tr>
+									<tr>
+										<td>15-Dec-2022, 11:28:25 pm</td>
+										<td class='linked' test-id='6'>ValidateHeadersAPiGroups</td>
+										<td><span class='test-status unknown'>unknown</span></td>
+									</tr>
+									<tr>
+										<td>15-Dec-2022, 11:28:25 pm</td>
+										<td class='linked' test-id='7'>validateCreateAPIGroupWithContext</td>
+										<td><span class='test-status unknown'>unknown</span></td>
+									</tr>
+									<tr>
+										<td>15-Dec-2022, 11:28:25 pm</td>
+										<td class='linked' test-id='8'>validateCreateAPIGroupWithOutContext</td>
+										<td><span class='test-status unknown'>unknown</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>API_Portal_Registry</span>
+						<span class='category-status right'>
+							<span class='label others'>4</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							
+							
+							<span class='label yellow darken-2 white-text'>Others: 4</span>
+						</div>
+					
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>15-Dec-2022, 11:28:25 pm</td>
+										<td class='linked' test-id='9'>ValidateSwaggerTab</td>
+										<td><span class='test-status unknown'>unknown</span></td>
+									</tr>
+									<tr>
+										<td>15-Dec-2022, 11:28:25 pm</td>
+										<td class='linked' test-id='10'>run_anonymous_Managed_API</td>
+										<td><span class='test-status unknown'>unknown</span></td>
+									</tr>
+									<tr>
+										<td>15-Dec-2022, 11:28:25 pm</td>
+										<td class='linked' test-id='11'>validateSwaggerURLinAPIPortal</td>
+										<td><span class='test-status unknown'>unknown</span></td>
+									</tr>
+									<tr>
+										<td>15-Dec-2022, 11:28:25 pm</td>
+										<td class='linked' test-id='12'>run_basic_Managed_API</td>
+										<td><span class='test-status unknown'>unknown</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>APIM_Analytics</span>
+						<span class='category-status right'>
+							<span class='label pass'>3</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span class='label green accent-4 white-text'>Passed: 3</span>
+							
+							
+						</div>
+					
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>15-Dec-2022, 11:28:48 pm</td>
+										<td class='linked' test-id='14'>validateAnalyticsOverViewTab</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>15-Dec-2022, 11:29:00 pm</td>
+										<td class='linked' test-id='18'>validateAnalyticsActivityLogTab</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>15-Dec-2022, 11:29:00 pm</td>
+										<td class='linked' test-id='19'>validateAnalyticsEventsLogTab</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>API_Portal_Home</span>
+						<span class='category-status right'>
+							<span class='label pass'>2</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span class='label green accent-4 white-text'>Passed: 2</span>
+							
+							
+						</div>
+					
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>15-Dec-2022, 11:28:53 pm</td>
+										<td class='linked' test-id='15'>validateAnalyticsOverviewTab</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>15-Dec-2022, 11:28:54 pm</td>
+										<td class='linked' test-id='16'>validateTopApisTab</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>API_Groups_In_API_Portal</span>
+						<span class='category-status right'>
+							<span class='label pass'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span class='label green accent-4 white-text'>Passed: 1</span>
+							
+							
+						</div>
+					
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>15-Dec-2022, 11:28:58 pm</td>
+										<td class='linked' test-id='17'>validateAPIURLInAPIGroup</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>APIM_OAuth2</span>
+						<span class='category-status right'>
+							<span class='label fail'>3</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							
+							<span class='label red lighten-1 white-text'>Failed: 3</span>
+							
+						</div>
+					
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>15-Dec-2022, 11:29:31 pm</td>
+										<td class='linked' test-id='24'>ValdiateCreateOAuth2Client</td>
+										<td><span class='test-status fail'>fail</span></td>
+									</tr>
+									<tr>
+										<td>15-Dec-2022, 11:30:31 pm</td>
+										<td class='linked' test-id='30'>ValdiateEditOAuth2Client</td>
+										<td><span class='test-status fail'>fail</span></td>
+									</tr>
+									<tr>
+										<td>15-Dec-2022, 11:31:34 pm</td>
+										<td class='linked' test-id='35'>ValdiateDeleteOAuth2Client</td>
+										<td><span class='test-status fail'>fail</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>APIM_CustomAPI</span>
+						<span class='category-status right'>
+							<span class='label pass'>1</span>
+							<span class='label fail'>4</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span class='label green accent-4 white-text'>Passed: 1</span>
+							<span class='label red lighten-1 white-text'>Failed: 4</span>
+							
+						</div>
+					
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>15-Dec-2022, 11:29:33 pm</td>
+										<td class='linked' test-id='25'>ValdiateTestAndCreateCustomAPI</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>15-Dec-2022, 11:30:24 pm</td>
+										<td class='linked' test-id='28'>ValdiateAddRatelimitToCustomApi</td>
+										<td><span class='test-status fail'>fail</span></td>
+									</tr>
+									<tr>
+										<td>15-Dec-2022, 11:30:29 pm</td>
+										<td class='linked' test-id='29'>ValdiateAddIpFilteringToCustomApi</td>
+										<td><span class='test-status fail'>fail</span></td>
+									</tr>
+									<tr>
+										<td>15-Dec-2022, 11:31:30 pm</td>
+										<td class='linked' test-id='34'>ValdiateAddGroupToCustomApi</td>
+										<td><span class='test-status fail'>fail</span></td>
+									</tr>
+									<tr>
+										<td>15-Dec-2022, 11:32:30 pm</td>
+										<td class='linked' test-id='38'>ValdiateDeleteCustomAPI</td>
+										<td><span class='test-status fail'>fail</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>APIM_Swagger</span>
+						<span class='category-status right'>
+							<span class='label fail'>4</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							
+							<span class='label red lighten-1 white-text'>Failed: 4</span>
+							
+						</div>
+					
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>15-Dec-2022, 11:30:47 pm</td>
+										<td class='linked' test-id='31'>validateAnonAPISwaggerURL</td>
+										<td><span class='test-status fail'>fail</span></td>
+									</tr>
+									<tr>
+										<td>15-Dec-2022, 11:31:48 pm</td>
+										<td class='linked' test-id='36'>validateAnonAPISwagger</td>
+										<td><span class='test-status fail'>fail</span></td>
+									</tr>
+									<tr>
+										<td>15-Dec-2022, 11:32:48 pm</td>
+										<td class='linked' test-id='39'>validateBasicAPISwaggerURL</td>
+										<td><span class='test-status fail'>fail</span></td>
+									</tr>
+									<tr>
+										<td>15-Dec-2022, 11:33:48 pm</td>
+										<td class='linked' test-id='43'>validateBasicAPISwagger</td>
+										<td><span class='test-status fail'>fail</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>RateLimit</span>
+						<span class='category-status right'>
+							<span class='label pass'>1</span>
+							<span class='label fail'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span class='label green accent-4 white-text'>Passed: 1</span>
+							<span class='label red lighten-1 white-text'>Failed: 1</span>
+							
+						</div>
+					
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>15-Dec-2022, 11:33:04 pm</td>
+										<td class='linked' test-id='40'>verifyRateLimitPolicyAppliedToAnonymousApi</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>15-Dec-2022, 11:33:32 pm</td>
+										<td class='linked' test-id='42'>verifyRateLimitPolicyAppliedToBasicApi</td>
+										<td><span class='test-status fail'>fail</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>ClientSdk</span>
+						<span class='category-status right'>
+							<span class='label pass'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span class='label green accent-4 white-text'>Passed: 1</span>
+							
+							
+						</div>
+					
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>15-Dec-2022, 11:33:49 pm</td>
+										<td class='linked' test-id='44'>verifyClientSdkItemsAndDownload</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>OrgLevelPolicies</span>
+						<span class='category-status right'>
+							<span class='label pass'>3</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span class='label green accent-4 white-text'>Passed: 3</span>
+							
+							
+						</div>
+					
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>15-Dec-2022, 11:34:21 pm</td>
+										<td class='linked' test-id='45'>validateOrgRateLimitUI</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>15-Dec-2022, 11:34:21 pm</td>
+										<td class='linked' test-id='46'>deleteDefaultOrgRateLimitTier</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>15-Dec-2022, 11:34:24 pm</td>
+										<td class='linked' test-id='47'>validateIpFilterPoliciesRetained</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+
+			</ul>
+		</div>
+	</div>
+
+	<div class='subview-right left'>
+		<div class='view-summary'>
+			<h5 class='category-name'></h5>
+		</div>
+	</div>
+</div>
+<!-- category view --><!-- exception view --><div id='dashboard-view' class='view hide'>
+	<div class='card-panel transparent np-v'>
+		<h5>Dashboard</h5>
+
+		<div class='row'>
+			<div class='col s2'>
+				<div class='card-panel r'>
+					Tests
+					<div class='panel-lead'>48</div>
+				</div>
+			</div>
+			<div class='col s2'>
+				<div class='card-panel r'>
+					Steps
+					<div class='panel-lead'>160</div>
+				</div>
+			</div>
+			<div class='col s2'>
+				<div class='card-panel r'>
+					Start
+					<div class='panel-lead'>15-Dec-2022, 11:26:51 pm</div>
+				</div>
+			</div>
+			<div class='col s2'>
+				<div class='card-panel r'>
+			 		End
+			 		<div class='panel-lead'>15-Dec-2022, 11:39:35 pm</div>
+				</div>
+			</div>
+			<div class='col s2'>
+				<div class='card-panel r'>
+					Time Taken
+					<div class='panel-lead'>763,398ms</div>
+				</div>
+			</div>
+			<div class='col s4'>
+				<div class='card-panel'>
+					<span class='right label cyan white-text'>Environment</span><p>&nbsp;</p>
+					
+					<table>
+						<tr>
+							<th>Name</th>
+							<th>Value</th>
+						</tr>
+						<tr>
+							<td>User Name</td>
+							<td>jashaik</td>
+						</tr>
+						<tr>
+							<td>OS</td>
+							<td>Windows 10</td>
+						</tr>
+						<tr>
+							<td>Java Version</td>
+							<td>17.0.4.1</td>
+						</tr>
+						<tr>
+							<td>Host Name</td>
+							<td>AAD-W17Q1DRL3</td>
+						</tr>
+						<tr>
+							<td>Environment</td>
+							<td>Azure_POD3</td>
+						</tr>
+						<tr>
+							<td>POD Url</td>
+							<td>https://dm1-us.informaticacloud.com/identity-service/home</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+			<div class='col s4'>
+				<div class='card-panel'>
+					<span class='right label cyan white-text'>Categories</span><p>&nbsp;</p>
+					
+					<table>
+						<tr>
+							<th>Name</th>
+							<th>Passed</th>
+							<th>Failed</th>
+							<th>Others</th>
+						</tr>
+						<tr>
+							<td>IICS_Login</td>
+							<td>2</td>
+							<td>0</td>
+							<td>0</td>
+						</tr>
+						<tr>
+							<td>Managed_API_Page</td>
+							<td>1</td>
+							<td>4</td>
+							<td>0</td>
+						</tr>
+						<tr>
+							<td>APIM_Home_Page</td>
+							<td>1</td>
+							<td>8</td>
+							<td>0</td>
+						</tr>
+						<tr>
+							<td>API_Groups</td>
+							<td>0</td>
+							<td>0</td>
+							<td>4</td>
+						</tr>
+						<tr>
+							<td>API_Portal_Registry</td>
+							<td>0</td>
+							<td>0</td>
+							<td>4</td>
+						</tr>
+						<tr>
+							<td>APIM_Analytics</td>
+							<td>3</td>
+							<td>0</td>
+							<td>0</td>
+						</tr>
+						<tr>
+							<td>API_Portal_Home</td>
+							<td>2</td>
+							<td>0</td>
+							<td>0</td>
+						</tr>
+						<tr>
+							<td>API_Groups_In_API_Portal</td>
+							<td>1</td>
+							<td>0</td>
+							<td>0</td>
+						</tr>
+						<tr>
+							<td>APIM_OAuth2</td>
+							<td>0</td>
+							<td>3</td>
+							<td>0</td>
+						</tr>
+						<tr>
+							<td>APIM_CustomAPI</td>
+							<td>1</td>
+							<td>4</td>
+							<td>0</td>
+						</tr>
+						<tr>
+							<td>APIM_Swagger</td>
+							<td>0</td>
+							<td>4</td>
+							<td>0</td>
+						</tr>
+						<tr>
+							<td>RateLimit</td>
+							<td>1</td>
+							<td>1</td>
+							<td>0</td>
+						</tr>
+						<tr>
+							<td>ClientSdk</td>
+							<td>1</td>
+							<td>0</td>
+							<td>0</td>
+						</tr>
+						<tr>
+							<td>OrgLevelPolicies</td>
+							<td>3</td>
+							<td>0</td>
+							<td>0</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- dashboard view --><!-- testrunner-logs view -->
+		</div>
+		<!-- container -->
+
+		<script>
+			var statusGroup = {
+				passParent: 16,
+				failParent: 24,
+				fatalParent: 0,
+				errorParent: 0,
+				warningParent: 0,
+				skipParent: 0,
+				unknownParent: 8,
+				
+				passChild: 53,
+				failChild: 67,
+				fatalChild: 0,
+				errorChild: 0,
+				warningChild: 0,
+				skipChild: 0,
+				unknownChild: 0,
+				infoChild: 40,
+				
+				passGrandChild: 0,
+				failGrandChild: 0,
+				fatalGrandChild: 0,
+				errorGrandChild: 0,
+				warningGrandChild: 0,
+				skipGrandChild: 0,
+				unknownGrandChild: 0,
+				infoGrandChild: 0
+			};
+		</script>
+
+		<script src='https://cdn.rawgit.com/anshooarora/extentreports-java/master/dist/js/extent.js' type='text/javascript'></script>
+		
+		
+	</body>
+	
+</html>

@@ -1,0 +1,2759 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite, 24 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-APIM_Tests" class="navigator-link">
+              <span class="suite-name border-failed">APIM Tests</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-APIM_Tests" class="navigator-link ">
+                    <span>[unset file name]</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-APIM_Tests" class="navigator-link ">
+                    <span class="test-stats">14 tests</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-APIM_Tests" class="navigator-link ">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-APIM_Tests" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-APIM_Tests" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-APIM_Tests" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-APIM_Tests" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">50 methods, 24 failed,  10 skipped,  16 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-APIM_Tests" class="hide-methods failed suite-APIM_Tests"> (hide)</a> <!-- hide-methods failed suite-APIM_Tests -->
+                      <a href="#" panel-name="suite-APIM_Tests" class="show-methods failed suite-APIM_Tests"> (show)</a> <!-- show-methods failed suite-APIM_Tests -->
+                    </span>
+                    <div class="method-list-content failed suite-APIM_Tests">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-APIM_Tests" title="com.informatica.tests.managedAPITest" class="method navigator-link" hash-for-method="ClickOnEnablePrivacyPolicyWarning({Additional Details=APIName=APIM_Automation_AnonPrivacy,Version=1.0.0,Protocol=REST, TestMethodName=...)">ClickOnEnablePrivacyPolicyWarning({Additional Details=APIName=APIM_Automation_AnonPrivacy,Version=1.0.0,Protocol=REST, TestMethodName=...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-APIM_Tests" title="com.informatica.tests.APIMRegisteryTest" class="method navigator-link" hash-for-method="CreateManagagedAPI({Additional Details=APIName=APIM_Automation_JWT,Version=1.0.0,Protocol=REST, TestMethodName=CreateMa...)">CreateManagagedAPI({Additional Details=APIName=APIM_Automation_JWT,Version=1.0.0,Protocol=REST, TestMethodName=CreateMa...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-APIM_Tests" title="com.informatica.tests.APIMRegisteryTest" class="method navigator-link" hash-for-method="CreateNewVersionAPI({Additional Details=APIName=APIM_Automation_NewVersion1,APINameV2=APIM_Automation_NewVersion2,Versio...)">CreateNewVersionAPI({Additional Details=APIName=APIM_Automation_NewVersion1,APINameV2=APIM_Automation_NewVersion2,Versio...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-APIM_Tests" title="com.informatica.tests.APIMRegisteryTest" class="method navigator-link" hash-for-method="DeleteManagagedAPI({Additional Details=APIName=APIM_Automation_JWT,Version=1.0.0,Protocol=REST, TestMethodName=DeleteMa...)">DeleteManagagedAPI({Additional Details=APIName=APIM_Automation_JWT,Version=1.0.0,Protocol=REST, TestMethodName=DeleteMa...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-APIM_Tests" title="com.informatica.tests.APIMRegisteryTest" class="method navigator-link" hash-for-method="SearchActiveStatus">SearchActiveStatus</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-APIM_Tests" title="com.informatica.tests.APIMRegisteryTest" class="method navigator-link" hash-for-method="SearchInActiveStatus">SearchInActiveStatus</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-APIM_Tests" title="com.informatica.tests.APIMRegisteryTest" class="method navigator-link" hash-for-method="Search_ActiveServiceNot_AvailiableStatus">Search_ActiveServiceNot_AvailiableStatus</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-APIM_Tests" title="com.informatica.tests.APIMRegisteryTest" class="method navigator-link" hash-for-method="Search_InActiveServiceNot_AvailiableStatus">Search_InActiveServiceNot_AvailiableStatus</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-APIM_Tests" title="com.informatica.tests.CustomAPITest" class="method navigator-link" hash-for-method="ValdiateAddGroupToCustomApi({Additional Details=-, TestMethodName=ValdiateAddGroupToCustomApi, Description=Test case to validate...)">ValdiateAddGroupToCustomApi({Additional Details=-, TestMethodName=ValdiateAddGroupToCustomApi, Description=Test case to validate...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-APIM_Tests" title="com.informatica.tests.CustomAPITest" class="method navigator-link" hash-for-method="ValdiateAddIpFilteringToCustomApi({Additional Details=-, TestMethodName=ValdiateAddIpFilteringToCustomApi, Description=Test case to va...)">ValdiateAddIpFilteringToCustomApi({Additional Details=-, TestMethodName=ValdiateAddIpFilteringToCustomApi, Description=Test case to va...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-APIM_Tests" title="com.informatica.tests.CustomAPITest" class="method navigator-link" hash-for-method="ValdiateAddRatelimitToCustomApi({Additional Details=-, TestMethodName=ValdiateAddRatelimitToCustomApi, Description=Test case to vali...)">ValdiateAddRatelimitToCustomApi({Additional Details=-, TestMethodName=ValdiateAddRatelimitToCustomApi, Description=Test case to vali...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-APIM_Tests" title="com.informatica.tests.PoliciesAuthorizationTest" class="method navigator-link" hash-for-method="ValdiateCreateOAuth2Client({Additional Details=Processname=APIM_Automation_Basic_OAuth, TestMethodName=ValdiateCreateOAuth2Clie...)">ValdiateCreateOAuth2Client({Additional Details=Processname=APIM_Automation_Basic_OAuth, TestMethodName=ValdiateCreateOAuth2Clie...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-APIM_Tests" title="com.informatica.tests.CustomAPITest" class="method navigator-link" hash-for-method="ValdiateDeleteCustomAPI({Additional Details=-, TestMethodName=ValdiateDeleteCustomAPI, Description=Test case to validate Dle...)">ValdiateDeleteCustomAPI({Additional Details=-, TestMethodName=ValdiateDeleteCustomAPI, Description=Test case to validate Dle...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-APIM_Tests" title="com.informatica.tests.PoliciesAuthorizationTest" class="method navigator-link" hash-for-method="ValdiateDeleteOAuth2Client">ValdiateDeleteOAuth2Client</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-APIM_Tests" title="com.informatica.tests.PoliciesAuthorizationTest" class="method navigator-link" hash-for-method="ValdiateEditOAuth2Client">ValdiateEditOAuth2Client</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-APIM_Tests" title="com.informatica.tests.APIMRegisteryTest" class="method navigator-link" hash-for-method="ValidateHeadersAPiRegistry">ValidateHeadersAPiRegistry</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-APIM_Tests" title="com.informatica.tests.managedAPITest" class="method navigator-link" hash-for-method="accessAnonManagedAPI({Additional Details=ManagedAPIName=APIM_Automation_Generic_Anon1, TestMethodName=accessAnonManagedAP...)">accessAnonManagedAPI({Additional Details=ManagedAPIName=APIM_Automation_Generic_Anon1, TestMethodName=accessAnonManagedAP...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-APIM_Tests" title="com.informatica.tests.managedAPITest" class="method navigator-link" hash-for-method="accessBasicManagedAPI({Additional Details=ManagedAPIName=APIM_Automation_Generic_Basic, TestMethodName=accessBasicManagedA...)">accessBasicManagedAPI({Additional Details=ManagedAPIName=APIM_Automation_Generic_Basic, TestMethodName=accessBasicManagedA...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-APIM_Tests" title="com.informatica.tests.APIMSwaggerTest" class="method navigator-link" hash-for-method="validateAnonAPISwagger({Additional Details=ManagedAPIName=APIM_Automation_Generic_Anon1,ResponseBody={}, TestMethodName=val...)">validateAnonAPISwagger({Additional Details=ManagedAPIName=APIM_Automation_Generic_Anon1,ResponseBody={}, TestMethodName=val...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-APIM_Tests" title="com.informatica.tests.APIMSwaggerTest" class="method navigator-link" hash-for-method="validateAnonAPISwaggerURL({Additional Details=ManagedAPIName=APIM_Automation_Generic_Anon1, TestMethodName=validateAnonAPISwag...)">validateAnonAPISwaggerURL({Additional Details=ManagedAPIName=APIM_Automation_Generic_Anon1, TestMethodName=validateAnonAPISwag...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-APIM_Tests" title="com.informatica.tests.APIMSwaggerTest" class="method navigator-link" hash-for-method="validateBasicAPISwagger({Additional Details=ManagedAPIName=APIM_Automation_Generic_Basic,ResponseBody={
+  &quot;Name&quot;: &quot;Testing&quot;
+...)">validateBasicAPISwagger({Additional Details=ManagedAPIName=APIM_Automation_Generic_Basic,ResponseBody={
+  "Name": "Testing"
+...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-APIM_Tests" title="com.informatica.tests.APIMSwaggerTest" class="method navigator-link" hash-for-method="validateBasicAPISwaggerURL({Additional Details=ManagedAPIName=APIM_Automation_Generic_Basic, TestMethodName=validateBasicAPISwa...)">validateBasicAPISwaggerURL({Additional Details=ManagedAPIName=APIM_Automation_Generic_Basic, TestMethodName=validateBasicAPISwa...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-APIM_Tests" title="com.informatica.tests.managedAPITest" class="method navigator-link" hash-for-method="validateWSDLURL({Additional Details=ManagedAPIName=APIM_Automation_Generic_Anon1, TestMethodName=validateWSDLURL, De...)">validateWSDLURL({Additional Details=ManagedAPIName=APIM_Automation_Generic_Anon1, TestMethodName=validateWSDLURL, De...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-APIM_Tests" title="com.informatica.tests.RateLimitTest" class="method navigator-link" hash-for-method="verifyRateLimitPolicyAppliedToBasicApi({Additional Details=Processname=APIM_Automation_Basic, TestMethodName=verifyRateLimitPolicyAppliedTo...)">verifyRateLimitPolicyAppliedToBasicApi({Additional Details=Processname=APIM_Automation_Basic, TestMethodName=verifyRateLimitPolicyAppliedTo...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-APIM_Tests -->
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-APIM_Tests" class="hide-methods skipped suite-APIM_Tests"> (hide)</a> <!-- hide-methods skipped suite-APIM_Tests -->
+                      <a href="#" panel-name="suite-APIM_Tests" class="show-methods skipped suite-APIM_Tests"> (show)</a> <!-- show-methods skipped suite-APIM_Tests -->
+                    </span>
+                    <div class="method-list-content skipped suite-APIM_Tests">
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-APIM_Tests" title="com.informatica.tests.APIGroupsTest" class="method navigator-link" hash-for-method="ValidateHeadersAPiGroups">ValidateHeadersAPiGroups</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-APIM_Tests" title="com.informatica.tests.APIPortalRegistryTest" class="method navigator-link" hash-for-method="ValidateSwaggerTab">ValidateSwaggerTab</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-APIM_Tests" title="com.informatica.tests.APIPortalRegistryTest" class="method navigator-link" hash-for-method="run_anonymous_Managed_API">run_anonymous_Managed_API</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-APIM_Tests" title="com.informatica.tests.APIPortalRegistryTest" class="method navigator-link" hash-for-method="run_basic_Managed_API">run_basic_Managed_API</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-APIM_Tests" title="com.informatica.tests.APIGroupsTest" class="method navigator-link" hash-for-method="validateCreateAPIGroupWithContext">validateCreateAPIGroupWithContext</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-APIM_Tests" title="com.informatica.tests.APIGroupsTest" class="method navigator-link" hash-for-method="validateCreateAPIGroupWithOutContext">validateCreateAPIGroupWithOutContext</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-APIM_Tests" title="com.informatica.tests.APIGroupsTest" class="method navigator-link" hash-for-method="validateRemoveAPIGroup">validateRemoveAPIGroup</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-APIM_Tests" title="com.informatica.tests.APIGroupsTest" class="method navigator-link" hash-for-method="validateRenameAPIGroup">validateRenameAPIGroup</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-APIM_Tests" title="com.informatica.tests.APIPortalRegistryTest" class="method navigator-link" hash-for-method="validateSwaggerURLinAPIPortal">validateSwaggerURLinAPIPortal</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-APIM_Tests" title="com.informatica.tests.APIGroupsTest" class="method navigator-link" hash-for-method="validateUserNavigatedtoAPiGroups">validateUserNavigatedtoAPiGroups</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-APIM_Tests -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-APIM_Tests" class="hide-methods passed suite-APIM_Tests"> (hide)</a> <!-- hide-methods passed suite-APIM_Tests -->
+                      <a href="#" panel-name="suite-APIM_Tests" class="show-methods passed suite-APIM_Tests"> (show)</a> <!-- show-methods passed suite-APIM_Tests -->
+                    </span>
+                    <div class="method-list-content passed suite-APIM_Tests">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-APIM_Tests" title="com.informatica.tests.managedAPITest" class="method navigator-link" hash-for-method="ClickOnEnablePrivacyPolicyBlock({Additional Details=APIName=APIM_Automation_AnonPrivacy,Version=1.0.0,Protocol=REST, TestMethodName=...)">ClickOnEnablePrivacyPolicyBlock({Additional Details=APIName=APIM_Automation_AnonPrivacy,Version=1.0.0,Protocol=REST, TestMethodName=...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-APIM_Tests" title="com.informatica.tests.CustomAPITest" class="method navigator-link" hash-for-method="ValdiateTestAndCreateCustomAPI({Additional Details=-, TestMethodName=ValdiateTestAndCreateCustomAPI, Description=Test case to valid...)">ValdiateTestAndCreateCustomAPI({Additional Details=-, TestMethodName=ValdiateTestAndCreateCustomAPI, Description=Test case to valid...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-APIM_Tests" title="com.informatica.tests.OrgLevelPoliciesTest" class="method navigator-link" hash-for-method="deleteDefaultOrgRateLimitTier">deleteDefaultOrgRateLimitTier</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-APIM_Tests" title="com.informatica.tests.LoginTest" class="method navigator-link" hash-for-method="valdiateAPIMChiklet">valdiateAPIMChiklet</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-APIM_Tests" title="com.informatica.tests.APIPortalAPIGroupsTest" class="method navigator-link" hash-for-method="validateAPIURLInAPIGroup({Additional Details=apiGroupName=APIM_Automation_Grp,apiGroupContext=/APIM_Automation_Grp,apiName=AP...)">validateAPIURLInAPIGroup({Additional Details=apiGroupName=APIM_Automation_Grp,apiGroupContext=/APIM_Automation_Grp,apiName=AP...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-APIM_Tests" title="com.informatica.tests.ApimAnalyticsTest" class="method navigator-link" hash-for-method="validateAnalyticsActivityLogTab">validateAnalyticsActivityLogTab</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-APIM_Tests" title="com.informatica.tests.ApimAnalyticsTest" class="method navigator-link" hash-for-method="validateAnalyticsEventsLogTab">validateAnalyticsEventsLogTab</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-APIM_Tests" title="com.informatica.tests.ApimAnalyticsTest" class="method navigator-link" hash-for-method="validateAnalyticsOverViewTab">validateAnalyticsOverViewTab</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-APIM_Tests" title="com.informatica.tests.APIPortalHomeTest" class="method navigator-link" hash-for-method="validateAnalyticsOverviewTab">validateAnalyticsOverviewTab</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-APIM_Tests" title="com.informatica.tests.LoginTest" class="method navigator-link" hash-for-method="validateIICSLogin({Additional Details=Processname=Employee,GroupName=grp1, TestMethodName=validateIICSLogin, Descripti...)">validateIICSLogin({Additional Details=Processname=Employee,GroupName=grp1, TestMethodName=validateIICSLogin, Descripti...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-APIM_Tests" title="com.informatica.tests.OrgLevelPoliciesTest" class="method navigator-link" hash-for-method="validateIpFilterPoliciesRetained">validateIpFilterPoliciesRetained</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-APIM_Tests" title="com.informatica.tests.APIMRegisteryTest" class="method navigator-link" hash-for-method="validateManagedAPIDropdown">validateManagedAPIDropdown</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-APIM_Tests" title="com.informatica.tests.OrgLevelPoliciesTest" class="method navigator-link" hash-for-method="validateOrgRateLimitUI">validateOrgRateLimitUI</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-APIM_Tests" title="com.informatica.tests.APIPortalHomeTest" class="method navigator-link" hash-for-method="validateTopApisTab">validateTopApisTab</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-APIM_Tests" title="com.informatica.tests.ClientSdkTest" class="method navigator-link" hash-for-method="verifyClientSdkItemsAndDownload({Additional Details=Processname=APIM_Automation_Anon1, TestMethodName=verifyClientSdkItemsAndDownloa...)">verifyClientSdkItemsAndDownload({Additional Details=Processname=APIM_Automation_Anon1, TestMethodName=verifyClientSdkItemsAndDownloa...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-APIM_Tests" title="com.informatica.tests.RateLimitTest" class="method navigator-link" hash-for-method="verifyRateLimitPolicyAppliedToAnonymousApi({Additional Details=Processname=APIM_Automation_Anon1, TestMethodName=verifyRateLimitPolicyAppliedTo...)">verifyRateLimitPolicyAppliedToAnonymousApi({Additional Details=Processname=APIM_Automation_Anon1, TestMethodName=verifyRateLimitPolicyAppliedTo...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-APIM_Tests -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-APIM_Tests" class="panel APIM_Tests">
+          <div class="suite-APIM_Tests-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.informatica.tests.managedAPITest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="ClickOnEnablePrivacyPolicyWarning({Additional Details=APIName=APIM_Automation_AnonPrivacy,Version=1.0.0,Protocol=REST, TestMethodName=...)">
+                  </a> <!-- ClickOnEnablePrivacyPolicyWarning({Additional Details=APIName=APIM_Automation_AnonPrivacy,Version=1.0.0,Protocol=REST, TestMethodName=...) -->
+                  <span class="method-name">ClickOnEnablePrivacyPolicyWarning</span>
+                  <span class="parameters">({Additional Details=APIName=APIM_Automation_AnonPrivacy,Version=1.0.0,Protocol=REST, TestMethodName=ClickOnEnablePrivacyPolicyWarning, Description=Test case to enable privacy policy warning, IsRun=Yes, JIRA_KEY=APIM-1485})</span>
+                  <div class="stack-trace">java.lang.AssertionError: Exception while clicking ClickOnEnablePrivacyPolicyWarningValidation
+	at com.informatica.tests.managedAPITest.ClickOnEnablePrivacyPolicyWarning(managedAPITest.java:272)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 17 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="accessAnonManagedAPI({Additional Details=ManagedAPIName=APIM_Automation_Generic_Anon1, TestMethodName=accessAnonManagedAP...)">
+                  </a> <!-- accessAnonManagedAPI({Additional Details=ManagedAPIName=APIM_Automation_Generic_Anon1, TestMethodName=accessAnonManagedAP...) -->
+                  <span class="method-name">accessAnonManagedAPI</span>
+                  <span class="parameters">({Additional Details=ManagedAPIName=APIM_Automation_Generic_Anon1, TestMethodName=accessAnonManagedAPI, Description=Test case to validate API URL of Anonymous API, IsRun=Yes, JIRA_KEY=APIM-1476})</span>
+                  <div class="stack-trace">java.lang.AssertionError: Exception while validating AccessAnonManagedAPi
+	at com.informatica.tests.managedAPITest.accessAnonManagedAPI(managedAPITest.java:121)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 17 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="accessBasicManagedAPI({Additional Details=ManagedAPIName=APIM_Automation_Generic_Basic, TestMethodName=accessBasicManagedA...)">
+                  </a> <!-- accessBasicManagedAPI({Additional Details=ManagedAPIName=APIM_Automation_Generic_Basic, TestMethodName=accessBasicManagedA...) -->
+                  <span class="method-name">accessBasicManagedAPI</span>
+                  <span class="parameters">({Additional Details=ManagedAPIName=APIM_Automation_Generic_Basic, TestMethodName=accessBasicManagedAPI, Description=Test case to validate API URL of Basic API, IsRun=Yes, JIRA_KEY=APIM-1477})</span>
+                  <div class="stack-trace">java.lang.AssertionError: Exception while validating AccessBasicManagedAPI
+	at com.informatica.tests.managedAPITest.accessBasicManagedAPI(managedAPITest.java:158)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 17 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateWSDLURL({Additional Details=ManagedAPIName=APIM_Automation_Generic_Anon1, TestMethodName=validateWSDLURL, De...)">
+                  </a> <!-- validateWSDLURL({Additional Details=ManagedAPIName=APIM_Automation_Generic_Anon1, TestMethodName=validateWSDLURL, De...) -->
+                  <span class="method-name">validateWSDLURL</span>
+                  <span class="parameters">({Additional Details=ManagedAPIName=APIM_Automation_Generic_Anon1, TestMethodName=validateWSDLURL, Description=Test case to validate WSDL URL, IsRun=Yes, JIRA_KEY=APIM-1494})</span>
+                  <div class="stack-trace">java.lang.AssertionError: Exception while validating WSDL URL
+	at com.informatica.tests.managedAPITest.validateWSDLURL(managedAPITest.java:199)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 17 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-APIM_Tests-class-failed -->
+          <div class="suite-APIM_Tests-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.informatica.tests.RateLimitTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyRateLimitPolicyAppliedToBasicApi({Additional Details=Processname=APIM_Automation_Basic, TestMethodName=verifyRateLimitPolicyAppliedTo...)">
+                  </a> <!-- verifyRateLimitPolicyAppliedToBasicApi({Additional Details=Processname=APIM_Automation_Basic, TestMethodName=verifyRateLimitPolicyAppliedTo...) -->
+                  <span class="method-name">verifyRateLimitPolicyAppliedToBasicApi</span>
+                  <span class="parameters">({Additional Details=Processname=APIM_Automation_Basic, TestMethodName=verifyRateLimitPolicyAppliedToBasicApi, Description=APIM_UI_Sanity_TC006_Verify the rate limit policy applied to a Basic API, IsRun=Yes, JIRA_KEY=APIM-1479})</span>
+                  <div class="stack-trace">com.microsoft.playwright.TimeoutError: Error {
+  message=&apos;Timeout 60000ms exceeded.
+=========================== logs ===========================
+waiting for selector &quot;//*[@id=&quot;root&quot;]/div/div[2]/main/div[3]/div/div[1]/ul/button[2]&quot;
+============================================================
+  name=&apos;TimeoutError
+  stack=&apos;TimeoutError: Timeout 60000ms exceeded.
+=========================== logs ===========================
+waiting for selector &quot;//*[@id=&quot;root&quot;]/div/div[2]/main/div[3]/div/div[1]/ul/button[2]&quot;
+============================================================
+    at ProgressController.run (C:\Users\jashaik\AppData\Local\Temp\playwright-java-5376866736254237440\package\lib\server\progress.js:96:26)
+    at Frame.click (C:\Users\jashaik\AppData\Local\Temp\playwright-java-5376866736254237440\package\lib\server\frames.js:1111:23)
+    at FrameDispatcher.click (C:\Users\jashaik\AppData\Local\Temp\playwright-java-5376866736254237440\package\lib\dispatchers\frameDispatcher.js:166:30)
+    at DispatcherConnection.dispatch (C:\Users\jashaik\AppData\Local\Temp\playwright-java-5376866736254237440\package\lib\dispatchers\dispatcher.js:352:46)
+}
+	at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:52)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:103)
+	at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:105)
+	at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:94)
+	at com.microsoft.playwright.impl.FrameImpl.clickImpl(FrameImpl.java:255)
+	at com.microsoft.playwright.impl.FrameImpl.lambda$click$9(FrameImpl.java:246)
+	at com.microsoft.playwright.impl.LoggingSupport.lambda$withLogging$0(LoggingSupport.java:36)
+	at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:47)
+	at com.microsoft.playwright.impl.ChannelOwner.withLogging(ChannelOwner.java:79)
+	at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:35)
+	at com.microsoft.playwright.impl.FrameImpl.click(FrameImpl.java:246)
+	at com.microsoft.playwright.impl.LocatorImpl.click(LocatorImpl.java:100)
+	at com.microsoft.playwright.Locator.click(Locator.java:1648)
+	at com.informatica.pages.ApiDetailsPolicyPage.clickPoliciesTab(ApiDetailsPolicyPage.java:32)
+	at com.informatica.tests.RateLimitTest.verifyRateLimitPolicy(RateLimitTest.java:134)
+	at com.informatica.tests.RateLimitTest.verifyRateLimitPolicyAppliedToBasicApi(RateLimitTest.java:184)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: com.microsoft.playwright.TimeoutError: Error {
+  message=&apos;Timeout 60000ms exceeded.
+=========================== logs ===========================
+waiting for selector &quot;//*[@id=&quot;root&quot;]/div/div[2]/main/div[3]/div/div[1]/ul/button[2]&quot;
+============================================================
+  name=&apos;TimeoutError
+  stack=&apos;TimeoutError: Timeout 60000ms exceeded.
+=========================== logs ===========================
+waiting for selector &quot;//*[@id=&quot;root&quot;]/div/div[2]/main/div[3]/div/div[1]/ul/button[2]&quot;
+============================================================
+    at ProgressController.run (C:\Users\jashaik\AppData\Local\Temp\playwright-java-5376866736254237440\package\lib\server\progress.js:96:26)
+    at Frame.click (C:\Users\jashaik\AppData\Local\Temp\playwright-java-5376866736254237440\package\lib\server\frames.js:1111:23)
+    at FrameDispatcher.click (C:\Users\jashaik\AppData\Local\Temp\playwright-java-5376866736254237440\package\lib\dispatchers\frameDispatcher.js:166:30)
+    at DispatcherConnection.dispatch (C:\Users\jashaik\AppData\Local\Temp\playwright-java-5376866736254237440\package\lib\dispatchers\dispatcher.js:352:46)
+}
+	at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:181)
+	at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:163)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:101)
+	... 34 more
+... Removed 16 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(APIM_UI_Sanity_TC006_Verify the rate limit policy applied to a Basic API)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-APIM_Tests-class-failed -->
+          <div class="suite-APIM_Tests-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.informatica.tests.PoliciesAuthorizationTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="ValdiateCreateOAuth2Client({Additional Details=Processname=APIM_Automation_Basic_OAuth, TestMethodName=ValdiateCreateOAuth2Clie...)">
+                  </a> <!-- ValdiateCreateOAuth2Client({Additional Details=Processname=APIM_Automation_Basic_OAuth, TestMethodName=ValdiateCreateOAuth2Clie...) -->
+                  <span class="method-name">ValdiateCreateOAuth2Client</span>
+                  <span class="parameters">({Additional Details=Processname=APIM_Automation_Basic_OAuth, TestMethodName=ValdiateCreateOAuth2Client, Description=Test case to validate Creation of oAuth2 Client, IsRun=Yes, JIRA_KEY=APIM-1498})</span>
+                  <div class="stack-trace">java.lang.AssertionError: Exception while validating Create OAuth2 Client
+	at com.informatica.tests.PoliciesAuthorizationTest.ValdiateCreateOAuth2Client(PoliciesAuthorizationTest.java:91)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 17 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="ValdiateDeleteOAuth2Client">
+                  </a> <!-- ValdiateDeleteOAuth2Client -->
+                  <span class="method-name">ValdiateDeleteOAuth2Client</span>
+                  <div class="stack-trace">java.lang.AssertionError: Exception while validating Deleting OAuth2 Client
+	at com.informatica.tests.PoliciesAuthorizationTest.ValdiateDeleteOAuth2Client(PoliciesAuthorizationTest.java:166)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 17 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="ValdiateEditOAuth2Client">
+                  </a> <!-- ValdiateEditOAuth2Client -->
+                  <span class="method-name">ValdiateEditOAuth2Client</span>
+                  <div class="stack-trace">java.lang.AssertionError: Exception while validating Create OAuth2 Client
+	at com.informatica.tests.PoliciesAuthorizationTest.ValdiateEditOAuth2Client(PoliciesAuthorizationTest.java:137)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 17 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-APIM_Tests-class-failed -->
+          <div class="suite-APIM_Tests-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.informatica.tests.APIMRegisteryTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="CreateManagagedAPI({Additional Details=APIName=APIM_Automation_JWT,Version=1.0.0,Protocol=REST, TestMethodName=CreateMa...)">
+                  </a> <!-- CreateManagagedAPI({Additional Details=APIName=APIM_Automation_JWT,Version=1.0.0,Protocol=REST, TestMethodName=CreateMa...) -->
+                  <span class="method-name">CreateManagagedAPI</span>
+                  <span class="parameters">({Additional Details=APIName=APIM_Automation_JWT,Version=1.0.0,Protocol=REST, TestMethodName=CreateManagagedAPI, Description=Test case to validate cretaion of managed API, IsRun=Yes, JIRA_KEY=APIM-1506})</span>
+                  <div class="stack-trace">java.lang.AssertionError: Exception while creating CreateManagagedAPIValidation
+	at com.informatica.tests.APIMRegisteryTest.CreateManagagedAPI(APIMRegisteryTest.java:218)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 17 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="CreateNewVersionAPI({Additional Details=APIName=APIM_Automation_NewVersion1,APINameV2=APIM_Automation_NewVersion2,Versio...)">
+                  </a> <!-- CreateNewVersionAPI({Additional Details=APIName=APIM_Automation_NewVersion1,APINameV2=APIM_Automation_NewVersion2,Versio...) -->
+                  <span class="method-name">CreateNewVersionAPI</span>
+                  <span class="parameters">({Additional Details=APIName=APIM_Automation_NewVersion1,APINameV2=APIM_Automation_NewVersion2,Version=1.0.0,Version1=2.0.0,Version2=abc,Protocol=REST,Protocol2=SOAP, TestMethodName=CreateNewVersionAPI, Description=Test case to validate creation of new version managed API, IsRun=Yes, JIRA_KEY=APIM-1507})</span>
+                  <div class="stack-trace">java.lang.AssertionError: Exception while creating CreateNewVersionAPI
+	at com.informatica.tests.APIMRegisteryTest.CreateNewVersionAPI(APIMRegisteryTest.java:295)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 17 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="DeleteManagagedAPI({Additional Details=APIName=APIM_Automation_JWT,Version=1.0.0,Protocol=REST, TestMethodName=DeleteMa...)">
+                  </a> <!-- DeleteManagagedAPI({Additional Details=APIName=APIM_Automation_JWT,Version=1.0.0,Protocol=REST, TestMethodName=DeleteMa...) -->
+                  <span class="method-name">DeleteManagagedAPI</span>
+                  <span class="parameters">({Additional Details=APIName=APIM_Automation_JWT,Version=1.0.0,Protocol=REST, TestMethodName=DeleteManagagedAPI, Description=Test case to validate deletion of managed API, IsRun=Yes, JIRA_KEY=APIM-1638})</span>
+                  <div class="stack-trace">java.lang.AssertionError: Exception while deleting DeleteManagagedAPIValidation
+	at com.informatica.tests.APIMRegisteryTest.DeleteManagagedAPI(APIMRegisteryTest.java:342)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 17 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="SearchActiveStatus">
+                  </a> <!-- SearchActiveStatus -->
+                  <span class="method-name">SearchActiveStatus</span>
+                  <div class="stack-trace">java.lang.AssertionError: Exception while validating SearchActiveStatus
+	at com.informatica.tests.APIMRegisteryTest.SearchActiveStatus(APIMRegisteryTest.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 17 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="SearchInActiveStatus">
+                  </a> <!-- SearchInActiveStatus -->
+                  <span class="method-name">SearchInActiveStatus</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
+	at com.informatica.tests.APIMRegisteryTest.SearchInActiveStatus(APIMRegisteryTest.java:77)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 20 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Search_ActiveServiceNot_AvailiableStatus">
+                  </a> <!-- Search_ActiveServiceNot_AvailiableStatus -->
+                  <span class="method-name">Search_ActiveServiceNot_AvailiableStatus</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
+	at com.informatica.tests.APIMRegisteryTest.Search_ActiveServiceNot_AvailiableStatus(APIMRegisteryTest.java:94)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 20 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Search_InActiveServiceNot_AvailiableStatus">
+                  </a> <!-- Search_InActiveServiceNot_AvailiableStatus -->
+                  <span class="method-name">Search_InActiveServiceNot_AvailiableStatus</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
+	at com.informatica.tests.APIMRegisteryTest.Search_InActiveServiceNot_AvailiableStatus(APIMRegisteryTest.java:111)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 20 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="ValidateHeadersAPiRegistry">
+                  </a> <!-- ValidateHeadersAPiRegistry -->
+                  <span class="method-name">ValidateHeadersAPiRegistry</span>
+                  <div class="stack-trace">java.lang.AssertionError: Exception while validating HeadersAPiRegistry
+	at com.informatica.tests.APIMRegisteryTest.ValidateHeadersAPiRegistry(APIMRegisteryTest.java:137)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 17 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-APIM_Tests-class-failed -->
+          <div class="suite-APIM_Tests-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.informatica.tests.CustomAPITest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="ValdiateAddGroupToCustomApi({Additional Details=-, TestMethodName=ValdiateAddGroupToCustomApi, Description=Test case to validate...)">
+                  </a> <!-- ValdiateAddGroupToCustomApi({Additional Details=-, TestMethodName=ValdiateAddGroupToCustomApi, Description=Test case to validate...) -->
+                  <span class="method-name">ValdiateAddGroupToCustomApi</span>
+                  <span class="parameters">({Additional Details=-, TestMethodName=ValdiateAddGroupToCustomApi, Description=Test case to validate Adding Groups to Custom API, IsRun=Yes, JIRA_KEY=APIM-1637})</span>
+                  <div class="stack-trace">java.lang.AssertionError: Exception while validating  update Groups for CustomAPI
+	at com.informatica.tests.CustomAPITest.ValdiateAddGroupToCustomApi(CustomAPITest.java:202)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 17 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="ValdiateAddIpFilteringToCustomApi({Additional Details=-, TestMethodName=ValdiateAddIpFilteringToCustomApi, Description=Test case to va...)">
+                  </a> <!-- ValdiateAddIpFilteringToCustomApi({Additional Details=-, TestMethodName=ValdiateAddIpFilteringToCustomApi, Description=Test case to va...) -->
+                  <span class="method-name">ValdiateAddIpFilteringToCustomApi</span>
+                  <span class="parameters">({Additional Details=-, TestMethodName=ValdiateAddIpFilteringToCustomApi, Description=Test case to validate IP Filtering for Custom API, IsRun=Yes, JIRA_KEY=APIM-1657})</span>
+                  <div class="stack-trace">java.lang.AssertionError: Exception while validating  update IpFiltering for CustomAPI
+	at com.informatica.tests.CustomAPITest.ValdiateAddIpFilteringToCustomApi(CustomAPITest.java:167)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 17 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="ValdiateAddRatelimitToCustomApi({Additional Details=-, TestMethodName=ValdiateAddRatelimitToCustomApi, Description=Test case to vali...)">
+                  </a> <!-- ValdiateAddRatelimitToCustomApi({Additional Details=-, TestMethodName=ValdiateAddRatelimitToCustomApi, Description=Test case to vali...) -->
+                  <span class="method-name">ValdiateAddRatelimitToCustomApi</span>
+                  <span class="parameters">({Additional Details=-, TestMethodName=ValdiateAddRatelimitToCustomApi, Description=Test case to validate Rate Limit for Custom API, IsRun=Yes, JIRA_KEY=APIM-1658})</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [The Managed API &quot;CustomAPI_Automation&quot; was updated successfully.] but found [Failed to update the Managed API &quot;CustomAPI_Automation&quot;]
+	at com.informatica.tests.CustomAPITest.ValdiateAddRatelimitToCustomApi(CustomAPITest.java:119)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 22 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="ValdiateDeleteCustomAPI({Additional Details=-, TestMethodName=ValdiateDeleteCustomAPI, Description=Test case to validate Dle...)">
+                  </a> <!-- ValdiateDeleteCustomAPI({Additional Details=-, TestMethodName=ValdiateDeleteCustomAPI, Description=Test case to validate Dle...) -->
+                  <span class="method-name">ValdiateDeleteCustomAPI</span>
+                  <span class="parameters">({Additional Details=-, TestMethodName=ValdiateDeleteCustomAPI, Description=Test case to validate Dleting the Group, IsRun=Yes, JIRA_KEY=-})</span>
+                  <div class="stack-trace">java.lang.AssertionError: Exception while validating  Delete Custom API
+	at com.informatica.tests.CustomAPITest.ValdiateDeleteCustomAPI(CustomAPITest.java:231)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 17 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-APIM_Tests-class-failed -->
+          <div class="suite-APIM_Tests-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.informatica.tests.APIMSwaggerTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateAnonAPISwagger({Additional Details=ManagedAPIName=APIM_Automation_Generic_Anon1,ResponseBody={}, TestMethodName=val...)">
+                  </a> <!-- validateAnonAPISwagger({Additional Details=ManagedAPIName=APIM_Automation_Generic_Anon1,ResponseBody={}, TestMethodName=val...) -->
+                  <span class="method-name">validateAnonAPISwagger</span>
+                  <span class="parameters">({Additional Details=ManagedAPIName=APIM_Automation_Generic_Anon1,ResponseBody={}, TestMethodName=validateAnonAPISwagger, Description=Test case to verify Swagger tab functionality for Anonymous API, IsRun=Yes, JIRA_KEY=APIM-1490})</span>
+                  <div class="stack-trace">java.lang.AssertionError: Exception while validating Anonymous API Swagger tab
+	at com.informatica.tests.APIMSwaggerTest.validateAnonAPISwagger(APIMSwaggerTest.java:109)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 17 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateAnonAPISwaggerURL({Additional Details=ManagedAPIName=APIM_Automation_Generic_Anon1, TestMethodName=validateAnonAPISwag...)">
+                  </a> <!-- validateAnonAPISwaggerURL({Additional Details=ManagedAPIName=APIM_Automation_Generic_Anon1, TestMethodName=validateAnonAPISwag...) -->
+                  <span class="method-name">validateAnonAPISwaggerURL</span>
+                  <span class="parameters">({Additional Details=ManagedAPIName=APIM_Automation_Generic_Anon1, TestMethodName=validateAnonAPISwaggerURL, Description=Test case to verify Swagger URL for Anonymous API, IsRun=Yes, JIRA_KEY=APIM-1492})</span>
+                  <div class="stack-trace">java.lang.AssertionError: Exception while validating Anonymous API Swagger URL
+	at com.informatica.tests.APIMSwaggerTest.validateAnonAPISwaggerURL(APIMSwaggerTest.java:215)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 17 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateBasicAPISwagger({Additional Details=ManagedAPIName=APIM_Automation_Generic_Basic,ResponseBody={
+  &quot;Name&quot;: &quot;Testing&quot;
+...)">
+                  </a> <!-- validateBasicAPISwagger({Additional Details=ManagedAPIName=APIM_Automation_Generic_Basic,ResponseBody={
+  "Name": "Testing"
+...) -->
+                  <span class="method-name">validateBasicAPISwagger</span>
+                  <span class="parameters">({Additional Details=ManagedAPIName=APIM_Automation_Generic_Basic,ResponseBody={
+  "Name": "Testing"
+}
+, TestMethodName=validateBasicAPISwagger, Description=Test case to verify Swagger tab functionality for Basic API, IsRun=Yes, JIRA_KEY=APIM-1491})</span>
+                  <div class="stack-trace">java.lang.AssertionError: Exception while validating Basic API Swagger tab
+	at com.informatica.tests.APIMSwaggerTest.validateBasicAPISwagger(APIMSwaggerTest.java:174)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 17 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateBasicAPISwaggerURL({Additional Details=ManagedAPIName=APIM_Automation_Generic_Basic, TestMethodName=validateBasicAPISwa...)">
+                  </a> <!-- validateBasicAPISwaggerURL({Additional Details=ManagedAPIName=APIM_Automation_Generic_Basic, TestMethodName=validateBasicAPISwa...) -->
+                  <span class="method-name">validateBasicAPISwaggerURL</span>
+                  <span class="parameters">({Additional Details=ManagedAPIName=APIM_Automation_Generic_Basic, TestMethodName=validateBasicAPISwaggerURL, Description=Test case to verify Swagger URL for Basic API, IsRun=Yes, JIRA_KEY=APIM-1493})</span>
+                  <div class="stack-trace">java.lang.AssertionError: Exception while validating Basic API Swagger URL
+	at com.informatica.tests.APIMSwaggerTest.validateBasicAPISwaggerURL(APIMSwaggerTest.java:255)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 17 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-APIM_Tests-class-failed -->
+          <div class="suite-APIM_Tests-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">com.informatica.tests.APIGroupsTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="ValidateHeadersAPiGroups">
+                  </a> <!-- ValidateHeadersAPiGroups -->
+                  <span class="method-name">ValidateHeadersAPiGroups</span>
+                  <div class="stack-trace">com.microsoft.playwright.TimeoutError: Timeout 60000ms exceeded
+	at com.microsoft.playwright.impl.WaitableTimeout.get(WaitableTimeout.java:41)
+	at com.microsoft.playwright.impl.WaitableRace.get(WaitableRace.java:44)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:103)
+	at com.microsoft.playwright.impl.FrameImpl.waitForLoadStateImpl(FrameImpl.java:825)
+	at com.microsoft.playwright.impl.FrameImpl.waitForLoadStateImpl(FrameImpl.java:810)
+	at com.microsoft.playwright.impl.PageImpl.lambda$waitForLoadState$69(PageImpl.java:1260)
+	at com.microsoft.playwright.impl.WaitForEventLogger.get(WaitForEventLogger.java:46)
+	at com.microsoft.playwright.impl.ChannelOwner.withWaitLogging(ChannelOwner.java:72)
+	at com.microsoft.playwright.impl.PageImpl.waitForLoadState(PageImpl.java:1259)
+	at com.microsoft.playwright.Page.waitForLoadState(Page.java:6025)
+	at com.informatica.pages.LoginPage.ClickonAPIMChiklet(LoginPage.java:50)
+	at com.informatica.tests.APIGroupsTest.init(APIGroupsTest.java:39)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 15 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateCreateAPIGroupWithContext">
+                  </a> <!-- validateCreateAPIGroupWithContext -->
+                  <span class="method-name">validateCreateAPIGroupWithContext</span>
+                  <div class="stack-trace">com.microsoft.playwright.TimeoutError: Timeout 60000ms exceeded
+	at com.microsoft.playwright.impl.WaitableTimeout.get(WaitableTimeout.java:41)
+	at com.microsoft.playwright.impl.WaitableRace.get(WaitableRace.java:44)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:103)
+	at com.microsoft.playwright.impl.FrameImpl.waitForLoadStateImpl(FrameImpl.java:825)
+	at com.microsoft.playwright.impl.FrameImpl.waitForLoadStateImpl(FrameImpl.java:810)
+	at com.microsoft.playwright.impl.PageImpl.lambda$waitForLoadState$69(PageImpl.java:1260)
+	at com.microsoft.playwright.impl.WaitForEventLogger.get(WaitForEventLogger.java:46)
+	at com.microsoft.playwright.impl.ChannelOwner.withWaitLogging(ChannelOwner.java:72)
+	at com.microsoft.playwright.impl.PageImpl.waitForLoadState(PageImpl.java:1259)
+	at com.microsoft.playwright.Page.waitForLoadState(Page.java:6025)
+	at com.informatica.pages.LoginPage.ClickonAPIMChiklet(LoginPage.java:50)
+	at com.informatica.tests.APIGroupsTest.init(APIGroupsTest.java:39)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 15 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateCreateAPIGroupWithOutContext">
+                  </a> <!-- validateCreateAPIGroupWithOutContext -->
+                  <span class="method-name">validateCreateAPIGroupWithOutContext</span>
+                  <div class="stack-trace">com.microsoft.playwright.TimeoutError: Timeout 60000ms exceeded
+	at com.microsoft.playwright.impl.WaitableTimeout.get(WaitableTimeout.java:41)
+	at com.microsoft.playwright.impl.WaitableRace.get(WaitableRace.java:44)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:103)
+	at com.microsoft.playwright.impl.FrameImpl.waitForLoadStateImpl(FrameImpl.java:825)
+	at com.microsoft.playwright.impl.FrameImpl.waitForLoadStateImpl(FrameImpl.java:810)
+	at com.microsoft.playwright.impl.PageImpl.lambda$waitForLoadState$69(PageImpl.java:1260)
+	at com.microsoft.playwright.impl.WaitForEventLogger.get(WaitForEventLogger.java:46)
+	at com.microsoft.playwright.impl.ChannelOwner.withWaitLogging(ChannelOwner.java:72)
+	at com.microsoft.playwright.impl.PageImpl.waitForLoadState(PageImpl.java:1259)
+	at com.microsoft.playwright.Page.waitForLoadState(Page.java:6025)
+	at com.informatica.pages.LoginPage.ClickonAPIMChiklet(LoginPage.java:50)
+	at com.informatica.tests.APIGroupsTest.init(APIGroupsTest.java:39)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 15 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateRemoveAPIGroup">
+                  </a> <!-- validateRemoveAPIGroup -->
+                  <span class="method-name">validateRemoveAPIGroup</span>
+                  <div class="stack-trace">java.lang.Throwable: Method APIGroupsTest.validateRemoveAPIGroup(java.lang.Object)[pri:10, instance:com.informatica.tests.APIGroupsTest@1608bcbd] depends on not successfully finished methods
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 9 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateRenameAPIGroup">
+                  </a> <!-- validateRenameAPIGroup -->
+                  <span class="method-name">validateRenameAPIGroup</span>
+                  <div class="stack-trace">java.lang.Throwable: Method APIGroupsTest.validateRenameAPIGroup(java.lang.Object)[pri:9, instance:com.informatica.tests.APIGroupsTest@1608bcbd] depends on not successfully finished methods
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 9 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateUserNavigatedtoAPiGroups">
+                  </a> <!-- validateUserNavigatedtoAPiGroups -->
+                  <span class="method-name">validateUserNavigatedtoAPiGroups</span>
+                  <div class="stack-trace">com.microsoft.playwright.TimeoutError: Timeout 60000ms exceeded
+	at com.microsoft.playwright.impl.WaitableTimeout.get(WaitableTimeout.java:41)
+	at com.microsoft.playwright.impl.WaitableRace.get(WaitableRace.java:44)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:103)
+	at com.microsoft.playwright.impl.FrameImpl.waitForLoadStateImpl(FrameImpl.java:825)
+	at com.microsoft.playwright.impl.FrameImpl.waitForLoadStateImpl(FrameImpl.java:810)
+	at com.microsoft.playwright.impl.PageImpl.lambda$waitForLoadState$69(PageImpl.java:1260)
+	at com.microsoft.playwright.impl.WaitForEventLogger.get(WaitForEventLogger.java:46)
+	at com.microsoft.playwright.impl.ChannelOwner.withWaitLogging(ChannelOwner.java:72)
+	at com.microsoft.playwright.impl.PageImpl.waitForLoadState(PageImpl.java:1259)
+	at com.microsoft.playwright.Page.waitForLoadState(Page.java:6025)
+	at com.informatica.pages.LoginPage.ClickonAPIMChiklet(LoginPage.java:50)
+	at com.informatica.tests.APIGroupsTest.init(APIGroupsTest.java:39)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 15 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-APIM_Tests-class-skipped -->
+          <div class="suite-APIM_Tests-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">com.informatica.tests.APIPortalRegistryTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="ValidateSwaggerTab">
+                  </a> <!-- ValidateSwaggerTab -->
+                  <span class="method-name">ValidateSwaggerTab</span>
+                  <div class="stack-trace">com.microsoft.playwright.TimeoutError: Timeout 60000ms exceeded
+	at com.microsoft.playwright.impl.WaitableTimeout.get(WaitableTimeout.java:41)
+	at com.microsoft.playwright.impl.WaitableRace.get(WaitableRace.java:44)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:103)
+	at com.microsoft.playwright.impl.FrameImpl.waitForLoadStateImpl(FrameImpl.java:825)
+	at com.microsoft.playwright.impl.FrameImpl.waitForLoadStateImpl(FrameImpl.java:810)
+	at com.microsoft.playwright.impl.PageImpl.lambda$waitForLoadState$69(PageImpl.java:1260)
+	at com.microsoft.playwright.impl.WaitForEventLogger.get(WaitForEventLogger.java:46)
+	at com.microsoft.playwright.impl.ChannelOwner.withWaitLogging(ChannelOwner.java:72)
+	at com.microsoft.playwright.impl.PageImpl.waitForLoadState(PageImpl.java:1259)
+	at com.microsoft.playwright.Page.waitForLoadState(Page.java:6025)
+	at com.informatica.pages.LoginPage.clickOnApiChiklet(LoginPage.java:64)
+	at com.informatica.tests.APIPortalRegistryTest.init(APIPortalRegistryTest.java:47)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 15 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="run_anonymous_Managed_API">
+                  </a> <!-- run_anonymous_Managed_API -->
+                  <span class="method-name">run_anonymous_Managed_API</span>
+                  <div class="stack-trace">com.microsoft.playwright.TimeoutError: Timeout 60000ms exceeded
+	at com.microsoft.playwright.impl.WaitableTimeout.get(WaitableTimeout.java:41)
+	at com.microsoft.playwright.impl.WaitableRace.get(WaitableRace.java:44)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:103)
+	at com.microsoft.playwright.impl.FrameImpl.waitForLoadStateImpl(FrameImpl.java:825)
+	at com.microsoft.playwright.impl.FrameImpl.waitForLoadStateImpl(FrameImpl.java:810)
+	at com.microsoft.playwright.impl.PageImpl.lambda$waitForLoadState$69(PageImpl.java:1260)
+	at com.microsoft.playwright.impl.WaitForEventLogger.get(WaitForEventLogger.java:46)
+	at com.microsoft.playwright.impl.ChannelOwner.withWaitLogging(ChannelOwner.java:72)
+	at com.microsoft.playwright.impl.PageImpl.waitForLoadState(PageImpl.java:1259)
+	at com.microsoft.playwright.Page.waitForLoadState(Page.java:6025)
+	at com.informatica.pages.LoginPage.clickOnApiChiklet(LoginPage.java:64)
+	at com.informatica.tests.APIPortalRegistryTest.init(APIPortalRegistryTest.java:47)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 15 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="run_basic_Managed_API">
+                  </a> <!-- run_basic_Managed_API -->
+                  <span class="method-name">run_basic_Managed_API</span>
+                  <div class="stack-trace">com.microsoft.playwright.TimeoutError: Timeout 60000ms exceeded
+	at com.microsoft.playwright.impl.WaitableTimeout.get(WaitableTimeout.java:41)
+	at com.microsoft.playwright.impl.WaitableRace.get(WaitableRace.java:44)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:103)
+	at com.microsoft.playwright.impl.FrameImpl.waitForLoadStateImpl(FrameImpl.java:825)
+	at com.microsoft.playwright.impl.FrameImpl.waitForLoadStateImpl(FrameImpl.java:810)
+	at com.microsoft.playwright.impl.PageImpl.lambda$waitForLoadState$69(PageImpl.java:1260)
+	at com.microsoft.playwright.impl.WaitForEventLogger.get(WaitForEventLogger.java:46)
+	at com.microsoft.playwright.impl.ChannelOwner.withWaitLogging(ChannelOwner.java:72)
+	at com.microsoft.playwright.impl.PageImpl.waitForLoadState(PageImpl.java:1259)
+	at com.microsoft.playwright.Page.waitForLoadState(Page.java:6025)
+	at com.informatica.pages.LoginPage.clickOnApiChiklet(LoginPage.java:64)
+	at com.informatica.tests.APIPortalRegistryTest.init(APIPortalRegistryTest.java:47)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 15 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateSwaggerURLinAPIPortal">
+                  </a> <!-- validateSwaggerURLinAPIPortal -->
+                  <span class="method-name">validateSwaggerURLinAPIPortal</span>
+                  <div class="stack-trace">com.microsoft.playwright.TimeoutError: Timeout 60000ms exceeded
+	at com.microsoft.playwright.impl.WaitableTimeout.get(WaitableTimeout.java:41)
+	at com.microsoft.playwright.impl.WaitableRace.get(WaitableRace.java:44)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:103)
+	at com.microsoft.playwright.impl.FrameImpl.waitForLoadStateImpl(FrameImpl.java:825)
+	at com.microsoft.playwright.impl.FrameImpl.waitForLoadStateImpl(FrameImpl.java:810)
+	at com.microsoft.playwright.impl.PageImpl.lambda$waitForLoadState$69(PageImpl.java:1260)
+	at com.microsoft.playwright.impl.WaitForEventLogger.get(WaitForEventLogger.java:46)
+	at com.microsoft.playwright.impl.ChannelOwner.withWaitLogging(ChannelOwner.java:72)
+	at com.microsoft.playwright.impl.PageImpl.waitForLoadState(PageImpl.java:1259)
+	at com.microsoft.playwright.Page.waitForLoadState(Page.java:6025)
+	at com.informatica.pages.LoginPage.clickOnApiChiklet(LoginPage.java:64)
+	at com.informatica.tests.APIPortalRegistryTest.init(APIPortalRegistryTest.java:47)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 15 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-APIM_Tests-class-skipped -->
+          <div class="suite-APIM_Tests-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.informatica.tests.managedAPITest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="ClickOnEnablePrivacyPolicyBlock({Additional Details=APIName=APIM_Automation_AnonPrivacy,Version=1.0.0,Protocol=REST, TestMethodName=...)">
+                  </a> <!-- ClickOnEnablePrivacyPolicyBlock({Additional Details=APIName=APIM_Automation_AnonPrivacy,Version=1.0.0,Protocol=REST, TestMethodName=...) -->
+                  <span class="method-name">ClickOnEnablePrivacyPolicyBlock</span>
+                  <span class="parameters">({Additional Details=APIName=APIM_Automation_AnonPrivacy,Version=1.0.0,Protocol=REST, TestMethodName=ClickOnEnablePrivacyPolicyBlock, Description=Test case to enable privacy policy block, IsRun=Yes, JIRA_KEY=APIM-1486})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-APIM_Tests-class-passed -->
+          <div class="suite-APIM_Tests-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.informatica.tests.ClientSdkTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyClientSdkItemsAndDownload({Additional Details=Processname=APIM_Automation_Anon1, TestMethodName=verifyClientSdkItemsAndDownloa...)">
+                  </a> <!-- verifyClientSdkItemsAndDownload({Additional Details=Processname=APIM_Automation_Anon1, TestMethodName=verifyClientSdkItemsAndDownloa...) -->
+                  <span class="method-name">verifyClientSdkItemsAndDownload</span>
+                  <span class="parameters">({Additional Details=Processname=APIM_Automation_Anon1, TestMethodName=verifyClientSdkItemsAndDownload, Description=APIM_UI_Sanity_TC022_Verify that the Download SDK option is working for a Managed API, IsRun=Yes, JIRA_KEY=APIM-1495})</span>
+                  <em>
+(APIM_UI_Sanity_TC022_Verify that the Download SDK option is working for a Managed API)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-APIM_Tests-class-passed -->
+          <div class="suite-APIM_Tests-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.informatica.tests.APIPortalAPIGroupsTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateAPIURLInAPIGroup({Additional Details=apiGroupName=APIM_Automation_Grp,apiGroupContext=/APIM_Automation_Grp,apiName=AP...)">
+                  </a> <!-- validateAPIURLInAPIGroup({Additional Details=apiGroupName=APIM_Automation_Grp,apiGroupContext=/APIM_Automation_Grp,apiName=AP...) -->
+                  <span class="method-name">validateAPIURLInAPIGroup</span>
+                  <span class="parameters">({Additional Details=apiGroupName=APIM_Automation_Grp,apiGroupContext=/APIM_Automation_Grp,apiName=APIM_Automation_Anon1,apiProtocol=REST, TestMethodName=validateAPIURLInAPIGroup, Description=Test case to validate the API in APIGROUP with Context from API Portal, IsRun=Yes, JIRA_KEY=APIM-1505})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-APIM_Tests-class-passed -->
+          <div class="suite-APIM_Tests-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.informatica.tests.RateLimitTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyRateLimitPolicyAppliedToAnonymousApi({Additional Details=Processname=APIM_Automation_Anon1, TestMethodName=verifyRateLimitPolicyAppliedTo...)">
+                  </a> <!-- verifyRateLimitPolicyAppliedToAnonymousApi({Additional Details=Processname=APIM_Automation_Anon1, TestMethodName=verifyRateLimitPolicyAppliedTo...) -->
+                  <span class="method-name">verifyRateLimitPolicyAppliedToAnonymousApi</span>
+                  <span class="parameters">({Additional Details=Processname=APIM_Automation_Anon1, TestMethodName=verifyRateLimitPolicyAppliedToAnonymousApi, Description=APIM_UI_Sanity_TC005_Verify the rate limit policy applied to an anonymous API, IsRun=Yes, JIRA_KEY=APIM-1478})</span>
+                  <em>
+(APIM_UI_Sanity_TC005_Verify the rate limit policy applied to an anonymous API)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-APIM_Tests-class-passed -->
+          <div class="suite-APIM_Tests-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.informatica.tests.APIMRegisteryTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateManagedAPIDropdown">
+                  </a> <!-- validateManagedAPIDropdown -->
+                  <span class="method-name">validateManagedAPIDropdown</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-APIM_Tests-class-passed -->
+          <div class="suite-APIM_Tests-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.informatica.tests.CustomAPITest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="ValdiateTestAndCreateCustomAPI({Additional Details=-, TestMethodName=ValdiateTestAndCreateCustomAPI, Description=Test case to valid...)">
+                  </a> <!-- ValdiateTestAndCreateCustomAPI({Additional Details=-, TestMethodName=ValdiateTestAndCreateCustomAPI, Description=Test case to valid...) -->
+                  <span class="method-name">ValdiateTestAndCreateCustomAPI</span>
+                  <span class="parameters">({Additional Details=-, TestMethodName=ValdiateTestAndCreateCustomAPI, Description=Test case to validate Test and Creation of Custom API, IsRun=Yes, JIRA_KEY=APIM-1635})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-APIM_Tests-class-passed -->
+          <div class="suite-APIM_Tests-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.informatica.tests.OrgLevelPoliciesTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="deleteDefaultOrgRateLimitTier">
+                  </a> <!-- deleteDefaultOrgRateLimitTier -->
+                  <span class="method-name">deleteDefaultOrgRateLimitTier</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateIpFilterPoliciesRetained">
+                  </a> <!-- validateIpFilterPoliciesRetained -->
+                  <span class="method-name">validateIpFilterPoliciesRetained</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateOrgRateLimitUI">
+                  </a> <!-- validateOrgRateLimitUI -->
+                  <span class="method-name">validateOrgRateLimitUI</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-APIM_Tests-class-passed -->
+          <div class="suite-APIM_Tests-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.informatica.tests.ApimAnalyticsTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateAnalyticsActivityLogTab">
+                  </a> <!-- validateAnalyticsActivityLogTab -->
+                  <span class="method-name">validateAnalyticsActivityLogTab</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateAnalyticsEventsLogTab">
+                  </a> <!-- validateAnalyticsEventsLogTab -->
+                  <span class="method-name">validateAnalyticsEventsLogTab</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateAnalyticsOverViewTab">
+                  </a> <!-- validateAnalyticsOverViewTab -->
+                  <span class="method-name">validateAnalyticsOverViewTab</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-APIM_Tests-class-passed -->
+          <div class="suite-APIM_Tests-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.informatica.tests.APIPortalHomeTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateAnalyticsOverviewTab">
+                  </a> <!-- validateAnalyticsOverviewTab -->
+                  <span class="method-name">validateAnalyticsOverviewTab</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateTopApisTab">
+                  </a> <!-- validateTopApisTab -->
+                  <span class="method-name">validateTopApisTab</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-APIM_Tests-class-passed -->
+          <div class="suite-APIM_Tests-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.informatica.tests.LoginTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="valdiateAPIMChiklet">
+                  </a> <!-- valdiateAPIMChiklet -->
+                  <span class="method-name">valdiateAPIMChiklet</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateIICSLogin({Additional Details=Processname=Employee,GroupName=grp1, TestMethodName=validateIICSLogin, Descripti...)">
+                  </a> <!-- validateIICSLogin({Additional Details=Processname=Employee,GroupName=grp1, TestMethodName=validateIICSLogin, Descripti...) -->
+                  <span class="method-name">validateIICSLogin</span>
+                  <span class="parameters">({Additional Details=Processname=Employee,GroupName=grp1, TestMethodName=validateIICSLogin, Description=Test case to validate user logged into IICS, IsRun=Yes, JIRA_KEY=-})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-APIM_Tests-class-passed -->
+        </div> <!-- panel APIM_Tests -->
+        <div panel-name="test-xml-APIM_Tests" class="panel">
+          <div class="main-panel-header rounded-window-top">
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite parallel=&quot;tests&quot; name=&quot;APIM Tests&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; parallel=&quot;tests&quot; name=&quot;IICS_Login&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.informatica.tests.LoginTest&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;validateIICSLogin&quot;/&gt;
+          &lt;include name=&quot;valdiateAPIMChiklet&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- com.informatica.tests.LoginTest --&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- IICS_Login --&gt;
+  &lt;test thread-count=&quot;5&quot; parallel=&quot;tests&quot; name=&quot;APIM_Home_Page&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.informatica.tests.APIMRegisteryTest&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;SearchActiveStatus&quot;/&gt;
+          &lt;include name=&quot;SearchInActiveStatus&quot;/&gt;
+          &lt;include name=&quot;Search_ActiveServiceNot_AvailiableStatus&quot;/&gt;
+          &lt;include name=&quot;Search_InActiveServiceNot_AvailiableStatus&quot;/&gt;
+          &lt;include name=&quot;ValidateHeadersAPiRegistry&quot;/&gt;
+          &lt;include name=&quot;validateManagedAPIDropdown&quot;/&gt;
+          &lt;include name=&quot;CreateManagagedAPI&quot;/&gt;
+          &lt;include name=&quot;CreateNewVersionAPI&quot;/&gt;
+          &lt;include name=&quot;DeleteManagagedAPI&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- com.informatica.tests.APIMRegisteryTest --&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- APIM_Home_Page --&gt;
+  &lt;test thread-count=&quot;5&quot; parallel=&quot;tests&quot; name=&quot;Managed_API_Page&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.informatica.tests.managedAPITest&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;accessAnonManagedAPI&quot;/&gt;
+          &lt;include name=&quot;accessBasicManagedAPI&quot;/&gt;
+          &lt;include name=&quot;validateWSDLURL&quot;/&gt;
+          &lt;include name=&quot;ClickOnEnablePrivacyPolicyWarning&quot;/&gt;
+          &lt;include name=&quot;ClickOnEnablePrivacyPolicyBlock&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- com.informatica.tests.managedAPITest --&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Managed_API_Page --&gt;
+  &lt;test thread-count=&quot;5&quot; parallel=&quot;tests&quot; name=&quot;API_Groups&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.informatica.tests.APIGroupsTest&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;validateUserNavigatedtoAPiGroups&quot;/&gt;
+          &lt;include name=&quot;ValidateHeadersAPiGroups&quot;/&gt;
+          &lt;include name=&quot;validateCreateAPIGroupWithContext&quot;/&gt;
+          &lt;include name=&quot;validateCreateAPIGroupWithOutContext&quot;/&gt;
+          &lt;include name=&quot;validateRenameAPIGroup&quot;/&gt;
+          &lt;include name=&quot;validateRemoveAPIGroup&quot;/&gt;
+          &lt;include name=&quot;APIM_UI_Reg_TC01&quot;/&gt;
+          &lt;include name=&quot;APIM_UI_Reg_TC02&quot;/&gt;
+          &lt;include name=&quot;APIM_UI_Reg_TC24&quot;/&gt;
+          &lt;include name=&quot;APIM_UI_Reg_TC53&quot;/&gt;
+          &lt;include name=&quot;APIM_UI_Reg_TC27&quot;/&gt;
+          &lt;include name=&quot;APIM_UI_Reg_TC29&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- com.informatica.tests.APIGroupsTest --&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- API_Groups --&gt;
+  &lt;test thread-count=&quot;5&quot; parallel=&quot;tests&quot; name=&quot;API_Portal_Registry&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.informatica.tests.APIPortalRegistryTest&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;ValidateSwaggerTab&quot;/&gt;
+          &lt;include name=&quot;run_anonymous_Managed_API&quot;/&gt;
+          &lt;include name=&quot;run_basic_Managed_API&quot;/&gt;
+          &lt;include name=&quot;validateSwaggerURLinAPIPortal&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- com.informatica.tests.APIPortalRegistryTest --&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- API_Portal_Registry --&gt;
+  &lt;test thread-count=&quot;5&quot; parallel=&quot;tests&quot; name=&quot;API_Portal_Home&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.informatica.tests.APIPortalHomeTest&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;validateAnalyticsOverviewTab&quot;/&gt;
+          &lt;include name=&quot;validateTopApisTab&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- com.informatica.tests.APIPortalHomeTest --&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- API_Portal_Home --&gt;
+  &lt;test thread-count=&quot;5&quot; parallel=&quot;tests&quot; name=&quot;API_Groups_In_API_Portal&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.informatica.tests.APIPortalAPIGroupsTest&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;validateAPIURLInAPIGroup&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- com.informatica.tests.APIPortalAPIGroupsTest --&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- API_Groups_In_API_Portal --&gt;
+  &lt;test thread-count=&quot;5&quot; parallel=&quot;tests&quot; name=&quot;APIM_Analytics&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.informatica.tests.ApimAnalyticsTest&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;validateAnalyticsOverViewTab&quot;/&gt;
+          &lt;include name=&quot;validateAnalyticsActivityLogTab&quot;/&gt;
+          &lt;include name=&quot;validateAnalyticsEventsLogTab&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- com.informatica.tests.ApimAnalyticsTest --&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- APIM_Analytics --&gt;
+  &lt;test thread-count=&quot;5&quot; parallel=&quot;tests&quot; name=&quot;APIM_OAuth2&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.informatica.tests.PoliciesAuthorizationTest&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;ValdiateCreateOAuth2Client&quot;/&gt;
+          &lt;include name=&quot;ValdiateEditOAuth2Client&quot;/&gt;
+          &lt;include name=&quot;ValdiateDeleteOAuth2Client&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- com.informatica.tests.PoliciesAuthorizationTest --&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- APIM_OAuth2 --&gt;
+  &lt;test thread-count=&quot;5&quot; parallel=&quot;tests&quot; name=&quot;APIM_CustomAPI&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.informatica.tests.CustomAPITest&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;ValdiateTestAndCreateCustomAPI&quot;/&gt;
+          &lt;include name=&quot;ValdiateAddRatelimitToCustomApi&quot;/&gt;
+          &lt;include name=&quot;ValdiateAddIpFilteringToCustomApi&quot;/&gt;
+          &lt;include name=&quot;ValdiateAddGroupToCustomApi&quot;/&gt;
+          &lt;include name=&quot;ValdiateDeleteCustomAPI&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- com.informatica.tests.CustomAPITest --&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- APIM_CustomAPI --&gt;
+  &lt;test thread-count=&quot;5&quot; parallel=&quot;tests&quot; name=&quot;APIM_Swagger&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.informatica.tests.APIMSwaggerTest&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;validateAnonAPISwagger&quot;/&gt;
+          &lt;include name=&quot;validateBasicAPISwagger&quot;/&gt;
+          &lt;include name=&quot;validateAnonAPISwaggerURL&quot;/&gt;
+          &lt;include name=&quot;validateBasicAPISwaggerURL&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- com.informatica.tests.APIMSwaggerTest --&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- APIM_Swagger --&gt;
+  &lt;test thread-count=&quot;5&quot; parallel=&quot;tests&quot; name=&quot;RateLimit&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.informatica.tests.RateLimitTest&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;verifyRateLimitPolicyAppliedToAnonymousApi&quot;/&gt;
+          &lt;include name=&quot;verifyRateLimitPolicyAppliedToBasicApi&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- com.informatica.tests.RateLimitTest --&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- RateLimit --&gt;
+  &lt;test thread-count=&quot;5&quot; parallel=&quot;tests&quot; name=&quot;ClientSdk&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.informatica.tests.ClientSdkTest&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;verifyClientSdkItemsAndDownload&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- com.informatica.tests.ClientSdkTest --&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- ClientSdk --&gt;
+  &lt;test thread-count=&quot;5&quot; parallel=&quot;tests&quot; name=&quot;OrgLevelPolicies&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.informatica.tests.OrgLevelPoliciesTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- OrgLevelPolicies --&gt;
+&lt;/suite&gt; &lt;!-- APIM Tests --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-APIM_Tests" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for APIM Tests</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">IICS_Login (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">APIM_Home_Page (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Managed_API_Page (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">API_Groups (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">API_Portal_Registry (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">API_Portal_Home (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">API_Groups_In_API_Portal (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">APIM_Analytics (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">APIM_OAuth2 (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">APIM_CustomAPI (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">APIM_Swagger (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">RateLimit (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">ClientSdk (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">OrgLevelPolicies (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-APIM_Tests" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for APIM Tests</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-APIM_Tests" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for APIM Tests</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_APIM_Tests');
+function tableData_APIM_Tests() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(50);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'ClickOnEnablePrivacyPolicyBlock')
+data.setCell(0, 2, 'com.informatica.tests.managedAPITest')
+data.setCell(0, 3, 264965);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'ClickOnEnablePrivacyPolicyWarning')
+data.setCell(1, 2, 'com.informatica.tests.managedAPITest')
+data.setCell(1, 3, 261460);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'verifyRateLimitPolicyAppliedToBasicApi')
+data.setCell(2, 2, 'com.informatica.tests.RateLimitTest')
+data.setCell(2, 3, 120264);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'validateAnalyticsEventsLogTab')
+data.setCell(3, 2, 'com.informatica.tests.ApimAnalyticsTest')
+data.setCell(3, 3, 81485);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'accessBasicManagedAPI')
+data.setCell(4, 2, 'com.informatica.tests.managedAPITest')
+data.setCell(4, 3, 76641);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'CreateNewVersionAPI')
+data.setCell(5, 2, 'com.informatica.tests.APIMRegisteryTest')
+data.setCell(5, 3, 62349);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'CreateManagagedAPI')
+data.setCell(6, 2, 'com.informatica.tests.APIMRegisteryTest')
+data.setCell(6, 3, 62257);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'DeleteManagagedAPI')
+data.setCell(7, 2, 'com.informatica.tests.APIMRegisteryTest')
+data.setCell(7, 3, 62209);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'ValdiateEditOAuth2Client')
+data.setCell(8, 2, 'com.informatica.tests.PoliciesAuthorizationTest')
+data.setCell(8, 3, 62132);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'ValdiateCreateOAuth2Client')
+data.setCell(9, 2, 'com.informatica.tests.PoliciesAuthorizationTest')
+data.setCell(9, 3, 60623);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'validateWSDLURL')
+data.setCell(10, 2, 'com.informatica.tests.managedAPITest')
+data.setCell(10, 3, 60264);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'validateAnonAPISwaggerURL')
+data.setCell(11, 2, 'com.informatica.tests.APIMSwaggerTest')
+data.setCell(11, 3, 60187);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'validateBasicAPISwaggerURL')
+data.setCell(12, 2, 'com.informatica.tests.APIMSwaggerTest')
+data.setCell(12, 3, 60184);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'SearchActiveStatus')
+data.setCell(13, 2, 'com.informatica.tests.APIMRegisteryTest')
+data.setCell(13, 3, 60121);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'accessAnonManagedAPI')
+data.setCell(14, 2, 'com.informatica.tests.managedAPITest')
+data.setCell(14, 3, 60108);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'ValidateHeadersAPiRegistry')
+data.setCell(15, 2, 'com.informatica.tests.APIMRegisteryTest')
+data.setCell(15, 3, 60035);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'ValdiateDeleteOAuth2Client')
+data.setCell(16, 2, 'com.informatica.tests.PoliciesAuthorizationTest')
+data.setCell(16, 3, 60033);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'validateBasicAPISwagger')
+data.setCell(17, 2, 'com.informatica.tests.APIMSwaggerTest')
+data.setCell(17, 3, 60024);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'ValdiateAddGroupToCustomApi')
+data.setCell(18, 2, 'com.informatica.tests.CustomAPITest')
+data.setCell(18, 3, 60016);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'validateAnonAPISwagger')
+data.setCell(19, 2, 'com.informatica.tests.APIMSwaggerTest')
+data.setCell(19, 3, 60010);
+data.setCell(20, 0, 20)
+data.setCell(20, 1, 'ValdiateDeleteCustomAPI')
+data.setCell(20, 2, 'com.informatica.tests.CustomAPITest')
+data.setCell(20, 3, 60009);
+data.setCell(21, 0, 21)
+data.setCell(21, 1, 'ValdiateAddIpFilteringToCustomApi')
+data.setCell(21, 2, 'com.informatica.tests.CustomAPITest')
+data.setCell(21, 3, 60008);
+data.setCell(22, 0, 22)
+data.setCell(22, 1, 'ValdiateTestAndCreateCustomAPI')
+data.setCell(22, 2, 'com.informatica.tests.CustomAPITest')
+data.setCell(22, 3, 51118);
+data.setCell(23, 0, 23)
+data.setCell(23, 1, 'verifyRateLimitPolicyAppliedToAnonymousApi')
+data.setCell(23, 2, 'com.informatica.tests.RateLimitTest')
+data.setCell(23, 3, 27998);
+data.setCell(24, 0, 24)
+data.setCell(24, 1, 'validateAnalyticsOverViewTab')
+data.setCell(24, 2, 'com.informatica.tests.ApimAnalyticsTest')
+data.setCell(24, 3, 11290);
+data.setCell(25, 0, 25)
+data.setCell(25, 1, 'verifyClientSdkItemsAndDownload')
+data.setCell(25, 2, 'com.informatica.tests.ClientSdkTest')
+data.setCell(25, 3, 8257);
+data.setCell(26, 0, 26)
+data.setCell(26, 1, 'validateTopApisTab')
+data.setCell(26, 2, 'com.informatica.tests.APIPortalHomeTest')
+data.setCell(26, 3, 5432);
+data.setCell(27, 0, 27)
+data.setCell(27, 1, 'ValdiateAddRatelimitToCustomApi')
+data.setCell(27, 2, 'com.informatica.tests.CustomAPITest')
+data.setCell(27, 3, 4919);
+data.setCell(28, 0, 28)
+data.setCell(28, 1, 'deleteDefaultOrgRateLimitTier')
+data.setCell(28, 2, 'com.informatica.tests.OrgLevelPoliciesTest')
+data.setCell(28, 3, 3443);
+data.setCell(29, 0, 29)
+data.setCell(29, 1, 'valdiateAPIMChiklet')
+data.setCell(29, 2, 'com.informatica.tests.LoginTest')
+data.setCell(29, 3, 3238);
+data.setCell(30, 0, 30)
+data.setCell(30, 1, 'validateIICSLogin')
+data.setCell(30, 2, 'com.informatica.tests.LoginTest')
+data.setCell(30, 3, 2218);
+data.setCell(31, 0, 31)
+data.setCell(31, 1, 'validateAPIURLInAPIGroup')
+data.setCell(31, 2, 'com.informatica.tests.APIPortalAPIGroupsTest')
+data.setCell(31, 3, 1807);
+data.setCell(32, 0, 32)
+data.setCell(32, 1, 'validateAnalyticsOverviewTab')
+data.setCell(32, 2, 'com.informatica.tests.APIPortalHomeTest')
+data.setCell(32, 3, 533);
+data.setCell(33, 0, 33)
+data.setCell(33, 1, 'validateAnalyticsActivityLogTab')
+data.setCell(33, 2, 'com.informatica.tests.ApimAnalyticsTest')
+data.setCell(33, 3, 502);
+data.setCell(34, 0, 34)
+data.setCell(34, 1, 'validateManagedAPIDropdown')
+data.setCell(34, 2, 'com.informatica.tests.APIMRegisteryTest')
+data.setCell(34, 3, 249);
+data.setCell(35, 0, 35)
+data.setCell(35, 1, 'validateOrgRateLimitUI')
+data.setCell(35, 2, 'com.informatica.tests.OrgLevelPoliciesTest')
+data.setCell(35, 3, 114);
+data.setCell(36, 0, 36)
+data.setCell(36, 1, 'validateIpFilterPoliciesRetained')
+data.setCell(36, 2, 'com.informatica.tests.OrgLevelPoliciesTest')
+data.setCell(36, 3, 99);
+data.setCell(37, 0, 37)
+data.setCell(37, 1, 'SearchInActiveStatus')
+data.setCell(37, 2, 'com.informatica.tests.APIMRegisteryTest')
+data.setCell(37, 3, 14);
+data.setCell(38, 0, 38)
+data.setCell(38, 1, 'Search_InActiveServiceNot_AvailiableStatus')
+data.setCell(38, 2, 'com.informatica.tests.APIMRegisteryTest')
+data.setCell(38, 3, 8);
+data.setCell(39, 0, 39)
+data.setCell(39, 1, 'Search_ActiveServiceNot_AvailiableStatus')
+data.setCell(39, 2, 'com.informatica.tests.APIMRegisteryTest')
+data.setCell(39, 3, 7);
+data.setCell(40, 0, 40)
+data.setCell(40, 1, 'validateUserNavigatedtoAPiGroups')
+data.setCell(40, 2, 'com.informatica.tests.APIGroupsTest')
+data.setCell(40, 3, 0);
+data.setCell(41, 0, 41)
+data.setCell(41, 1, 'validateCreateAPIGroupWithOutContext')
+data.setCell(41, 2, 'com.informatica.tests.APIGroupsTest')
+data.setCell(41, 3, 0);
+data.setCell(42, 0, 42)
+data.setCell(42, 1, 'validateCreateAPIGroupWithContext')
+data.setCell(42, 2, 'com.informatica.tests.APIGroupsTest')
+data.setCell(42, 3, 0);
+data.setCell(43, 0, 43)
+data.setCell(43, 1, 'ValidateHeadersAPiGroups')
+data.setCell(43, 2, 'com.informatica.tests.APIGroupsTest')
+data.setCell(43, 3, 0);
+data.setCell(44, 0, 44)
+data.setCell(44, 1, 'validateRenameAPIGroup')
+data.setCell(44, 2, 'com.informatica.tests.APIGroupsTest')
+data.setCell(44, 3, 0);
+data.setCell(45, 0, 45)
+data.setCell(45, 1, 'validateRemoveAPIGroup')
+data.setCell(45, 2, 'com.informatica.tests.APIGroupsTest')
+data.setCell(45, 3, 0);
+data.setCell(46, 0, 46)
+data.setCell(46, 1, 'ValidateSwaggerTab')
+data.setCell(46, 2, 'com.informatica.tests.APIPortalRegistryTest')
+data.setCell(46, 3, 0);
+data.setCell(47, 0, 47)
+data.setCell(47, 1, 'validateSwaggerURLinAPIPortal')
+data.setCell(47, 2, 'com.informatica.tests.APIPortalRegistryTest')
+data.setCell(47, 3, 0);
+data.setCell(48, 0, 48)
+data.setCell(48, 1, 'run_basic_Managed_API')
+data.setCell(48, 2, 'com.informatica.tests.APIPortalRegistryTest')
+data.setCell(48, 3, 0);
+data.setCell(49, 0, 49)
+data.setCell(49, 1, 'run_anonymous_Managed_API')
+data.setCell(49, 2, 'com.informatica.tests.APIPortalRegistryTest')
+data.setCell(49, 3, 0);
+window.suiteTableData['APIM_Tests']= { tableData: data, tableDiv: 'times-div-APIM_Tests'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 32 minutes</span>
+              <div id="times-div-APIM_Tests">
+              </div> <!-- times-div-APIM_Tests -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-APIM_Tests" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for APIM Tests</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-APIM_Tests" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">3 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.informatica.tests.managedAPITest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">ManagedAPINameToolTip</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.informatica.tests.APIGroupsTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">validateCreateAPIGroupWithipfilter</span>
+                <br/>
+                <span class="ignored-method-name">validateCreateAPIGroupWithratelimit</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-APIM_Tests" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.informatica.tests.APIGroupsTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">validateUserNavigatedtoAPiGroups</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">ValidateHeadersAPiGroups</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">validateCreateAPIGroupWithContext</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">validateCreateAPIGroupWithOutContext</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.informatica.tests.APIPortalRegistryTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">ValidateSwaggerTab</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">run_anonymous_Managed_API</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">validateSwaggerURLinAPIPortal</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">run_basic_Managed_API</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.informatica.tests.OrgLevelPoliciesTest</div> <!-- chronological-class-name -->
+              <div class="configuration-suite before">
+                <span class="method-name">beforeSuite</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-suite before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.informatica.tests.LoginTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">init</span>
+                <span class="method-start">460 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.informatica.tests.APIMRegisteryTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">init</span>
+                <span class="method-start">460 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.informatica.tests.managedAPITest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">init</span>
+                <span class="method-start">460 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.informatica.tests.APIGroupsTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">init</span>
+                <span class="method-start">460 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.informatica.tests.APIPortalRegistryTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">init</span>
+                <span class="method-start">460 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.informatica.tests.LoginTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">register(public void com.informatica.tests.LoginTest.validateIICSLogin(java.lang.Object))</span>
+                <span class="method-start">27150 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">validateIICSLogin({Additional Details=Processname=Employee,GroupName=grp1, TestMethodName=validateIICSLogin, Descripti...)</span>
+                <span class="method-start">27168 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">captureStatus([TestResult name=validateIICSLogin status=SUCCESS method=LoginTest.validateIICSLogin(java.lang.Objec...)</span>
+                <span class="method-start">29388 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">register(public void com.informatica.tests.LoginTest.valdiateAPIMChiklet())</span>
+                <span class="method-start">29393 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">valdiateAPIMChiklet</span>
+                <span class="method-start">29393 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">captureStatus([TestResult name=valdiateAPIMChiklet status=SUCCESS method=LoginTest.valdiateAPIMChiklet()[pri:2, in...)</span>
+                <span class="method-start">32632 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-test after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">32634 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.informatica.tests.APIPortalHomeTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">init</span>
+                <span class="method-start">35488 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.informatica.tests.managedAPITest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">register(public void com.informatica.tests.managedAPITest.accessAnonManagedAPI(java.lang.Object))</span>
+                <span class="method-start">38399 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">accessAnonManagedAPI({Additional Details=ManagedAPIName=APIM_Automation_Generic_Anon1, TestMethodName=accessAnonManagedAP...)</span>
+                <span class="method-start">38400 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.informatica.tests.APIMRegisteryTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">register(public void com.informatica.tests.APIMRegisteryTest.SearchActiveStatus())</span>
+                <span class="method-start">72034 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">SearchActiveStatus</span>
+                <span class="method-start">72034 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.informatica.tests.APIGroupsTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">register(public void com.informatica.tests.APIGroupsTest.validateUserNavigatedtoAPiGroups())</span>
+                <span class="method-start">93493 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method after">
+                <span class="method-name">captureStatus([TestResult name={null} status=CREATED method=APIGroupsTest.validateUserNavigatedtoAPiGroups()[pri:1...)</span>
+                <span class="method-start">93494 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">register(public void com.informatica.tests.APIGroupsTest.ValidateHeadersAPiGroups())</span>
+                <span class="method-start">93495 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method after">
+                <span class="method-name">captureStatus([TestResult name={null} status=CREATED method=APIGroupsTest.ValidateHeadersAPiGroups()[pri:2, instan...)</span>
+                <span class="method-start">93497 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">register(public void com.informatica.tests.APIGroupsTest.validateCreateAPIGroupWithContext(java.lang.Object))</span>
+                <span class="method-start">93501 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method after">
+                <span class="method-name">captureStatus([TestResult name={null} status=CREATED method=APIGroupsTest.validateCreateAPIGroupWithContext(java.l...)</span>
+                <span class="method-start">93502 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">register(public void com.informatica.tests.APIGroupsTest.validateCreateAPIGroupWithOutContext(java.lang.Objec...)</span>
+                <span class="method-start">93503 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method after">
+                <span class="method-name">captureStatus([TestResult name={null} status=CREATED method=APIGroupsTest.validateCreateAPIGroupWithOutContext(jav...)</span>
+                <span class="method-start">93504 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-test after">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">tearDown</span>
+                <span class="method-start">93508 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.informatica.tests.APIPortalRegistryTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">register(public void com.informatica.tests.APIPortalRegistryTest.ValidateSwaggerTab(java.lang.Object) throws ...)</span>
+                <span class="method-start">94358 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method after">
+                <span class="method-name">captureStatus([TestResult name={null} status=CREATED method=APIPortalRegistryTest.ValidateSwaggerTab(java.lang.Obj...)</span>
+                <span class="method-start">94358 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">register(public void com.informatica.tests.APIPortalRegistryTest.run_anonymous_Managed_API(java.lang.Object) ...)</span>
+                <span class="method-start">94359 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method after">
+                <span class="method-name">captureStatus([TestResult name={null} status=CREATED method=APIPortalRegistryTest.run_anonymous_Managed_API(java.l...)</span>
+                <span class="method-start">94360 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">register(public void com.informatica.tests.APIPortalRegistryTest.validateSwaggerURLinAPIPortal(java.lang.Obje...)</span>
+                <span class="method-start">94360 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method after">
+                <span class="method-name">captureStatus([TestResult name={null} status=CREATED method=APIPortalRegistryTest.validateSwaggerURLinAPIPortal(ja...)</span>
+                <span class="method-start">94361 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">register(public void com.informatica.tests.APIPortalRegistryTest.run_basic_Managed_API(java.lang.Object) thro...)</span>
+                <span class="method-start">94361 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method after">
+                <span class="method-name">captureStatus([TestResult name={null} status=CREATED method=APIPortalRegistryTest.run_basic_Managed_API(java.lang....)</span>
+                <span class="method-start">94361 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-test after">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">tearDown</span>
+                <span class="method-start">94361 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.informatica.tests.APIPortalAPIGroupsTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">init</span>
+                <span class="method-start">94794 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.informatica.tests.ApimAnalyticsTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">init</span>
+                <span class="method-start">95286 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.informatica.tests.managedAPITest</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">captureStatus([TestResult name=accessAnonManagedAPI status=FAILURE method=managedAPITest.accessAnonManagedAPI(java...)</span>
+                <span class="method-start">98508 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">register(public void com.informatica.tests.managedAPITest.accessBasicManagedAPI(java.lang.Object))</span>
+                <span class="method-start">99025 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">accessBasicManagedAPI({Additional Details=ManagedAPIName=APIM_Automation_Generic_Basic, TestMethodName=accessBasicManagedA...)</span>
+                <span class="method-start">99026 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.informatica.tests.ApimAnalyticsTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">register(public void com.informatica.tests.ApimAnalyticsTest.validateAnalyticsOverViewTab() throws java.lang....)</span>
+                <span class="method-start">117219 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">validateAnalyticsOverViewTab</span>
+                <span class="method-start">117220 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.informatica.tests.APIPortalHomeTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">register(public void com.informatica.tests.APIPortalHomeTest.validateAnalyticsOverviewTab() throws java.lang....)</span>
+                <span class="method-start">122299 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">validateAnalyticsOverviewTab</span>
+                <span class="method-start">122299 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">captureStatus([TestResult name=validateAnalyticsOverviewTab status=SUCCESS method=APIPortalHomeTest.validateAnalyt...)</span>
+                <span class="method-start">122832 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">register(public void com.informatica.tests.APIPortalHomeTest.validateTopApisTab() throws java.lang.Exception)</span>
+                <span class="method-start">122833 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">validateTopApisTab</span>
+                <span class="method-start">122835 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.informatica.tests.APIPortalAPIGroupsTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">register(public void com.informatica.tests.APIPortalAPIGroupsTest.validateAPIURLInAPIGroup(java.lang.Object) ...)</span>
+                <span class="method-start">126582 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">validateAPIURLInAPIGroup({Additional Details=apiGroupName=APIM_Automation_Grp,apiGroupContext=/APIM_Automation_Grp,apiName=AP...)</span>
+                <span class="method-start">126583 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.informatica.tests.APIPortalHomeTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">captureStatus([TestResult name=validateTopApisTab status=SUCCESS method=APIPortalHomeTest.validateTopApisTab()[pri...)</span>
+                <span class="method-start">128267 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-test after">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">tearDown</span>
+                <span class="method-start">128269 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.informatica.tests.APIPortalAPIGroupsTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">captureStatus([TestResult name=validateAPIURLInAPIGroup status=SUCCESS method=APIPortalAPIGroupsTest.validateAPIUR...)</span>
+                <span class="method-start">128390 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-test after">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">tearDown</span>
+                <span class="method-start">128393 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.informatica.tests.ApimAnalyticsTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">captureStatus([TestResult name=validateAnalyticsOverViewTab status=SUCCESS method=ApimAnalyticsTest.validateAnalyt...)</span>
+                <span class="method-start">128510 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">register(public void com.informatica.tests.ApimAnalyticsTest.validateAnalyticsActivityLogTab() throws java.la...)</span>
+                <span class="method-start">128511 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">validateAnalyticsActivityLogTab</span>
+                <span class="method-start">128511 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">captureStatus([TestResult name=validateAnalyticsActivityLogTab status=SUCCESS method=ApimAnalyticsTest.validateAna...)</span>
+                <span class="method-start">129014 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">register(public void com.informatica.tests.ApimAnalyticsTest.validateAnalyticsEventsLogTab() throws java.lang...)</span>
+                <span class="method-start">129016 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">validateAnalyticsEventsLogTab</span>
+                <span class="method-start">129016 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.informatica.tests.PoliciesAuthorizationTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">init</span>
+                <span class="method-start">129566 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.informatica.tests.CustomAPITest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">init</span>
+                <span class="method-start">129598 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.informatica.tests.APIMRegisteryTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">captureStatus([TestResult name=SearchActiveStatus status=FAILURE method=APIMRegisteryTest.SearchActiveStatus()[pri...)</span>
+                <span class="method-start">132156 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">register(public void com.informatica.tests.APIMRegisteryTest.SearchInActiveStatus())</span>
+                <span class="method-start">132580 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">SearchInActiveStatus</span>
+                <span class="method-start">132581 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">captureStatus([TestResult name=SearchInActiveStatus status=FAILURE method=APIMRegisteryTest.SearchInActiveStatus()...)</span>
+                <span class="method-start">132596 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">register(public void com.informatica.tests.APIMRegisteryTest.Search_ActiveServiceNot_AvailiableStatus())</span>
+                <span class="method-start">132939 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">Search_ActiveServiceNot_AvailiableStatus</span>
+                <span class="method-start">132940 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">captureStatus([TestResult name=Search_ActiveServiceNot_AvailiableStatus status=FAILURE method=APIMRegisteryTest.Se...)</span>
+                <span class="method-start">132947 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">register(public void com.informatica.tests.APIMRegisteryTest.Search_InActiveServiceNot_AvailiableStatus())</span>
+                <span class="method-start">133325 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">Search_InActiveServiceNot_AvailiableStatus</span>
+                <span class="method-start">133325 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">captureStatus([TestResult name=Search_InActiveServiceNot_AvailiableStatus status=FAILURE method=APIMRegisteryTest....)</span>
+                <span class="method-start">133334 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">register(public void com.informatica.tests.APIMRegisteryTest.ValidateHeadersAPiRegistry())</span>
+                <span class="method-start">133709 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">ValidateHeadersAPiRegistry</span>
+                <span class="method-start">133710 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.informatica.tests.PoliciesAuthorizationTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">register(public void com.informatica.tests.PoliciesAuthorizationTest.ValdiateCreateOAuth2Client(java.lang.Obj...)</span>
+                <span class="method-start">159409 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">ValdiateCreateOAuth2Client({Additional Details=Processname=APIM_Automation_Basic_OAuth, TestMethodName=ValdiateCreateOAuth2Clie...)</span>
+                <span class="method-start">159410 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.informatica.tests.CustomAPITest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">register(public void com.informatica.tests.CustomAPITest.ValdiateTestAndCreateCustomAPI(java.lang.Object))</span>
+                <span class="method-start">162037 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">ValdiateTestAndCreateCustomAPI({Additional Details=-, TestMethodName=ValdiateTestAndCreateCustomAPI, Description=Test case to valid...)</span>
+                <span class="method-start">162037 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.informatica.tests.managedAPITest</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">captureStatus([TestResult name=accessBasicManagedAPI status=FAILURE method=managedAPITest.accessBasicManagedAPI(ja...)</span>
+                <span class="method-start">175667 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">register(public void com.informatica.tests.managedAPITest.validateWSDLURL(java.lang.Object))</span>
+                <span class="method-start">175990 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">validateWSDLURL({Additional Details=ManagedAPIName=APIM_Automation_Generic_Anon1, TestMethodName=validateWSDLURL, De...)</span>
+                <span class="method-start">175991 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.informatica.tests.APIMRegisteryTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">captureStatus([TestResult name=ValidateHeadersAPiRegistry status=FAILURE method=APIMRegisteryTest.ValidateHeadersA...)</span>
+                <span class="method-start">193745 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">register(public void com.informatica.tests.APIMRegisteryTest.CreateManagagedAPI(java.lang.Object))</span>
+                <span class="method-start">194010 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">CreateManagagedAPI({Additional Details=APIName=APIM_Automation_JWT,Version=1.0.0,Protocol=REST, TestMethodName=CreateMa...)</span>
+                <span class="method-start">194010 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.informatica.tests.ApimAnalyticsTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">captureStatus([TestResult name=validateAnalyticsEventsLogTab status=SUCCESS method=ApimAnalyticsTest.validateAnaly...)</span>
+                <span class="method-start">210501 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-test after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">210501 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.informatica.tests.APIMSwaggerTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">init</span>
+                <span class="method-start">211122 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.informatica.tests.CustomAPITest</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">captureStatus([TestResult name=ValdiateTestAndCreateCustomAPI status=SUCCESS method=CustomAPITest.ValdiateTestAndC...)</span>
+                <span class="method-start">213156 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">register(public void com.informatica.tests.CustomAPITest.ValdiateAddRatelimitToCustomApi(java.lang.Object))</span>
+                <span class="method-start">213157 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">ValdiateAddRatelimitToCustomApi({Additional Details=-, TestMethodName=ValdiateAddRatelimitToCustomApi, Description=Test case to vali...)</span>
+                <span class="method-start">213157 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">captureStatus([TestResult name=ValdiateAddRatelimitToCustomApi status=FAILURE method=CustomAPITest.ValdiateAddRate...)</span>
+                <span class="method-start">218076 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">register(public void com.informatica.tests.CustomAPITest.ValdiateAddIpFilteringToCustomApi(java.lang.Object))</span>
+                <span class="method-start">218254 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">ValdiateAddIpFilteringToCustomApi({Additional Details=-, TestMethodName=ValdiateAddIpFilteringToCustomApi, Description=Test case to va...)</span>
+                <span class="method-start">218254 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.informatica.tests.PoliciesAuthorizationTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">captureStatus([TestResult name=ValdiateCreateOAuth2Client status=FAILURE method=PoliciesAuthorizationTest.Valdiate...)</span>
+                <span class="method-start">220033 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">register(public void com.informatica.tests.PoliciesAuthorizationTest.ValdiateEditOAuth2Client())</span>
+                <span class="method-start">220357 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">ValdiateEditOAuth2Client</span>
+                <span class="method-start">220358 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.informatica.tests.APIMSwaggerTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">register(public void com.informatica.tests.APIMSwaggerTest.validateAnonAPISwaggerURL(java.lang.Object))</span>
+                <span class="method-start">236099 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">validateAnonAPISwaggerURL({Additional Details=ManagedAPIName=APIM_Automation_Generic_Anon1, TestMethodName=validateAnonAPISwag...)</span>
+                <span class="method-start">236099 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.informatica.tests.managedAPITest</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">captureStatus([TestResult name=validateWSDLURL status=FAILURE method=managedAPITest.validateWSDLURL(java.lang.Obje...)</span>
+                <span class="method-start">236255 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">register(public void com.informatica.tests.managedAPITest.ClickOnEnablePrivacyPolicyWarning(java.lang.Object))</span>
+                <span class="method-start">236489 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">ClickOnEnablePrivacyPolicyWarning({Additional Details=APIName=APIM_Automation_AnonPrivacy,Version=1.0.0,Protocol=REST, TestMethodName=...)</span>
+                <span class="method-start">236490 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.informatica.tests.APIMRegisteryTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">captureStatus([TestResult name=CreateManagagedAPI status=FAILURE method=APIMRegisteryTest.CreateManagagedAPI(java....)</span>
+                <span class="method-start">256267 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">register(public void com.informatica.tests.APIMRegisteryTest.CreateNewVersionAPI(java.lang.Object))</span>
+                <span class="method-start">256529 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">CreateNewVersionAPI({Additional Details=APIName=APIM_Automation_NewVersion1,APINameV2=APIM_Automation_NewVersion2,Versio...)</span>
+                <span class="method-start">256529 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.informatica.tests.CustomAPITest</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">captureStatus([TestResult name=ValdiateAddIpFilteringToCustomApi status=FAILURE method=CustomAPITest.ValdiateAddIp...)</span>
+                <span class="method-start">278262 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">register(public void com.informatica.tests.CustomAPITest.ValdiateAddGroupToCustomApi(java.lang.Object))</span>
+                <span class="method-start">278496 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">ValdiateAddGroupToCustomApi({Additional Details=-, TestMethodName=ValdiateAddGroupToCustomApi, Description=Test case to validate...)</span>
+                <span class="method-start">278497 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.informatica.tests.PoliciesAuthorizationTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">captureStatus([TestResult name=ValdiateEditOAuth2Client status=FAILURE method=PoliciesAuthorizationTest.ValdiateEd...)</span>
+                <span class="method-start">282490 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">register(public void com.informatica.tests.PoliciesAuthorizationTest.ValdiateDeleteOAuth2Client())</span>
+                <span class="method-start">282750 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">ValdiateDeleteOAuth2Client</span>
+                <span class="method-start">282751 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.informatica.tests.APIMSwaggerTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">captureStatus([TestResult name=validateAnonAPISwaggerURL status=FAILURE method=APIMSwaggerTest.validateAnonAPISwag...)</span>
+                <span class="method-start">296286 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">register(public void com.informatica.tests.APIMSwaggerTest.validateAnonAPISwagger(java.lang.Object))</span>
+                <span class="method-start">296506 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">validateAnonAPISwagger({Additional Details=ManagedAPIName=APIM_Automation_Generic_Anon1,ResponseBody={}, TestMethodName=val...)</span>
+                <span class="method-start">296506 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.informatica.tests.APIMRegisteryTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">captureStatus([TestResult name=CreateNewVersionAPI status=FAILURE method=APIMRegisteryTest.CreateNewVersionAPI(jav...)</span>
+                <span class="method-start">318878 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">register(public void com.informatica.tests.APIMRegisteryTest.DeleteManagagedAPI(java.lang.Object) throws java...)</span>
+                <span class="method-start">319167 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">DeleteManagagedAPI({Additional Details=APIName=APIM_Automation_JWT,Version=1.0.0,Protocol=REST, TestMethodName=DeleteMa...)</span>
+                <span class="method-start">319169 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.informatica.tests.CustomAPITest</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">captureStatus([TestResult name=ValdiateAddGroupToCustomApi status=FAILURE method=CustomAPITest.ValdiateAddGroupToC...)</span>
+                <span class="method-start">338513 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">register(public void com.informatica.tests.CustomAPITest.ValdiateDeleteCustomAPI(java.lang.Object))</span>
+                <span class="method-start">338764 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">ValdiateDeleteCustomAPI({Additional Details=-, TestMethodName=ValdiateDeleteCustomAPI, Description=Test case to validate Dle...)</span>
+                <span class="method-start">338764 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.informatica.tests.PoliciesAuthorizationTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">captureStatus([TestResult name=ValdiateDeleteOAuth2Client status=FAILURE method=PoliciesAuthorizationTest.Valdiate...)</span>
+                <span class="method-start">342785 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-test after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">343008 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.informatica.tests.RateLimitTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">init</span>
+                <span class="method-start">343400 ms</span>
+              </div> <!-- configuration-class before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.informatica.tests.APIMSwaggerTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">captureStatus([TestResult name=validateAnonAPISwagger status=FAILURE method=APIMSwaggerTest.validateAnonAPISwagger...)</span>
+                <span class="method-start">356516 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">register(public void com.informatica.tests.APIMSwaggerTest.validateBasicAPISwaggerURL(java.lang.Object))</span>
+                <span class="method-start">356796 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">validateBasicAPISwaggerURL({Additional Details=ManagedAPIName=APIM_Automation_Generic_Basic, TestMethodName=validateBasicAPISwa...)</span>
+                <span class="method-start">356796 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.informatica.tests.RateLimitTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">register(public void com.informatica.tests.RateLimitTest.verifyRateLimitPolicyAppliedToAnonymousApi(java.lang...)</span>
+                <span class="method-start">373044 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyRateLimitPolicyAppliedToAnonymousApi({Additional Details=Processname=APIM_Automation_Anon1, TestMethodName=verifyRateLimitPolicyAppliedTo...)</span>
+                <span class="method-start">373044 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.informatica.tests.APIMRegisteryTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">captureStatus([TestResult name=DeleteManagagedAPI status=FAILURE method=APIMRegisteryTest.DeleteManagagedAPI(java....)</span>
+                <span class="method-start">381379 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">register(public void com.informatica.tests.APIMRegisteryTest.validateManagedAPIDropdown())</span>
+                <span class="method-start">381581 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">validateManagedAPIDropdown</span>
+                <span class="method-start">381582 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">captureStatus([TestResult name=validateManagedAPIDropdown status=SUCCESS method=APIMRegisteryTest.validateManagedA...)</span>
+                <span class="method-start">381831 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-test after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">381832 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.informatica.tests.ClientSdkTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">init</span>
+                <span class="method-start">389789 ms</span>
+              </div> <!-- configuration-class before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.informatica.tests.CustomAPITest</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">captureStatus([TestResult name=ValdiateDeleteCustomAPI status=FAILURE method=CustomAPITest.ValdiateDeleteCustomAPI...)</span>
+                <span class="method-start">398773 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-test after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">399068 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.informatica.tests.RateLimitTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">captureStatus([TestResult name=verifyRateLimitPolicyAppliedToAnonymousApi status=SUCCESS method=RateLimitTest.veri...)</span>
+                <span class="method-start">401042 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">register(public void com.informatica.tests.RateLimitTest.verifyRateLimitPolicyAppliedToBasicApi(java.lang.Obj...)</span>
+                <span class="method-start">401043 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyRateLimitPolicyAppliedToBasicApi({Additional Details=Processname=APIM_Automation_Basic, TestMethodName=verifyRateLimitPolicyAppliedTo...)</span>
+                <span class="method-start">401044 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.informatica.tests.OrgLevelPoliciesTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">init</span>
+                <span class="method-start">411200 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.informatica.tests.APIMSwaggerTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">captureStatus([TestResult name=validateBasicAPISwaggerURL status=FAILURE method=APIMSwaggerTest.validateBasicAPISw...)</span>
+                <span class="method-start">416980 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">register(public void com.informatica.tests.APIMSwaggerTest.validateBasicAPISwagger(java.lang.Object))</span>
+                <span class="method-start">417323 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">validateBasicAPISwagger({Additional Details=ManagedAPIName=APIM_Automation_Generic_Basic,ResponseBody={
+  "Name": "Testing"
+...)</span>
+                <span class="method-start">417323 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.informatica.tests.ClientSdkTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">register(public void com.informatica.tests.ClientSdkTest.verifyClientSdkItemsAndDownload(java.lang.Object))</span>
+                <span class="method-start">417916 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyClientSdkItemsAndDownload({Additional Details=Processname=APIM_Automation_Anon1, TestMethodName=verifyClientSdkItemsAndDownloa...)</span>
+                <span class="method-start">417916 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">captureStatus([TestResult name=verifyClientSdkItemsAndDownload status=SUCCESS method=ClientSdkTest.verifyClientSdk...)</span>
+                <span class="method-start">426173 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-test after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">426174 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.informatica.tests.OrgLevelPoliciesTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">register(public void com.informatica.tests.OrgLevelPoliciesTest.validateOrgRateLimitUI())</span>
+                <span class="method-start">449689 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">validateOrgRateLimitUI</span>
+                <span class="method-start">449689 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">captureStatus([TestResult name=validateOrgRateLimitUI status=SUCCESS method=OrgLevelPoliciesTest.validateOrgRateLi...)</span>
+                <span class="method-start">449803 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">register(public void com.informatica.tests.OrgLevelPoliciesTest.deleteDefaultOrgRateLimitTier())</span>
+                <span class="method-start">449804 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">deleteDefaultOrgRateLimitTier</span>
+                <span class="method-start">449805 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">captureStatus([TestResult name=deleteDefaultOrgRateLimitTier status=SUCCESS method=OrgLevelPoliciesTest.deleteDefa...)</span>
+                <span class="method-start">453248 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">register(public void com.informatica.tests.OrgLevelPoliciesTest.validateIpFilterPoliciesRetained())</span>
+                <span class="method-start">453250 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">validateIpFilterPoliciesRetained</span>
+                <span class="method-start">453250 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">captureStatus([TestResult name=validateIpFilterPoliciesRetained status=SUCCESS method=OrgLevelPoliciesTest.validat...)</span>
+                <span class="method-start">453350 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-test after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">453351 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.informatica.tests.APIMSwaggerTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">captureStatus([TestResult name=validateBasicAPISwagger status=FAILURE method=APIMSwaggerTest.validateBasicAPISwagg...)</span>
+                <span class="method-start">477347 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-test after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">477577 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.informatica.tests.managedAPITest</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">captureStatus([TestResult name=ClickOnEnablePrivacyPolicyWarning status=FAILURE method=managedAPITest.ClickOnEnabl...)</span>
+                <span class="method-start">497950 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">register(public void com.informatica.tests.managedAPITest.ClickOnEnablePrivacyPolicyBlock(java.lang.Object))</span>
+                <span class="method-start">498209 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">ClickOnEnablePrivacyPolicyBlock({Additional Details=APIName=APIM_Automation_AnonPrivacy,Version=1.0.0,Protocol=REST, TestMethodName=...)</span>
+                <span class="method-start">498209 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.informatica.tests.RateLimitTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">captureStatus([TestResult name=verifyRateLimitPolicyAppliedToBasicApi status=FAILURE method=RateLimitTest.verifyRa...)</span>
+                <span class="method-start">521309 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-test after">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">tearDown</span>
+                <span class="method-start">521569 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.informatica.tests.managedAPITest</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">captureStatus([TestResult name=ClickOnEnablePrivacyPolicyBlock status=SUCCESS method=managedAPITest.ClickOnEnableP...)</span>
+                <span class="method-start">763174 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-test after">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">tearDown</span>
+                <span class="method-start">763175 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.informatica.tests.OrgLevelPoliciesTest</div> <!-- chronological-class-name -->
+              <div class="configuration-suite after">
+                <span class="method-name">cleanUp</span>
+                <span class="method-start">763526 ms</span>
+              </div> <!-- configuration-suite after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

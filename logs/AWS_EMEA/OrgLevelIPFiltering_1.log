@@ -1,0 +1,25 @@
+[INFO ] 2022-12-15 13:30:00.115 - com.informatica.web.util.MyLogger:startLogger 18==>  
+
+************** Execution Started : OrgLevelIPFiltering**************
+
+[INFO ] 2022-12-15 13:30:01.848 - com.informatica.pages.LoginPage:<init> 26==>  Initiated loginPage object
+[INFO ] 2022-12-15 13:30:04.114 - com.informatica.pages.BasePage:loginIntoIICSApp 60==>  entering username and password
+[INFO ] 2022-12-15 13:30:05.013 - com.informatica.pages.BasePage:loginIntoIICSApp 63==>  Clicking on Login Button
+[INFO ] 2022-12-15 13:30:09.749 - com.informatica.pages.LoginPage:<init> 26==>  Initiated loginPage object
+[INFO ] 2022-12-15 13:30:09.750 - com.informatica.pages.LoginPage:ClickonAPIMChiklet 48==>  Clicking on  APIM Chikclet
+[INFO ] 2022-12-15 13:30:17.087 - com.informatica.pages.APIMRegistryPage:<init> 18==>  Initiated APIMRegistryPage object
+[INFO ] 2022-12-15 13:30:17.087 - com.informatica.pages.APIMRegistryPage:ClickonPolicies 239==>  Clicking on  Policies tab
+[INFO ] 2022-12-15 13:30:21.007 - com.informatica.tests.OrgLevelPoliciesTest:validateOrgRateLimitUI 58==>  ================= validateOrgRateLimitUI : START ================== 
+[INFO ] 2022-12-15 13:30:21.007 - com.informatica.pages.APIMPoliciesPage:validateOrgRateLimitUI 186==>  Validate Configured User Specific tier at org level Rate Limit...
+[INFO ] 2022-12-15 13:30:21.055 - com.informatica.tests.OrgLevelPoliciesTest:deleteDefaultOrgRateLimitTier 84==>  ================= deleteDeafultOrgRateLimitTier : START ================== 
+[INFO ] 2022-12-15 13:30:21.055 - com.informatica.pages.APIMPoliciesPage:deleteOrgTier 139==>  Configuring new tier at org level Rate Limit...
+[INFO ] 2022-12-15 13:30:23.823 - com.informatica.tests.OrgLevelPoliciesTest:validateIpFilterPoliciesRetained 110==>  ================= ORGLevel IPfilter check : START ================== 
+[INFO ] 2022-12-15 13:30:23.824 - com.informatica.pages.APIMPoliciesPage:ipfilterretained 111==>  Test Method Started 
+[INFO ] 2022-12-15 13:30:23.824 - com.informatica.pages.APIMPoliciesPage:checkallow 51==>  check ip filter set to allow/deny
+[INFO ] 2022-12-15 13:30:23.835 - com.informatica.pages.APIMPoliciesPage:checkfromip 59==>  get from range of ip filter
+[INFO ] 2022-12-15 13:30:23.842 - com.informatica.pages.APIMPoliciesPage:ipfilterretained 115==>  ip Filter from is set to 0.0.0.0
+[INFO ] 2022-12-15 13:30:23.842 - com.informatica.pages.APIMPoliciesPage:checktoip 67==>  get to range of ip filter
+[INFO ] 2022-12-15 13:30:23.849 - com.informatica.pages.APIMPoliciesPage:ipfilterretained 117==>  ip Filter from is set to 255.255.255.255
+[INFO ] 2022-12-15 13:30:23.849 - com.informatica.pages.APIMPoliciesPage:ipfilterretained 118==>  Org Level ip Filter values are retained
+[INFO ] 2022-12-15 13:30:23.849 - com.informatica.pages.APIMPoliciesPage:ipfilterretained 119==>  check for update button
+[INFO ] 2022-12-15 13:30:23.906 - com.informatica.pages.APIMPoliciesPage:ipfilterretained 122==>  save button operation successfull

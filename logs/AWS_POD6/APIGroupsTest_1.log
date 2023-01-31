@@ -1,0 +1,11 @@
+[INFO ] 2022-12-12 14:54:22.777 - com.informatica.web.util.MyLogger:startLogger 18==>  
+
+************** Execution Started : APIGroupsTest**************
+
+[INFO ] 2022-12-12 14:54:28.296 - com.informatica.pages.BasePage:loginIntoIICSApp 60==>  entering username and password
+[INFO ] 2022-12-12 14:54:29.658 - com.informatica.pages.BasePage:loginIntoIICSApp 63==>  Clicking on Login Button
+[INFO ] 2022-12-12 14:54:35.406 - com.informatica.pages.LoginPage:<init> 26==>  Initiated loginPage object
+[INFO ] 2022-12-12 14:54:35.407 - com.informatica.pages.LoginPage:ClickonAPIMChiklet 48==>  Clicking on  APIM Chikclet
+[INFO ] 2022-12-12 14:55:07.918 - com.informatica.pages.APIMRegistryPage:<init> 18==>  Initiated APIMRegistryPage object
+[INFO ] 2022-12-12 14:55:07.974 - com.informatica.tests.APIMGroupsRegressionScenarios:updatedContextIsNotIncludedinAPIURLNotPartOfGroup_TC31 262==>  =================Validating Updated context is part of API URL: START ================== 
+[INFO ] 2022-12-12 14:55:07.976 - com.informatica.pages.APIGroupsPage:removeAPIFromGroup 920==>  Removing API From Group

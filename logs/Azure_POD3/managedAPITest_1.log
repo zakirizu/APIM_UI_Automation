@@ -1,0 +1,3437 @@
+[INFO ] 2022-12-15 23:26:53.078 - com.informatica.web.util.MyLogger:startLogger 18==>  
+
+************** Execution Started : managedAPITest**************
+
+[INFO ] 2022-12-15 23:27:08.579 - com.informatica.pages.BasePage:loginIntoIICSApp 60==>  entering username and password
+[INFO ] 2022-12-15 23:27:10.213 - com.informatica.pages.BasePage:loginIntoIICSApp 63==>  Clicking on Login Button
+[INFO ] 2022-12-15 23:27:18.652 - com.informatica.pages.LoginPage:<init> 26==>  Initiated loginPage object
+[INFO ] 2022-12-15 23:27:18.658 - com.informatica.pages.LoginPage:ClickonAPIMChiklet 48==>  Clicking on  APIM Chikclet
+[INFO ] 2022-12-15 23:27:29.980 - com.informatica.pages.APIMRegistryPage:<init> 18==>  Initiated APIMRegistryPage object
+[INFO ] 2022-12-15 23:27:29.984 - com.informatica.pages.AnalyticsPage:<init> 23==>  Initiated ApimAnalyticsPage object
+[INFO ] 2022-12-15 23:27:29.995 - com.informatica.tests.managedAPITest:accessAnonManagedAPI 95==>  ================= AccessAnonManagedAPiValdiations : START ================== 
+[INFO ] 2022-12-15 23:27:29.998 - com.informatica.pages.APIMRegistryPage:clickOnAPIRegistry 354==>  Clicking on  API Registry
+[ERROR] 2022-12-15 23:28:30.043 - com.informatica.pages.APIMRegistryPage:clickOnAPIRegistry 358==>  Failed to click on API Registry[Ljava.lang.StackTraceElement;@1c842436
+[ERROR] 2022-12-15 23:28:30.046 - com.informatica.tests.managedAPITest:accessAnonManagedAPI 119==>  Exception while validating AccessAnonManagedAPi : com.microsoft.playwright.TimeoutError: Error {
+  message='Timeout 60000ms exceeded.
+=========================== logs ===========================
+waiting for selector "//span[text()='API Registry']"
+  selector resolved to visible <span class="d-shell__nav__links__link__label">API Registry</span>
+attempting click action
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #1
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #2
+  waiting 20ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #3
+  waiting 100ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #4
+  waiting 100ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #5
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #6
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #7
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #8
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #9
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #10
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #11
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #12
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #13
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #14
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #15
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #16
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #17
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #18
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #19
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #20
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #21
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #22
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #23
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #24
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #25
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #26
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #27
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #28
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #29
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #30
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #31
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #32
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #33
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #34
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #35
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #36
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #37
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #38
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #39
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #40
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #41
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #42
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #43
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #44
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #45
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #46
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #47
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #48
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #49
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #50
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #51
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #52
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #53
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #54
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #55
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #56
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #57
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #58
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #59
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #60
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #61
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #62
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #63
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #64
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #65
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #66
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #67
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #68
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #69
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #70
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #71
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #72
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #73
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #74
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #75
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #76
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #77
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #78
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #79
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #80
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #81
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #82
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #83
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #84
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #85
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #86
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #87
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #88
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #89
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #90
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #91
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #92
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #93
+  waiting 500ms
+============================================================
+  name='TimeoutError
+  stack='TimeoutError: Timeout 60000ms exceeded.
+=========================== logs ===========================
+waiting for selector "//span[text()='API Registry']"
+  selector resolved to visible <span class="d-shell__nav__links__link__label">API Registry</span>
+attempting click action
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #1
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #2
+  waiting 20ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #3
+  waiting 100ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #4
+  waiting 100ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #5
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #6
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #7
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #8
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #9
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #10
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #11
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #12
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #13
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #14
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #15
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #16
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #17
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #18
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #19
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #20
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #21
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #22
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #23
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #24
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #25
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #26
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #27
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #28
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #29
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #30
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #31
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #32
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #33
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #34
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #35
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #36
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #37
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #38
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #39
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #40
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #41
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #42
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #43
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #44
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #45
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #46
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #47
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #48
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #49
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #50
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #51
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #52
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #53
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #54
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #55
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #56
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #57
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #58
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #59
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #60
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #61
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #62
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #63
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #64
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #65
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #66
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #67
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #68
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #69
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #70
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #71
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #72
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #73
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #74
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #75
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #76
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #77
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #78
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #79
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #80
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #81
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #82
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #83
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #84
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #85
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #86
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #87
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #88
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #89
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #90
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #91
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #92
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #93
+  waiting 500ms
+============================================================
+    at ProgressController.run (C:\Users\jashaik\AppData\Local\Temp\playwright-java-5376866736254237440\package\lib\server\progress.js:96:26)
+    at Frame.click (C:\Users\jashaik\AppData\Local\Temp\playwright-java-5376866736254237440\package\lib\server\frames.js:1111:23)
+    at FrameDispatcher.click (C:\Users\jashaik\AppData\Local\Temp\playwright-java-5376866736254237440\package\lib\dispatchers\frameDispatcher.js:166:30)
+    at DispatcherConnection.dispatch (C:\Users\jashaik\AppData\Local\Temp\playwright-java-5376866736254237440\package\lib\dispatchers\dispatcher.js:352:46)
+}
+[INFO ] 2022-12-15 23:28:30.618 - com.informatica.tests.managedAPITest:accessBasicManagedAPI 141==>  ================= AccessBasicManagedAPIValdiations : START ================== 
+[INFO ] 2022-12-15 23:28:30.622 - com.informatica.pages.APIMRegistryPage:clickOnAPIRegistry 354==>  Clicking on  API Registry
+[INFO ] 2022-12-15 23:28:47.155 - com.informatica.pages.APIMRegistryPage:clickOnApiInGrid 504==>  Clicking on API - APIM_Automation_Generic_Basic
+[ERROR] 2022-12-15 23:29:47.258 - com.informatica.tests.managedAPITest:accessBasicManagedAPI 156==>  Exception while validating AccessBasicManagedAPI : com.microsoft.playwright.TimeoutError: Error {
+  message='Timeout 60000ms exceeded.
+=========================== logs ===========================
+waiting for selector "//tr[@data-id='REST_APIM_Automation_Generic_Basic_1.0.0']"
+============================================================
+  name='TimeoutError
+  stack='TimeoutError: Timeout 60000ms exceeded.
+=========================== logs ===========================
+waiting for selector "//tr[@data-id='REST_APIM_Automation_Generic_Basic_1.0.0']"
+============================================================
+    at ProgressController.run (C:\Users\jashaik\AppData\Local\Temp\playwright-java-5376866736254237440\package\lib\server\progress.js:96:26)
+    at Frame.click (C:\Users\jashaik\AppData\Local\Temp\playwright-java-5376866736254237440\package\lib\server\frames.js:1111:23)
+    at FrameDispatcher.click (C:\Users\jashaik\AppData\Local\Temp\playwright-java-5376866736254237440\package\lib\dispatchers\frameDispatcher.js:166:30)
+    at DispatcherConnection.dispatch (C:\Users\jashaik\AppData\Local\Temp\playwright-java-5376866736254237440\package\lib\dispatchers\dispatcher.js:352:46)
+}
+[INFO ] 2022-12-15 23:29:47.583 - com.informatica.tests.managedAPITest:validateWSDLURL 178==>  ================= validateWSDLURL : START ================== 
+[INFO ] 2022-12-15 23:29:47.584 - com.informatica.pages.APIMRegistryPage:clickOnAPIRegistry 354==>  Clicking on  API Registry
+[INFO ] 2022-12-15 23:29:47.767 - com.informatica.pages.APIMRegistryPage:clickOnApiInGrid 504==>  Clicking on API - APIM_Automation_Generic_Anon1
+[ERROR] 2022-12-15 23:30:47.845 - com.informatica.tests.managedAPITest:validateWSDLURL 197==>  Exception while validating WSDL URL : com.microsoft.playwright.TimeoutError: Error {
+  message='Timeout 60000ms exceeded.
+=========================== logs ===========================
+waiting for selector "//tr[@data-id='SOAP_APIM_Automation_Generic_Anon1_1.0.0']"
+============================================================
+  name='TimeoutError
+  stack='TimeoutError: Timeout 60000ms exceeded.
+=========================== logs ===========================
+waiting for selector "//tr[@data-id='SOAP_APIM_Automation_Generic_Anon1_1.0.0']"
+============================================================
+    at ProgressController.run (C:\Users\jashaik\AppData\Local\Temp\playwright-java-5376866736254237440\package\lib\server\progress.js:96:26)
+    at Frame.click (C:\Users\jashaik\AppData\Local\Temp\playwright-java-5376866736254237440\package\lib\server\frames.js:1111:23)
+    at FrameDispatcher.click (C:\Users\jashaik\AppData\Local\Temp\playwright-java-5376866736254237440\package\lib\dispatchers\frameDispatcher.js:166:30)
+    at DispatcherConnection.dispatch (C:\Users\jashaik\AppData\Local\Temp\playwright-java-5376866736254237440\package\lib\dispatchers\dispatcher.js:352:46)
+}
+[INFO ] 2022-12-15 23:30:48.081 - com.informatica.tests.managedAPITest:ClickOnEnablePrivacyPolicyWarning 220==>  ================= ClickOnEnablePrivacyPolicyWarningValidation : START ================== 
+[INFO ] 2022-12-15 23:30:48.083 - com.informatica.pages.APIMRegistryPage:clickOnAPIRegistry 354==>  Clicking on  API Registry
+[INFO ] 2022-12-15 23:30:48.188 - com.informatica.pages.APIMRegistryPage:CheckManagedAPIStatus 737==>  Search an API
+[INFO ] 2022-12-15 23:30:48.289 - com.informatica.pages.APIMRegistryPage:DeleteManagedAPI 662==>  Search an API
+[INFO ] 2022-12-15 23:30:56.836 - com.informatica.pages.APIMRegistryPage:DeleteManagedAPI 682==>  Deactivate Message :The Managed API "APIM_Automation_AnonPrivacy" was deactivated successfully.
+[INFO ] 2022-12-15 23:30:57.963 - com.informatica.pages.APIMRegistryPage:DeleteManagedAPI 704==>  Deactivate Message :The Managed API "APIM_Automation_AnonPrivacy" was deleted successfully.
+[INFO ] 2022-12-15 23:30:57.964 - com.informatica.pages.BasePage:CheckPageisLoading 326==>  Checking Page is Loading :: START
+[INFO ] 2022-12-15 23:30:57.972 - com.informatica.pages.APIMRegistryPage:DeleteManagedAPI 716==>  Deleted the Managed API post Validation
+[INFO ] 2022-12-15 23:30:57.973 - com.informatica.pages.APIMRegistryPage:ReloadPage 559==>  Reloading the page
+[INFO ] 2022-12-15 23:31:10.137 - com.informatica.pages.APIMRegistryPage:CreateManagedAPI 581==>  Search an API
+[INFO ] 2022-12-15 23:31:12.554 - com.informatica.pages.APIMRegistryPage:ReloadPage 559==>  Reloading the page
+[INFO ] 2022-12-15 23:31:22.702 - com.informatica.pages.APIMRegistryPage:CreateManagedAPI 604==>  Created the Managed API
+[INFO ] 2022-12-15 23:31:22.703 - com.informatica.pages.APIMRegistryPage:EditManagedAPI 631==>  Search an API
+[INFO ] 2022-12-15 23:31:33.027 - com.informatica.tests.managedAPITest:ClickOnEnablePrivacyPolicyWarning 240==>  ================= PrivacyManagedAPIWarningExecutionValdiations : START ================== 
+[INFO ] 2022-12-15 23:31:48.372 - com.informatica.pages.APIMRegistryPage:ClickonAnalytcis 255==>  Clicking on  Analytics Tab
+[INFO ] 2022-12-15 23:31:48.548 - com.informatica.pages.BasePage:CheckPageisLoading 326==>  Checking Page is Loading :: START
+[INFO ] 2022-12-15 23:31:58.594 - com.informatica.pages.AnalyticsPage:clickEventsLogTab 93==>  Clicking on  EventlogTab 
+[INFO ] 2022-12-15 23:31:58.670 - com.informatica.pages.BasePage:CheckPageisLoading 326==>  Checking Page is Loading :: START
+[INFO ] 2022-12-15 23:33:03.991 - com.informatica.pages.AnalyticsPage:clickShowLog 113==>  Clicking on Show Log Button 
+[INFO ] 2022-12-15 23:33:04.085 - com.informatica.pages.BasePage:CheckPageisLoading 326==>  Checking Page is Loading :: START
+[INFO ] 2022-12-15 23:34:09.387 - com.informatica.pages.AnalyticsPage:validateTheRecordsInEventLog 229==>  validateTheRecordsInEventLog :: START
+[INFO ] 2022-12-15 23:34:09.516 - com.informatica.pages.AnalyticsPage:validateTheRecordsInEventLog 237==>  Event status :: 200 OK
+[INFO ] 2022-12-15 23:34:09.516 - com.informatica.pages.AnalyticsPage:validateTheRecordsInEventLog 238==>  Event description :: Warning: There was a privacy policy leakage in the response. Details: email address. 1 item. first item: /EmailOp
+[INFO ] 2022-12-15 23:34:09.517 - com.informatica.pages.AnalyticsPage:validateTheRecordsInEventLog 242==>  validateEventLogPage :: END
+[INFO ] 2022-12-15 23:34:09.517 - com.informatica.pages.APIMRegistryPage:clickOnAPIRegistry 354==>  Clicking on  API Registry
+[ERROR] 2022-12-15 23:35:09.534 - com.informatica.pages.APIMRegistryPage:clickOnAPIRegistry 358==>  Failed to click on API Registry[Ljava.lang.StackTraceElement;@d9346d7
+[ERROR] 2022-12-15 23:35:09.536 - com.informatica.tests.managedAPITest:ClickOnEnablePrivacyPolicyWarning 270==>  Exception while clicking ClickOnEnablePrivacyPolicyWarningValidation : com.microsoft.playwright.TimeoutError: Error {
+  message='Timeout 60000ms exceeded.
+=========================== logs ===========================
+waiting for selector "//span[text()='API Registry']"
+  selector resolved to visible <span class="d-shell__nav__links__link__label">API Registry</span>
+attempting click action
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #1
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #2
+  waiting 20ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #3
+  waiting 100ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #4
+  waiting 100ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #5
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #6
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #7
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #8
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #9
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #10
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #11
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #12
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #13
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #14
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #15
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #16
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #17
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #18
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #19
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #20
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #21
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #22
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #23
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #24
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #25
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #26
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #27
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #28
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #29
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #30
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #31
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #32
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #33
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #34
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #35
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #36
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #37
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #38
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #39
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #40
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #41
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #42
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #43
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #44
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #45
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #46
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #47
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #48
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #49
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #50
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #51
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #52
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #53
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #54
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #55
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #56
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #57
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #58
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #59
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #60
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #61
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #62
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #63
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #64
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #65
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #66
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #67
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #68
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #69
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #70
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #71
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #72
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #73
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #74
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #75
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #76
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #77
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #78
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #79
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #80
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #81
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #82
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #83
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #84
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #85
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #86
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #87
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #88
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #89
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #90
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #91
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #92
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #93
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #94
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #95
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #96
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #97
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #98
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #99
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #100
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #101
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #102
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #103
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #104
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #105
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #106
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #107
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #108
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #109
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #110
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #111
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #112
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #113
+  waiting 500ms
+============================================================
+  name='TimeoutError
+  stack='TimeoutError: Timeout 60000ms exceeded.
+=========================== logs ===========================
+waiting for selector "//span[text()='API Registry']"
+  selector resolved to visible <span class="d-shell__nav__links__link__label">API Registry</span>
+attempting click action
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #1
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #2
+  waiting 20ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #3
+  waiting 100ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #4
+  waiting 100ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #5
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #6
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #7
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #8
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #9
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #10
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #11
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #12
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #13
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #14
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #15
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #16
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #17
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #18
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #19
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #20
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #21
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #22
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #23
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #24
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #25
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #26
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #27
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #28
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #29
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #30
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #31
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #32
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #33
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #34
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #35
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #36
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #37
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #38
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #39
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #40
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #41
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #42
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #43
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #44
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #45
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #46
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #47
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #48
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #49
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #50
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #51
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #52
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #53
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #54
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #55
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #56
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #57
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #58
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #59
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #60
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #61
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #62
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #63
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #64
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #65
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #66
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #67
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #68
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #69
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #70
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #71
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #72
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #73
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #74
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #75
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #76
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #77
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #78
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #79
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #80
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #81
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #82
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #83
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #84
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #85
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #86
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #87
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #88
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #89
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #90
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #91
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #92
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #93
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #94
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #95
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #96
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #97
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #98
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #99
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #100
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #101
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #102
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #103
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #104
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #105
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #106
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #107
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #108
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #109
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #110
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #111
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #112
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  performing click action
+  <div class="d-loader d-version-2 d-loader--darken">…</div> from <div rerender="[object Object]">…</div> subtree intercepts pointer events
+retrying click action, attempt #113
+  waiting 500ms
+============================================================
+    at ProgressController.run (C:\Users\jashaik\AppData\Local\Temp\playwright-java-5376866736254237440\package\lib\server\progress.js:96:26)
+    at Frame.click (C:\Users\jashaik\AppData\Local\Temp\playwright-java-5376866736254237440\package\lib\server\frames.js:1111:23)
+    at FrameDispatcher.click (C:\Users\jashaik\AppData\Local\Temp\playwright-java-5376866736254237440\package\lib\dispatchers\frameDispatcher.js:166:30)
+    at DispatcherConnection.dispatch (C:\Users\jashaik\AppData\Local\Temp\playwright-java-5376866736254237440\package\lib\dispatchers\dispatcher.js:352:46)
+}
+[INFO ] 2022-12-15 23:35:09.801 - com.informatica.pages.APIMRegistryPage:clickOnAPIRegistry 354==>  Clicking on  API Registry
+[INFO ] 2022-12-15 23:35:10.864 - com.informatica.tests.managedAPITest:ClickOnEnablePrivacyPolicyBlock 292==>  ================= ClickOnEnablePrivacyPolicyBlockValidation : START ================== 
+[INFO ] 2022-12-15 23:35:10.864 - com.informatica.pages.APIMRegistryPage:CheckManagedAPIStatus 737==>  Search an API
+[INFO ] 2022-12-15 23:35:10.974 - com.informatica.pages.APIMRegistryPage:DeleteManagedAPI 662==>  Search an API
+[INFO ] 2022-12-15 23:35:19.473 - com.informatica.pages.APIMRegistryPage:DeleteManagedAPI 682==>  Deactivate Message :The Managed API "APIM_Automation_AnonPrivacy" was deactivated successfully.
+[INFO ] 2022-12-15 23:35:20.687 - com.informatica.pages.APIMRegistryPage:DeleteManagedAPI 704==>  Deactivate Message :The Managed API "APIM_Automation_AnonPrivacy" was deleted successfully.
+[INFO ] 2022-12-15 23:35:20.687 - com.informatica.pages.BasePage:CheckPageisLoading 326==>  Checking Page is Loading :: START
+[INFO ] 2022-12-15 23:35:20.692 - com.informatica.pages.APIMRegistryPage:DeleteManagedAPI 716==>  Deleted the Managed API post Validation
+[INFO ] 2022-12-15 23:35:20.692 - com.informatica.pages.APIMRegistryPage:ReloadPage 559==>  Reloading the page
+[INFO ] 2022-12-15 23:35:28.389 - com.informatica.pages.APIMRegistryPage:CreateManagedAPI 581==>  Search an API
+[INFO ] 2022-12-15 23:35:30.789 - com.informatica.pages.APIMRegistryPage:ReloadPage 559==>  Reloading the page
+[INFO ] 2022-12-15 23:35:42.280 - com.informatica.pages.APIMRegistryPage:CreateManagedAPI 604==>  Created the Managed API
+[INFO ] 2022-12-15 23:35:42.281 - com.informatica.pages.APIMRegistryPage:EditManagedAPI 631==>  Search an API
+[INFO ] 2022-12-15 23:35:52.350 - com.informatica.tests.managedAPITest:ClickOnEnablePrivacyPolicyBlock 312==>  ================= PrivacyManagedAPIBlockExecutionValdiations : START ================== 
+[INFO ] 2022-12-15 23:36:06.377 - com.informatica.pages.APIMRegistryPage:ClickonAnalytcis 255==>  Clicking on  Analytics Tab
+[INFO ] 2022-12-15 23:36:06.509 - com.informatica.pages.BasePage:CheckPageisLoading 326==>  Checking Page is Loading :: START
+[INFO ] 2022-12-15 23:36:16.553 - com.informatica.pages.AnalyticsPage:clickEventsLogTab 93==>  Clicking on  EventlogTab 
+[INFO ] 2022-12-15 23:36:16.634 - com.informatica.pages.BasePage:CheckPageisLoading 326==>  Checking Page is Loading :: START
+[INFO ] 2022-12-15 23:37:16.940 - com.informatica.pages.AnalyticsPage:clickShowLog 113==>  Clicking on Show Log Button 
+[INFO ] 2022-12-15 23:37:16.992 - com.informatica.pages.BasePage:CheckPageisLoading 326==>  Checking Page is Loading :: START
+[INFO ] 2022-12-15 23:38:17.316 - com.informatica.pages.AnalyticsPage:validateTheRecordsInEventLog 229==>  validateTheRecordsInEventLog :: START
+[INFO ] 2022-12-15 23:38:17.467 - com.informatica.pages.AnalyticsPage:validateTheRecordsInEventLog 237==>  Event status :: 403 Forbidden
+[INFO ] 2022-12-15 23:38:17.468 - com.informatica.pages.AnalyticsPage:validateTheRecordsInEventLog 238==>  Event description :: Blocked: The message was blocked because of a potential privacy policy breach in the response. Details: email address. 1 item. first item: /EmailOp
+[INFO ] 2022-12-15 23:38:17.468 - com.informatica.pages.AnalyticsPage:validateTheRecordsInEventLog 242==>  validateEventLogPage :: END
+[INFO ] 2022-12-15 23:38:17.469 - com.informatica.pages.APIMRegistryPage:clickOnAPIRegistry 354==>  Clicking on  API Registry
+[INFO ] 2022-12-15 23:39:16.380 - com.informatica.pages.APIMRegistryPage:ReloadPage 559==>  Reloading the page
+[INFO ] 2022-12-15 23:39:25.082 - com.informatica.pages.APIMRegistryPage:DeleteManagedAPI 662==>  Search an API
+[INFO ] 2022-12-15 23:39:33.546 - com.informatica.pages.APIMRegistryPage:DeleteManagedAPI 682==>  Deactivate Message :The Managed API "APIM_Automation_AnonPrivacy" was deactivated successfully.
+[INFO ] 2022-12-15 23:39:34.760 - com.informatica.pages.APIMRegistryPage:DeleteManagedAPI 704==>  Deactivate Message :The Managed API "APIM_Automation_AnonPrivacy" was deleted successfully.
+[INFO ] 2022-12-15 23:39:34.760 - com.informatica.pages.BasePage:CheckPageisLoading 326==>  Checking Page is Loading :: START
+[INFO ] 2022-12-15 23:39:34.764 - com.informatica.pages.APIMRegistryPage:DeleteManagedAPI 716==>  Deleted the Managed API post Validation
+[INFO ] 2022-12-15 23:39:34.765 - com.informatica.tests.managedAPITest:ClickOnEnablePrivacyPolicyBlock 348==>  ================= ClickOnEnablePrivacyPolicyBlockValidation : END ================== 

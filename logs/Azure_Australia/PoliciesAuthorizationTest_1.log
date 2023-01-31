@@ -1,0 +1,32 @@
+[INFO ] 2022-12-15 13:14:14.112 - com.informatica.web.util.MyLogger:startLogger 18==>  
+
+************** Execution Started : PoliciesAuthorizationTest**************
+
+[INFO ] 2022-12-15 13:14:18.415 - com.informatica.pages.BasePage:loginIntoIICSApp 60==>  entering username and password
+[INFO ] 2022-12-15 13:14:19.515 - com.informatica.pages.BasePage:loginIntoIICSApp 63==>  Clicking on Login Button
+[INFO ] 2022-12-15 13:14:25.330 - com.informatica.pages.LoginPage:<init> 26==>  Initiated loginPage object
+[INFO ] 2022-12-15 13:14:25.331 - com.informatica.pages.LoginPage:ClickonAPIMChiklet 48==>  Clicking on  APIM Chikclet
+[INFO ] 2022-12-15 13:14:39.181 - com.informatica.pages.APIMRegistryPage:<init> 18==>  Initiated APIMRegistryPage object
+[INFO ] 2022-12-15 13:14:39.181 - com.informatica.pages.APIMRegistryPage:ClickonPolicies 239==>  Clicking on  Policies tab
+[INFO ] 2022-12-15 13:14:39.438 - com.informatica.pages.APIMRegistryPage:ClickonAuthorization 247==>  Clicking on  Authorization tab
+[INFO ] 2022-12-15 13:14:40.524 - com.informatica.tests.PoliciesAuthorizationTest:ValdiateCreateOAuth2Client 57==>  ================= ValdiateCreateOAuth2Client : START ================== 
+[INFO ] 2022-12-15 13:14:52.660 - com.informatica.tests.PoliciesAuthorizationTest:ValdiateCreateOAuth2Client 63==>  Validating the save Message
+[INFO ] 2022-12-15 13:14:52.661 - com.informatica.tests.PoliciesAuthorizationTest:ValdiateCreateOAuth2Client 67==>  Validating the Copy Id Button
+[INFO ] 2022-12-15 13:14:52.665 - com.informatica.tests.PoliciesAuthorizationTest:ValdiateCreateOAuth2Client 71==>  Validating the Copy Secret
+[INFO ] 2022-12-15 13:14:52.667 - com.informatica.tests.PoliciesAuthorizationTest:ValdiateCreateOAuth2Client 75==>  Validating the Header Message
+[INFO ] 2022-12-15 13:14:52.668 - com.informatica.tests.PoliciesAuthorizationTest:ValdiateCreateOAuth2Client 79==>  Validating the Oauth HEader token content
+[INFO ] 2022-12-15 13:14:52.669 - com.informatica.tests.PoliciesAuthorizationTest:ValdiateCreateOAuth2Client 83==>  Validating the Search for Created Client
+[INFO ] 2022-12-15 13:14:52.779 - com.informatica.tests.PoliciesAuthorizationTest:ValdiateCreateOAuth2Client 94==>  ================= ValdiateCreateOAuth2Client : END ================== 
+[INFO ] 2022-12-15 13:14:52.783 - com.informatica.tests.PoliciesAuthorizationTest:ValdiateEditOAuth2Client 102==>  ================= ValdiateUpdateOAuth2Client : START ================== 
+[INFO ] 2022-12-15 13:14:52.784 - com.informatica.pages.PoliciesAuthroizationClientPage:ClickonKebabMenuEditOption 38==>  Clicking on  KebabMenu
+[INFO ] 2022-12-15 13:15:09.314 - com.informatica.tests.PoliciesAuthorizationTest:ValdiateEditOAuth2Client 110==>  Validating the EditAndSaveOauth2 Message
+[INFO ] 2022-12-15 13:15:09.316 - com.informatica.tests.PoliciesAuthorizationTest:ValdiateEditOAuth2Client 114==>  Validating post update Save is Disabled 
+[INFO ] 2022-12-15 13:15:09.325 - com.informatica.tests.PoliciesAuthorizationTest:ValdiateEditOAuth2Client 118==>  Validating post update Client name Updated succesfully
+[INFO ] 2022-12-15 13:15:09.336 - com.informatica.tests.PoliciesAuthorizationTest:ValdiateEditOAuth2Client 122==>  Validating post update Client Description Updated succesfully
+[INFO ] 2022-12-15 13:15:09.346 - com.informatica.tests.PoliciesAuthorizationTest:ValdiateEditOAuth2Client 126==>  Validating post update Client Token Updated succesfully
+[INFO ] 2022-12-15 13:15:09.759 - com.informatica.tests.PoliciesAuthorizationTest:ValdiateEditOAuth2Client 140==>  ================= ValdiateUpdateOAuth2Client : END ================== 
+[INFO ] 2022-12-15 13:15:09.763 - com.informatica.tests.PoliciesAuthorizationTest:ValdiateDeleteOAuth2Client 148==>  ================= ValdiateCreateOAuth2Client : START ================== 
+[INFO ] 2022-12-15 13:15:09.764 - com.informatica.pages.APIMRegistryPage:ClickonPolicies 239==>  Clicking on  Policies tab
+[INFO ] 2022-12-15 13:15:10.287 - com.informatica.pages.APIMRegistryPage:ClickonAuthorization 247==>  Clicking on  Authorization tab
+[INFO ] 2022-12-15 13:15:10.370 - com.informatica.pages.PoliciesAuthroizationClientPage:ClickonKebabMenuEditOption 38==>  Clicking on  KebabMenu
+[INFO ] 2022-12-15 13:15:26.199 - com.informatica.tests.PoliciesAuthorizationTest:ValdiateDeleteOAuth2Client 169==>  ================= ValdiateCreateOAuth2Client : END ================== 

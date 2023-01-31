@@ -1,0 +1,14 @@
+APIM_Analytics:3:0:0
+APIM_CustomAPI:1:4:0
+API_Portal_Home:2:0:0
+API_Groups:0:0:0
+APIM_OAuth2:0:3:0
+RateLimit:1:1:0
+IICS_Login:2:0:0
+API_Portal_Registry:0:0:0
+API_Groups_In_API_Portal:1:0:0
+OrgLevelPolicies:3:0:0
+APIM_Swagger:0:4:0
+Managed_API_Page:1:4:0
+APIM_Home_Page:1:8:0
+ClientSdk:1:0:0

@@ -1,0 +1,36 @@
+[INFO ] 2022-12-15 13:15:09.319 - com.informatica.web.util.MyLogger:startLogger 18==>  
+
+************** Execution Started : APIMSwaggerTest**************
+
+[INFO ] 2022-12-15 13:15:10.590 - com.informatica.pages.LoginPage:<init> 26==>  Initiated loginPage object
+[INFO ] 2022-12-15 13:15:12.555 - com.informatica.pages.BasePage:loginIntoIICSApp 60==>  entering username and password
+[INFO ] 2022-12-15 13:15:13.217 - com.informatica.pages.BasePage:loginIntoIICSApp 63==>  Clicking on Login Button
+[INFO ] 2022-12-15 13:15:21.575 - com.informatica.pages.LoginPage:ClickonAPIMChiklet 48==>  Clicking on  APIM Chikclet
+[INFO ] 2022-12-15 13:15:26.507 - com.informatica.pages.APIMRegistryPage:<init> 18==>  Initiated APIMRegistryPage object
+[INFO ] 2022-12-15 13:15:26.526 - com.informatica.tests.APIMSwaggerTest:validateAnonAPISwaggerURL 194==>  ================= validateAnonAPISwaggerURL : START ================== 
+[INFO ] 2022-12-15 13:15:29.675 - com.informatica.pages.APIMRegistryPage:clickOnApiInGrid 504==>  Clicking on API - APIM_Automation_Generic_Anon1
+[INFO ] 2022-12-15 13:15:36.573 - com.informatica.pages.BasePage:copySwaggerURL 146==>  Copying Swagger URL
+[INFO ] 2022-12-15 13:15:46.536 - com.informatica.pages.BasePage:copySwaggerURL 150==>  Copied Swagger URL Text :https://apauc1-apigw.dm1-apau.informaticacloud.com/t/4prkqccmjkeievl1p3vvc4.com/APIM_Automation_Generic_Anon1?swagger
+[INFO ] 2022-12-15 13:15:46.537 - com.informatica.pages.BasePage:runAnonSwaggerURL 169==>  Running Swagger URL of Anonymous API
+[INFO ] 2022-12-15 13:15:48.257 - com.informatica.tests.APIMSwaggerTest:validateAnonAPISwaggerURL 218==>  ================= validateAnonAPISwaggerURL : END ================== 
+[INFO ] 2022-12-15 13:15:48.271 - com.informatica.tests.APIMSwaggerTest:validateAnonAPISwagger 77==>  ================= validateAnonAPISwagger : START ================== 
+[INFO ] 2022-12-15 13:15:48.274 - com.informatica.pages.APIMSwaggerPage:switchToSwaggerTab 44==>  Clicking on Swagger tab of Managed API
+[INFO ] 2022-12-15 13:15:48.448 - com.informatica.pages.APIMSwaggerPage:executeAPIonSwaggerTab 63==>  Executing API in Swagger tab
+[INFO ] 2022-12-15 13:15:52.178 - com.informatica.pages.APIMSwaggerPage:getAPIExecutionResponseCode 86==>  Getting response code of Swagger execution
+[INFO ] 2022-12-15 13:15:53.022 - com.informatica.pages.APIMSwaggerPage:getAPIExecutionResponseBody 107==>  Getting response body of Swagger execution
+[INFO ] 2022-12-15 13:15:53.090 - com.informatica.pages.APIMRegistryPage:closeOpenedAPI 377==>  Closing API APIM_Automation_Generic_Anon1
+[INFO ] 2022-12-15 13:15:53.603 - com.informatica.tests.APIMSwaggerTest:validateAnonAPISwagger 112==>  ================= validateAnonAPISwagger : END ================== 
+[INFO ] 2022-12-15 13:15:53.622 - com.informatica.tests.APIMSwaggerTest:validateBasicAPISwaggerURL 235==>  ================= validateBasicAPISwaggerURL : START ================== 
+[INFO ] 2022-12-15 13:15:53.739 - com.informatica.pages.APIMRegistryPage:clickOnApiInGrid 504==>  Clicking on API - APIM_Automation_Generic_Basic
+[INFO ] 2022-12-15 13:15:54.202 - com.informatica.pages.BasePage:copySwaggerURL 146==>  Copying Swagger URL
+[INFO ] 2022-12-15 13:15:58.722 - com.informatica.pages.BasePage:copySwaggerURL 150==>  Copied Swagger URL Text :https://apauc1-apigw.dm1-apau.informaticacloud.com/t/4prkqccmjkeievl1p3vvc4.com/APIM_Automation_Generic_Basic?swagger
+[INFO ] 2022-12-15 13:15:58.723 - com.informatica.pages.BasePage:runBasicSwaggerURL 200==>  Running Swagger URL of Basic API
+[INFO ] 2022-12-15 13:16:01.029 - com.informatica.tests.APIMSwaggerTest:validateBasicAPISwaggerURL 258==>  ================= validateBasicAPISwaggerURL : END ================== 
+[INFO ] 2022-12-15 13:16:01.034 - com.informatica.tests.APIMSwaggerTest:validateBasicAPISwagger 129==>  ================= validateBasicAPISwagger : START ================== 
+[INFO ] 2022-12-15 13:16:01.036 - com.informatica.pages.APIMSwaggerPage:switchToSwaggerTab 44==>  Clicking on Swagger tab of Managed API
+[INFO ] 2022-12-15 13:16:01.155 - com.informatica.pages.APIMSwaggerPage:loginIntoSwaggerTab 128==>  Logging into Swagger tab of Basic Managed API
+[INFO ] 2022-12-15 13:16:01.472 - com.informatica.pages.APIMSwaggerPage:executeAPIonSwaggerTab 63==>  Executing API in Swagger tab
+[INFO ] 2022-12-15 13:16:02.703 - com.informatica.pages.APIMSwaggerPage:getAPIExecutionResponseCode 86==>  Getting response code of Swagger execution
+[INFO ] 2022-12-15 13:16:03.219 - com.informatica.pages.APIMSwaggerPage:getAPIExecutionResponseBody 107==>  Getting response body of Swagger execution
+[INFO ] 2022-12-15 13:16:03.277 - com.informatica.pages.APIMRegistryPage:closeOpenedAPI 377==>  Closing API APIM_Automation_Generic_Basic
+[INFO ] 2022-12-15 13:16:04.072 - com.informatica.tests.APIMSwaggerTest:validateBasicAPISwagger 177==>  ================= validateBasicAPISwagger : END ================== 
