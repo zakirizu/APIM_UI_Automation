@@ -6,21 +6,18 @@ import java.io.File;
 
 public interface Constants {
 	
-	String BASE_URL = "baseUrl";
-	String PROJECT_PATH = System.getProperty("user.dir");
-	String CONFIGURATION_FILE_PATH = PROJECT_PATH + File.separator + "Config" + File.separator + "configuration.properties";
-	String LOG4J_FILE_PATH = PROJECT_PATH + File.separator+"src/test/resources/log4j2.properties";
-	String LOG_FILES_LOCATION =  PROJECT_PATH+ File.separator +"Loggers"+File.separator;
-	String LOGGER_FOLDER =  PROJECT_PATH+ File.separator +"logs";
-	String SCREENSHOTS_FOLDER  = PROJECT_PATH + File.separator + "Screenshots";
+	String BASE_URL 				= "baseUrl";
+	String PROJECT_PATH 			= System.getProperty("user.dir");
+	String CONFIGURATION_FILE_PATH 	= PROJECT_PATH + File.separator + "Config" + File.separator + "configuration.properties";
+	String LOG4J_FILE_PATH 			= PROJECT_PATH + File.separator+"src/test/resources/log4j2.properties";
+	String LOG_FILES_LOCATION 		=  PROJECT_PATH+ File.separator +"Loggers"+File.separator;
+	String LOGGER_FOLDER 			=  PROJECT_PATH+ File.separator +"logs";
+	String SCREENSHOTS_FOLDER  		= PROJECT_PATH + File.separator + "Screenshots";
 	String EXECUTION_RECORDING_VEDIO_FOLDER  = PROJECT_PATH + File.separator + "Vedios";
-	String TESTNG_FOLDER  = PROJECT_PATH + File.separator + "TestNg";
-	String ENVIRONEMNT_DETAILS  = PROJECT_PATH + File.separator + "EnvironmentDetails" + File.separator+"POD_Details.xlsx";
-	String REPORTS_PATH  = PROJECT_PATH + File.separator + "Reports";
-	String CONFIG_PATH  = PROJECT_PATH + File.separator + "Config";
-	
-	
-
+	String TESTNG_FOLDER  			= PROJECT_PATH + File.separator + "TestNg";
+	String ENVIRONEMNT_DETAILS  	= PROJECT_PATH + File.separator + "EnvironmentDetails" + File.separator+"POD_Details.xlsx";
+	String REPORTS_PATH  			= PROJECT_PATH + File.separator + "Reports";
+	String CONFIG_PATH  			= PROJECT_PATH + File.separator + "Config";
 	
 	String ENV_URL="" ;
 	char quotes ='"';
